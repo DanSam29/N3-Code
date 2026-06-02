@@ -1,0 +1,112 @@
+
+# ЗАПИТ 1: Показати всі заняття та їхніх викладачів
+# (базова перевірка даних)
+
+SELECT ?lesson ?subject ?teacher ?teacherName
+WHERE {
+  ?lesson a <http://example.org#Lesson> .
+  OPTIONAL { ?lesson <http://example.org#subject> ?subject . }
+  OPTIONAL {
+    ?lesson <http://example.org#hasTeacher> ?teacher .
+    ?teacher <http://example.org#fullName> ?teacherName .
+  }
+}
+
+
+
+# ЗАПИТ 2 (SHACL-імітація): ПОРУШЕННЯ — заняття БЕЗ викладача
+# Головне правило: Lesson не може існувати без Teacher
+
+SELECT ?lesson ?subject ?violation
+WHERE {
+  ?lesson a <http://example.org#Lesson> .
+  OPTIONAL { ?lesson <http://example.org#subject> ?subject . }
+  FILTER NOT EXISTS { ?lesson <http://example.org#hasTeacher> ?teacher . }
+  BIND("ПОРУШЕННЯ: відсутній викладач (hasTeacher)" AS ?violation)
+}
+
+
+
+# ЗАПИТ 3 (SHACL-імітація): ПОРУШЕННЯ — заняття БЕЗ групи
+
+SELECT ?lesson ?subject ?violation
+WHERE {
+  ?lesson a <http://example.org#Lesson> .
+  OPTIONAL { ?lesson <http://example.org#subject> ?subject . }
+  FILTER NOT EXISTS { ?lesson <http://example.org#belongsToGroup> ?group . }
+  BIND("ПОРУШЕННЯ: відсутня група (belongsToGroup)" AS ?violation)
+}
+
+
+
+# ЗАПИТ 4 (SHACL-імітація): ПОРУШЕННЯ — заняття БЕЗ назви дисципліни
+
+SELECT ?lesson ?violation
+WHERE {
+  ?lesson a <http://example.org#Lesson> .
+  FILTER NOT EXISTS { ?lesson <http://example.org#subject> ?subjectName . }
+  BIND("ПОРУШЕННЯ: відсутня дисципліна (subject)" AS ?violation)
+}
+
+
+
+# ЗАПИТ 5: ЗВЕДЕНИЙ ЗВІТ всіх порушень (усі 3 правила разом)
+
+SELECT ?lesson ?violation
+WHERE {
+  {
+    ?lesson a <http://example.org#Lesson> .
+    FILTER NOT EXISTS { ?lesson <http://example.org#hasTeacher> ?t . }
+    BIND("ПОРУШЕННЯ: немає викладача" AS ?violation)
+  }
+  UNION
+  {
+    ?lesson a <http://example.org#Lesson> .
+    FILTER NOT EXISTS { ?lesson <http://example.org#belongsToGroup> ?g . }
+    BIND("ПОРУШЕННЯ: немає групи" AS ?violation)
+  }
+  UNION
+  {
+    ?lesson a <http://example.org#Lesson> .
+    FILTER NOT EXISTS { ?lesson <http://example.org#subject> ?s . }
+    BIND("ПОРУШЕННЯ: немає дисципліни" AS ?violation)
+  }
+}
+ORDER BY ?lesson
+
+
+
+# ЗАПИТ 6: ВАЛІДНІ заняття — ті, що пройшли всі 3 перевірки
+
+SELECT ?lesson ?subject ?teacherName ?groupName
+WHERE {
+  ?lesson a <http://example.org#Lesson> .
+  ?lesson <http://example.org#subject> ?subject .
+  ?lesson <http://example.org#hasTeacher> ?teacher .
+  ?teacher <http://example.org#fullName> ?teacherName .
+  ?lesson <http://example.org#belongsToGroup> ?group .
+  ?group <http://example.org#groupName> ?groupName .
+}
+
+
+
+# ЗАПИТ 7: Викладачі БЕЗ занять (це ДОПУСТИМО — показуємо як норму)
+
+SELECT ?teacher ?teacherName ?department
+WHERE {
+  ?teacher a <http://example.org#Teacher> .
+  ?teacher <http://example.org#fullName> ?teacherName .
+  ?teacher <http://example.org#department> ?department .
+  FILTER NOT EXISTS { ?lesson <http://example.org#hasTeacher> ?teacher . }
+}
+
+
+
+# ЗАПИТ 8: Перевірка SHACL Shape — Teacher повинен мати fullName
+
+SELECT ?teacher ?violation
+WHERE {
+  ?teacher a <http://example.org#Teacher> .
+  FILTER NOT EXISTS { ?teacher <http://example.org#fullName> ?name . }
+  BIND("ПОРУШЕННЯ TeacherShape: відсутнє ПІБ (fullName)" AS ?violation)
+}

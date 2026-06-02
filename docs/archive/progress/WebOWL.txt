@@ -1,0 +1,714 @@
+@prefix ex:   <http://example.org#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# =====================================================================
+# Ontology: classes
+# =====================================================================
+
+ex:ScheduleDocument
+    a rdfs:Class ;
+    rdfs:label "Документ розкладу" ;
+    rdfs:comment "Файл або набір даних, з якого імпортується розклад" .
+
+ex:Group
+    a rdfs:Class ;
+    rdfs:label "Академічна група" .
+
+ex:Lesson
+    a rdfs:Class ;
+    rdfs:label "Заняття" .
+
+ex:Teacher
+    a rdfs:Class ;
+    rdfs:label "Викладач" .
+
+ex:User
+    a rdfs:Class ;
+    rdfs:label "Користувач" ;
+    rdfs:comment "Студент або викладач, який формує запит до системи" .
+
+ex:ScheduleQuery
+    a rdfs:Class ;
+    rdfs:label "Запит до розкладу" ;
+    rdfs:comment "Фільтр користувача для пошуку занять" .
+
+ex:Recommendation
+    a rdfs:Class ;
+    rdfs:label "Рекомендація" ;
+    rdfs:comment "Результат reasoning для конкретного запиту" .
+
+# =====================================================================
+# Datatype properties: document
+# =====================================================================
+
+ex:filename
+    a rdf:Property ;
+    rdfs:label "Назва файлу" ;
+    rdfs:domain ex:ScheduleDocument ;
+    rdfs:range xsd:string .
+
+ex:status
+    a rdf:Property ;
+    rdfs:label "Статус обробки" ;
+    rdfs:domain ex:ScheduleDocument ;
+    rdfs:range xsd:string .
+
+ex:uploadDate
+    a rdf:Property ;
+    rdfs:label "Дата завантаження" ;
+    rdfs:domain ex:ScheduleDocument ;
+    rdfs:range xsd:dateTime .
+
+ex:filePath
+    a rdf:Property ;
+    rdfs:label "Шлях до файлу" ;
+    rdfs:domain ex:ScheduleDocument ;
+    rdfs:range xsd:string .
+
+ex:rawText
+    a rdf:Property ;
+    rdfs:label "Сирий текст" ;
+    rdfs:domain ex:ScheduleDocument ;
+    rdfs:range xsd:string .
+
+ex:processedAt
+    a rdf:Property ;
+    rdfs:label "Дата обробки" ;
+    rdfs:domain ex:ScheduleDocument ;
+    rdfs:range xsd:dateTime .
+
+# =====================================================================
+# Datatype properties: group
+# =====================================================================
+
+ex:groupName
+    a rdf:Property ;
+    rdfs:label "Назва групи" ;
+    rdfs:domain ex:Group ;
+    rdfs:range xsd:string .
+
+ex:course
+    a rdf:Property ;
+    rdfs:label "Курс" ;
+    rdfs:domain ex:Group ;
+    rdfs:range xsd:integer .
+
+ex:faculty
+    a rdf:Property ;
+    rdfs:label "Факультет" ;
+    rdfs:domain ex:Group ;
+    rdfs:range xsd:string .
+
+ex:specialty
+    a rdf:Property ;
+    rdfs:label "Спеціальність" ;
+    rdfs:domain ex:Group ;
+    rdfs:range xsd:string .
+
+# =====================================================================
+# Datatype properties: teacher
+# =====================================================================
+
+ex:fullName
+    a rdf:Property ;
+    rdfs:label "ПІБ викладача" ;
+    rdfs:domain ex:Teacher ;
+    rdfs:range xsd:string .
+
+ex:department
+    a rdf:Property ;
+    rdfs:label "Кафедра" ;
+    rdfs:domain ex:Teacher ;
+    rdfs:range xsd:string .
+
+ex:email
+    a rdf:Property ;
+    rdfs:label "Електронна пошта" ;
+    rdfs:domain ex:Teacher ;
+    rdfs:range xsd:string .
+
+# =====================================================================
+# Datatype properties: lesson
+# =====================================================================
+
+ex:subject
+    a rdf:Property ;
+    rdfs:label "Дисципліна" ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range xsd:string .
+
+ex:dayOfWeek
+    a rdf:Property ;
+    rdfs:label "День тижня" ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range xsd:string .
+
+ex:weekType
+    a rdf:Property ;
+    rdfs:label "Тип тижня" ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range xsd:string .
+
+ex:timeStart
+    a rdf:Property ;
+    rdfs:label "Час початку" ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range xsd:string .
+
+ex:timeEnd
+    a rdf:Property ;
+    rdfs:label "Час завершення" ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range xsd:string .
+
+ex:lessonType
+    a rdf:Property ;
+    rdfs:label "Тип заняття" ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range xsd:string .
+
+ex:classroom
+    a rdf:Property ;
+    rdfs:label "Аудиторія" ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range xsd:string .
+
+ex:isElective
+    a rdf:Property ;
+    rdfs:label "Вибіркова дисципліна" ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range xsd:boolean .
+
+# =====================================================================
+# Datatype properties: user, query, recommendation
+# =====================================================================
+
+ex:subscriptionStatus
+    a rdf:Property ;
+    rdfs:label "Статус підписки" ;
+    rdfs:domain ex:User ;
+    rdfs:range xsd:string .
+
+ex:accessStatus
+    a rdf:Property ;
+    rdfs:label "Статус доступу" ;
+    rdfs:domain ex:User ;
+    rdfs:range xsd:string .
+
+ex:queryKind
+    a rdf:Property ;
+    rdfs:label "Тип запиту" ;
+    rdfs:domain ex:ScheduleQuery ;
+    rdfs:range xsd:string .
+
+ex:queryDay
+    a rdf:Property ;
+    rdfs:label "Запитуваний день" ;
+    rdfs:domain ex:ScheduleQuery ;
+    rdfs:range xsd:string .
+
+ex:querySubject
+    a rdf:Property ;
+    rdfs:label "Запитувана дисципліна" ;
+    rdfs:domain ex:ScheduleQuery ;
+    rdfs:range xsd:string .
+
+ex:recommendedDay
+    a rdf:Property ;
+    rdfs:label "Рекомендований день" ;
+    rdfs:domain ex:Recommendation ;
+    rdfs:range xsd:string .
+
+ex:recStatus
+    a rdf:Property ;
+    rdfs:label "Статус рекомендації" ;
+    rdfs:domain ex:Recommendation ;
+    rdfs:range xsd:string .
+
+# =====================================================================
+# Object properties: core model
+# =====================================================================
+
+ex:containsLesson
+    a rdf:Property ;
+    rdfs:label "Містить заняття" ;
+    rdfs:domain ex:ScheduleDocument ;
+    rdfs:range ex:Lesson .
+
+ex:documentForGroup
+    a rdf:Property ;
+    rdfs:label "Документ для групи" ;
+    rdfs:domain ex:ScheduleDocument ;
+    rdfs:range ex:Group .
+
+ex:belongsToDocument
+    a rdf:Property ;
+    rdfs:label "Належить до документа" ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range ex:ScheduleDocument .
+
+ex:belongsToGroup
+    a rdf:Property ;
+    rdfs:label "Належить до групи" ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range ex:Group .
+
+ex:hasLesson
+    a rdf:Property ;
+    rdfs:label "Має заняття" ;
+    rdfs:domain ex:Group ;
+    rdfs:range ex:Lesson .
+
+ex:hasTeacher
+    a rdf:Property ;
+    rdfs:label "Має викладача" ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range ex:Teacher .
+
+ex:teaches
+    a rdf:Property ;
+    rdfs:label "Викладає" ;
+    rdfs:domain ex:Teacher ;
+    rdfs:range ex:Lesson .
+
+ex:hasQuery
+    a rdf:Property ;
+    rdfs:label "Має запит" ;
+    rdfs:domain ex:User ;
+    rdfs:range ex:ScheduleQuery .
+
+ex:hasRecommendation
+    a rdf:Property ;
+    rdfs:label "Має рекомендацію" ;
+    rdfs:domain ex:User ;
+    rdfs:range ex:Recommendation .
+
+ex:generatedForQuery
+    a rdf:Property ;
+    rdfs:label "Згенеровано для запиту" ;
+    rdfs:domain ex:Recommendation ;
+    rdfs:range ex:ScheduleQuery .
+
+ex:queryGroup
+    a rdf:Property ;
+    rdfs:label "Запитувана група" ;
+    rdfs:domain ex:ScheduleQuery ;
+    rdfs:range ex:Group .
+
+ex:queryTeacher
+    a rdf:Property ;
+    rdfs:label "Запитуваний викладач" ;
+    rdfs:domain ex:ScheduleQuery ;
+    rdfs:range ex:Teacher .
+
+ex:recommendedLesson
+    a rdf:Property ;
+    rdfs:label "Рекомендоване заняття" ;
+    rdfs:domain ex:Recommendation ;
+    rdfs:range ex:Lesson .
+
+ex:recommendedTeacher
+    a rdf:Property ;
+    rdfs:label "Рекомендований викладач" ;
+    rdfs:domain ex:Recommendation ;
+    rdfs:range ex:Teacher .
+
+ex:suitableForQuery
+    a rdf:Property ;
+    rdfs:label "Підходить для запиту" ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range ex:ScheduleQuery .
+
+# =====================================================================
+# Derived properties and semantic links
+# =====================================================================
+
+ex:isMandatory
+    a rdf:Property ;
+    rdfs:label "Обов'язкове заняття" ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range xsd:boolean .
+
+ex:isNumeratorWeek
+    a rdf:Property ;
+    rdfs:label "Чисельник" ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range xsd:boolean .
+
+ex:isDenominatorWeek
+    a rdf:Property ;
+    rdfs:label "Знаменник" ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range xsd:boolean .
+
+ex:isProcessed
+    a rdf:Property ;
+    rdfs:label "Документ оброблено" ;
+    rdfs:domain ex:ScheduleDocument ;
+    rdfs:range xsd:boolean .
+
+ex:belongsToFaculty
+    a rdf:Property ;
+    rdfs:label "Належить до факультету" ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range xsd:string .
+
+ex:belongsToDepartment
+    a rdf:Property ;
+    rdfs:label "Належить до кафедри" ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range xsd:string .
+
+ex:hasSubLesson
+    a rdf:Property ;
+    rdfs:label "Має підзаняття" ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range ex:Lesson .
+
+ex:isSubLessonOf
+    a rdf:Property ;
+    rdfs:label "Є підзаняттям" ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range ex:Lesson .
+
+ex:hasSubLessonTransitive
+    a rdf:Property ;
+    rdfs:label "Має підзаняття транзитивно" ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range ex:Lesson .
+
+ex:isSubLessonOfTransitive
+    a rdf:Property ;
+    rdfs:label "Є підзаняттям транзитивно" ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range ex:Lesson .
+
+ex:relatedLesson
+    a rdf:Property ;
+    rdfs:label "Пов'язане заняття" ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range ex:Lesson .
+
+ex:similarLesson
+    a rdf:Property ;
+    rdfs:label "Схоже заняття" ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range ex:Lesson .
+
+ex:equivalentLesson
+    a rdf:Property ;
+    rdfs:label "Еквівалентне заняття" ;
+    rdfs:domain ex:Lesson ;
+    rdfs:range ex:Lesson .
+
+ex:hasSubGroup
+    a rdf:Property ;
+    rdfs:label "Має підгрупу" ;
+    rdfs:domain ex:Group ;
+    rdfs:range ex:Group .
+
+ex:isSubGroupOf
+    a rdf:Property ;
+    rdfs:label "Є підгрупою" ;
+    rdfs:domain ex:Group ;
+    rdfs:range ex:Group .
+
+ex:hasSubGroupTransitive
+    a rdf:Property ;
+    rdfs:label "Має підгрупу транзитивно" ;
+    rdfs:domain ex:Group ;
+    rdfs:range ex:Group .
+
+# =====================================================================
+# Simple OWL constraints
+# =====================================================================
+
+ex:filename a owl:FunctionalProperty .
+ex:groupName a owl:FunctionalProperty .
+ex:email a owl:FunctionalProperty .
+
+# =====================================================================
+# Source document
+# =====================================================================
+
+ex:doc_rozklad
+    a ex:ScheduleDocument ;
+    ex:filename "rozklad_2024.xlsx" ;
+    ex:status "completed" ;
+    ex:filePath "input/rozklad_2024.xlsx" ;
+    ex:containsLesson ex:lesson_1, ex:lesson_2, ex:lesson_3, ex:lesson_4, ex:lesson_5 .
+
+# =====================================================================
+# Groups
+# =====================================================================
+
+ex:group_kn21
+    a ex:Group ;
+    ex:groupName "КН-21" ;
+    ex:course 2 ;
+    ex:faculty "ФІОТ" ;
+    ex:specialty "Комп'ютерні науки" ;
+    ex:hasLesson ex:lesson_1, ex:lesson_2, ex:lesson_3, ex:lesson_4, ex:lesson_5 ;
+    ex:hasSubGroup ex:group_kn21a .
+
+ex:group_kn21a
+    a ex:Group ;
+    ex:groupName "КН-21а" ;
+    ex:course 2 ;
+    ex:faculty "ФІОТ" ;
+    ex:specialty "Комп'ютерні науки" .
+
+# =====================================================================
+# Teachers
+# =====================================================================
+
+ex:teacher_1
+    a ex:Teacher ;
+    ex:fullName "Іванов І.І." ;
+    ex:department "Кафедра математики" ;
+    ex:email "ivanov@university.edu" .
+
+ex:teacher_2
+    a ex:Teacher ;
+    ex:fullName "Петров П.П." ;
+    ex:department "Кафедра інформатики" ;
+    ex:email "petrov@university.edu" .
+
+ex:teacher_3
+    a ex:Teacher ;
+    ex:fullName "Сидоров С.С." ;
+    ex:department "Кафедра фізики" ;
+    ex:email "sydorov@university.edu" .
+
+ex:teacher_4
+    a ex:Teacher ;
+    ex:fullName "Коваль К.К." ;
+    ex:department "Кафедра мов" ;
+    ex:email "koval@university.edu" .
+
+ex:teacher_5
+    a ex:Teacher ;
+    ex:fullName "Бондар Б.Б." ;
+    ex:department "Кафедра інформатики" ;
+    ex:email "bondar@university.edu" .
+
+# Викладач БЕЗ занять — це ВАЛІДНО (Teacher може існувати без Lesson)
+ex:teacher_free
+    a ex:Teacher ;
+    ex:fullName "Вільний В.В." ;
+    ex:department "Кафедра мов" ;
+    ex:email "vilnyi@university.edu" .
+
+# =====================================================================
+# Lessons (валідні)
+# =====================================================================
+
+ex:lesson_1
+    a ex:Lesson ;
+    ex:subject "Математичний аналіз" ;
+    ex:dayOfWeek "Понеділок" ;
+    ex:weekType "numerator" ;
+    ex:timeStart "09:00" ;
+    ex:timeEnd "10:30" ;
+    ex:lessonType "лекція" ;
+    ex:classroom "205" ;
+    ex:isElective false ;
+    ex:hasTeacher ex:teacher_1 ;
+    ex:belongsToGroup ex:group_kn21 ;
+    ex:belongsToDocument ex:doc_rozklad .
+
+ex:lesson_2
+    a ex:Lesson ;
+    ex:subject "Програмування" ;
+    ex:dayOfWeek "Вівторок" ;
+    ex:weekType "all" ;
+    ex:timeStart "10:45" ;
+    ex:timeEnd "12:15" ;
+    ex:lessonType "практика" ;
+    ex:classroom "311" ;
+    ex:isElective false ;
+    ex:hasTeacher ex:teacher_2 ;
+    ex:belongsToGroup ex:group_kn21 ;
+    ex:belongsToDocument ex:doc_rozklad .
+
+ex:lesson_3
+    a ex:Lesson ;
+    ex:subject "Фізика" ;
+    ex:dayOfWeek "Середа" ;
+    ex:weekType "denominator" ;
+    ex:timeStart "12:30" ;
+    ex:timeEnd "14:00" ;
+    ex:lessonType "лекція" ;
+    ex:classroom "101" ;
+    ex:isElective false ;
+    ex:hasTeacher ex:teacher_3 ;
+    ex:belongsToGroup ex:group_kn21 ;
+    ex:belongsToDocument ex:doc_rozklad .
+
+ex:lesson_4
+    a ex:Lesson ;
+    ex:subject "Англійська мова" ;
+    ex:dayOfWeek "Четвер" ;
+    ex:weekType "all" ;
+    ex:timeStart "08:00" ;
+    ex:timeEnd "09:30" ;
+    ex:lessonType "практика" ;
+    ex:classroom "214" ;
+    ex:isElective true ;
+    ex:hasTeacher ex:teacher_4 ;
+    ex:belongsToGroup ex:group_kn21 ;
+    ex:belongsToDocument ex:doc_rozklad .
+
+ex:lesson_5
+    a ex:Lesson ;
+    ex:subject "Бази даних" ;
+    ex:dayOfWeek "П'ятниця" ;
+    ex:weekType "numerator" ;
+    ex:timeStart "14:15" ;
+    ex:timeEnd "15:45" ;
+    ex:lessonType "лабораторна" ;
+    ex:classroom "401" ;
+    ex:isElective false ;
+    ex:hasTeacher ex:teacher_5 ;
+    ex:belongsToGroup ex:group_kn21 ;
+    ex:belongsToDocument ex:doc_rozklad .
+
+# =====================================================================
+# Semantic links between lessons (збережено з оригіналу)
+# =====================================================================
+
+ex:lesson_1 ex:equivalentLesson ex:lesson_2 .
+ex:lesson_2 ex:similarLesson ex:lesson_5 .
+ex:lesson_1 ex:relatedLesson ex:lesson_3 .
+ex:lesson_1 ex:hasSubLesson ex:lesson_2 .
+ex:lesson_2 ex:hasSubLesson ex:lesson_5 .
+
+ex:lesson_1 skos:related ex:LectureType .
+ex:lesson_2 skos:related ex:PracticeType .
+ex:lesson_5 skos:related ex:LabType .
+
+# =====================================================================
+# Users
+# =====================================================================
+
+ex:user_1
+    a ex:User ;
+    ex:subscriptionStatus "paid" ;
+    ex:hasQuery ex:query_1 ;
+    ex:hasRecommendation ex:rec_1 .
+
+ex:user_2
+    a ex:User ;
+    ex:subscriptionStatus "paid" ;
+    ex:hasQuery ex:query_2 ;
+    ex:hasRecommendation ex:rec_2 .
+
+ex:user_3
+    a ex:User ;
+    ex:subscriptionStatus "paid" ;
+    ex:hasQuery ex:query_3 ;
+    ex:hasRecommendation ex:rec_3 .
+
+ex:user_4
+    a ex:User ;
+    ex:subscriptionStatus "unpaid" ;
+    ex:hasQuery ex:query_4 ;
+    ex:hasRecommendation ex:rec_4 .
+
+ex:user_5
+    a ex:User ;
+    ex:subscriptionStatus "paid" ;
+    ex:hasQuery ex:query_5 ;
+    ex:hasRecommendation ex:rec_5 .
+
+# =====================================================================
+# Recommendations
+# =====================================================================
+
+ex:rec_1 a ex:Recommendation .
+ex:rec_2 a ex:Recommendation .
+ex:rec_3 a ex:Recommendation .
+ex:rec_4 a ex:Recommendation .
+ex:rec_5 a ex:Recommendation .
+
+# =====================================================================
+# Queries
+# =====================================================================
+
+ex:query_1
+    a ex:ScheduleQuery ;
+    ex:queryKind "group_day" ;
+    ex:queryGroup ex:group_kn21 ;
+    ex:queryDay "Понеділок" .
+
+ex:query_2
+    a ex:ScheduleQuery ;
+    ex:queryKind "teacher_day" ;
+    ex:queryTeacher ex:teacher_2 ;
+    ex:queryDay "Вівторок" .
+
+ex:query_3
+    a ex:ScheduleQuery ;
+    ex:queryKind "group_subject" ;
+    ex:queryGroup ex:group_kn21 ;
+    ex:querySubject "Програмування" .
+
+ex:query_4
+    a ex:ScheduleQuery ;
+    ex:queryKind "group_day" ;
+    ex:queryGroup ex:group_kn21 ;
+    ex:queryDay "П'ятниця" .
+
+ex:query_5
+    a ex:ScheduleQuery ;
+    ex:queryKind "day_only" ;
+    ex:queryDay "Середа" .
+
+# =====================================================================
+# ЗАНЯТТЯ З ПОРУШЕННЯМИ (для демонстрації SHACL-валідації)
+# =====================================================================
+
+# ПОРУШЕННЯ 1: немає викладача (ex:hasTeacher відсутній)
+ex:lesson_invalid_1
+    a ex:Lesson ;
+    ex:subject "Без викладача" ;
+    ex:dayOfWeek "Четвер" ;
+    ex:weekType "all" ;
+    ex:timeStart "10:00" ;
+    ex:timeEnd "11:30" ;
+    ex:lessonType "лекція" ;
+    ex:classroom "999" ;
+    ex:isElective false ;
+    ex:belongsToGroup ex:group_kn21 ;
+    ex:belongsToDocument ex:doc_rozklad .
+
+# ПОРУШЕННЯ 2: немає групи (ex:belongsToGroup відсутній)
+ex:lesson_invalid_2
+    a ex:Lesson ;
+    ex:subject "Без групи" ;
+    ex:dayOfWeek "П'ятниця" ;
+    ex:weekType "all" ;
+    ex:timeStart "11:00" ;
+    ex:timeEnd "12:30" ;
+    ex:lessonType "практика" ;
+    ex:classroom "888" ;
+    ex:isElective false ;
+    ex:hasTeacher ex:teacher_1 ;
+    ex:belongsToDocument ex:doc_rozklad .
+
+# ПОРУШЕННЯ 3: немає назви дисципліни (ex:subject відсутній)
+ex:lesson_invalid_3
+    a ex:Lesson ;
+    ex:dayOfWeek "Субота" ;
+    ex:weekType "numerator" ;
+    ex:timeStart "09:00" ;
+    ex:timeEnd "10:30" ;
+    ex:lessonType "лабораторна" ;
+    ex:classroom "777" ;
+    ex:isElective false ;
+    ex:hasTeacher ex:teacher_2 ;
+    ex:belongsToGroup ex:group_kn21 ;
+    ex:belongsToDocument ex:doc_rozklad .

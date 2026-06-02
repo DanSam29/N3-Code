@@ -1,0 +1,67 @@
+graph LR
+    classDef owlClass fill:#1a5276,stroke:#1A3A5C,stroke-width:2px,color:#ffffff;
+    classDef instance fill:#d6eaf8,stroke:#2C5F8A,stroke-width:1.5px,color:#000000;
+    classDef literal fill:#fef9e7,stroke:#d4ac0d,stroke-dasharray:4 4,color:#000000;
+
+    %% Класи онтології
+    CScheduleDocument["sched:ScheduleDocument"]:::owlClass
+    CLesson["sched:Lesson"]:::owlClass
+    CGroup["sched:Group"]:::owlClass
+
+    %% Екземпляри ресурсів
+    doc1(["doc1"]):::instance
+    lesson1(["lesson1"]):::instance
+    group_kn21(["group_kn21"]):::instance
+
+    %% Літерали
+    lit_filename["'rozklad_2024.docx'\n^^xsd:string"]:::literal
+    lit_status["'completed'\n^^xsd:string"]:::literal
+    lit_uploadDate["'2024-09-01T10:00:00'\n^^xsd:dateTime"]:::literal
+
+    lit_groupName["'КН-21'\n^^xsd:string"]:::literal
+    lit_faculty["'ФІОТ'\n^^xsd:string"]:::literal
+    lit_course["'2'\n^^xsd:integer"]:::literal
+    lit_specialty["'Комп'ютерні науки'\n^^xsd:string"]:::literal
+
+    lit_day["'Понеділок'\n^^xsd:string"]:::literal
+    lit_weekType["'numerator'\n^^xsd:string"]:::literal
+    lit_timeStart["'09:00'\n^^xsd:string"]:::literal
+    lit_timeEnd["'10:30'\n^^xsd:string"]:::literal
+    lit_subject["'Математичний аналіз'\n^^xsd:string"]:::literal
+    lit_lessonType["'лекція'\n^^xsd:string"]:::literal
+    lit_teacher["'Іванов І.І.'\n^^xsd:string"]:::literal
+    lit_classroom["'205'\n^^xsd:string"]:::literal
+    lit_isElective["'false'\n^^xsd:boolean"]:::literal
+
+    %% rdf:type
+    doc1 -->|"rdf:type"| CScheduleDocument
+    lesson1 -->|"rdf:type"| CLesson
+    group_kn21 -->|"rdf:type"| CGroup
+
+    %% Структурні зв'язки
+    doc1 -->|"sched:containsLesson"| lesson1
+    group_kn21 -->|"sched:hasLesson"| lesson1
+    lesson1 -->|"sched:belongsToDocument\n[owl:inverseOf containsLesson]"| doc1
+    lesson1 -->|"sched:belongsToGroup\n[owl:inverseOf hasLesson]"| group_kn21
+
+    %% Властивості doc1
+    doc1 -->|"sched:filename"| lit_filename
+    doc1 -->|"sched:status"| lit_status
+    doc1 -->|"sched:uploadDate"| lit_uploadDate
+
+    %% Властивості group_kn21
+    group_kn21 -->|"sched:name"| lit_groupName
+    group_kn21 -->|"sched:faculty"| lit_faculty
+    group_kn21 -->|"sched:course"| lit_course
+    group_kn21 -->|"sched:specialty"| lit_specialty
+
+    %% Властивості lesson1
+    lesson1 -->|"sched:dayOfWeek"| lit_day
+    lesson1 -->|"sched:weekType"| lit_weekType
+    lesson1 -->|"sched:timeStart"| lit_timeStart
+    lesson1 -->|"sched:timeEnd"| lit_timeEnd
+    lesson1 -->|"sched:subject"| lit_subject
+    lesson1 -->|"sched:lessonType"| lit_lessonType
+    lesson1 -->|"sched:teacher"| lit_teacher
+    lesson1 -->|"sched:classroom"| lit_classroom
+    lesson1 -->|"sched:isElective"| lit_isElective

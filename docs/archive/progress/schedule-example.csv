@@ -1,0 +1,6 @@
+document,documentId,group,groupId,course,faculty,specialty,subject,lessonId,day,weekType,timeStart,timeEnd,lessonType,classroom,isElective,teacher,teacherId,department,email
+rozklad_2024.xlsx,doc_rozklad,КН-21,group_kn21,2,ФІОТ,Комп'ютерні науки,Математичний аналіз,lesson_1,Понеділок,numerator,09:00,10:30,лекція,205,false,Іванов І.І.,teacher_1,Кафедра математики,ivanov@university.edu
+rozklad_2024.xlsx,doc_rozklad,КН-21,group_kn21,2,ФІОТ,Комп'ютерні науки,Програмування,lesson_2,Вівторок,all,10:45,12:15,практика,311,false,Петров П.П.,teacher_2,Кафедра інформатики,petrov@university.edu
+rozklad_2024.xlsx,doc_rozklad,КН-21,group_kn21,2,ФІОТ,Комп'ютерні науки,Фізика,lesson_3,Середа,denominator,12:30,14:00,лекція,101,false,Сидоров С.С.,teacher_3,Кафедра фізики,sydorov@university.edu
+rozklad_2024.xlsx,doc_rozklad,КН-21,group_kn21,2,ФІОТ,Комп'ютерні науки,Англійська мова,lesson_4,Четвер,all,08:00,09:30,практика,214,true,Коваль К.К.,teacher_4,Кафедра мов,koval@university.edu
+rozklad_2024.xlsx,doc_rozklad,КН-21,group_kn21,2,ФІОТ,Комп'ютерні науки,Бази даних,lesson_5,П'ятниця,numerator,14:15,15:45,лабораторна,401,false,Бондар Б.Б.,teacher_5,Кафедра інформатики,bondar@university.edu

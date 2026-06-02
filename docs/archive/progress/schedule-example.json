@@ -1,0 +1,137 @@
+[
+  {
+    "document": "rozklad_2024.xlsx",
+    "group": {
+      "id": "group_kn21",
+      "name": "КН-21",
+      "course": 2,
+      "faculty": "ФІОТ",
+      "specialty": "Комп'ютерні науки"
+    },
+    "lesson": {
+      "id": "lesson_1",
+      "subject": "Математичний аналіз",
+      "day": "Понеділок",
+      "weekType": "numerator",
+      "timeStart": "09:00",
+      "timeEnd": "10:30",
+      "lessonType": "лекція",
+      "classroom": "205",
+      "isElective": false
+    },
+    "teacher": {
+      "id": "teacher_1",
+      "fullName": "Іванов І.І.",
+      "department": "Кафедра математики",
+      "email": "ivanov@university.edu"
+    }
+  },
+  {
+    "document": "rozklad_2024.xlsx",
+    "group": {
+      "id": "group_kn21",
+      "name": "КН-21",
+      "course": 2,
+      "faculty": "ФІОТ",
+      "specialty": "Комп'ютерні науки"
+    },
+    "lesson": {
+      "id": "lesson_2",
+      "subject": "Програмування",
+      "day": "Вівторок",
+      "weekType": "all",
+      "timeStart": "10:45",
+      "timeEnd": "12:15",
+      "lessonType": "практика",
+      "classroom": "311",
+      "isElective": false
+    },
+    "teacher": {
+      "id": "teacher_2",
+      "fullName": "Петров П.П.",
+      "department": "Кафедра інформатики",
+      "email": "petrov@university.edu"
+    }
+  },
+  {
+    "document": "rozklad_2024.xlsx",
+    "group": {
+      "id": "group_kn21",
+      "name": "КН-21",
+      "course": 2,
+      "faculty": "ФІОТ",
+      "specialty": "Комп'ютерні науки"
+    },
+    "lesson": {
+      "id": "lesson_3",
+      "subject": "Фізика",
+      "day": "Середа",
+      "weekType": "denominator",
+      "timeStart": "12:30",
+      "timeEnd": "14:00",
+      "lessonType": "лекція",
+      "classroom": "101",
+      "isElective": false
+    },
+    "teacher": {
+      "id": "teacher_3",
+      "fullName": "Сидоров С.С.",
+      "department": "Кафедра фізики",
+      "email": "sydorov@university.edu"
+    }
+  },
+  {
+    "document": "rozklad_2024.xlsx",
+    "group": {
+      "id": "group_kn21",
+      "name": "КН-21",
+      "course": 2,
+      "faculty": "ФІОТ",
+      "specialty": "Комп'ютерні науки"
+    },
+    "lesson": {
+      "id": "lesson_4",
+      "subject": "Англійська мова",
+      "day": "Четвер",
+      "weekType": "all",
+      "timeStart": "08:00",
+      "timeEnd": "09:30",
+      "lessonType": "практика",
+      "classroom": "214",
+      "isElective": true
+    },
+    "teacher": {
+      "id": "teacher_4",
+      "fullName": "Коваль К.К.",
+      "department": "Кафедра мов",
+      "email": "koval@university.edu"
+    }
+  },
+  {
+    "document": "rozklad_2024.xlsx",
+    "group": {
+      "id": "group_kn21",
+      "name": "КН-21",
+      "course": 2,
+      "faculty": "ФІОТ",
+      "specialty": "Комп'ютерні науки"
+    },
+    "lesson": {
+      "id": "lesson_5",
+      "subject": "Бази даних",
+      "day": "П'ятниця",
+      "weekType": "numerator",
+      "timeStart": "14:15",
+      "timeEnd": "15:45",
+      "lessonType": "лабораторна",
+      "classroom": "401",
+      "isElective": false
+    },
+    "teacher": {
+      "id": "teacher_5",
+      "fullName": "Бондар Б.Б.",
+      "department": "Кафедра інформатики",
+      "email": "bondar@university.edu"
+    }
+  }
+]
