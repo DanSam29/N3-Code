@@ -21,18 +21,18 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage });
 
-// Helper to sanitize strings for N3 literals
+// Допоміжна функція для очищення рядків для літералів N3
 function sanitize(str) {
     if (!str) return "";
     return str.toString()
-        .replace(/\\/g, '\\\\')   // escape backslashes
-        .replace(/"/g, '\\"')     // escape double quotes
-        .replace(/\n/g, ' ')      // replace newlines with space
-        .replace(/\r/g, '')       // remove carriage returns
+        .replace(/\\/g, '\\\\') // екранування зворотних слешів
+        .replace(/"/g, '\\"')   // екранування подвійних лапок
+        .replace(/\n/g, ' ')    // заміна переносів рядків пробілами
+        .replace(/\r/g, '')     // видалення повернення каретки
         .trim();
 }
 
-// Paths to N3 files
+// Шляхи до N3 файлів
 const ONTOLOGY_PATH = path.join(__dirname, '..', 'rdf', 'ontology.n3');
 const DATA_PATH = path.join(__dirname, '..', 'rdf', 'data.n3');
 const RULES_PATH = path.join(__dirname, '..', 'rdf', 'rules.n3');
@@ -47,7 +47,7 @@ const TIME_MAPPING = {
     "7": "19:00 - 20:20"
 };
 
-// In-memory metadata to avoid re-parsing data.n3 every time
+// Метадані в пам'яті, щоб уникнути повторного парсингу data.n3 щоразу
 let currentMetadata = { groups: [], teachers: [], days: ["ПОНЕДІЛОК", "ВІВТОРОК", "СЕРЕДА", "ЧЕТВЕР", "П'ЯТНИЦЯ"] };
 
 app.post('/api/upload', upload.single('schedule'), (req, res) => {
@@ -55,7 +55,7 @@ app.post('/api/upload', upload.single('schedule'), (req, res) => {
         const workbook = XLSX.readFile(req.file.path);
         const sheet = workbook.Sheets[workbook.SheetNames[0]];
         
-        // --- STEP 0: FILL MERGED CELLS ---
+        // Крок 0: заповнення об'єднаних комірок
         if (sheet['!merges']) {
             sheet['!merges'].forEach(merge => {
                 const startCell = sheet[XLSX.utils.encode_cell(merge.s)];
@@ -74,19 +74,19 @@ app.post('/api/upload', upload.single('schedule'), (req, res) => {
 
         let n3Data = '@prefix ex: <http://example.org#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n';
         
-        console.log('Starting file processing...');
-        // Find group headers (Looking for row with "Група")
+        console.log('Початок обробки файлу...');
+        // Пошук заголовків груп (шукаємо рядок, що починається з "Група")
         let groupRowIdx = -1;
         for (let r = 0; r < Math.min(rows.length, 30); r++) {
             if (rows[r] && rows[r].some(cell => cell && typeof cell === 'string' && cell.trim().startsWith('Група'))) {
                 groupRowIdx = r;
-                console.log(`Found "Група" at row ${r}`);
+                console.log(`Знайдено рядок "Група" на індексі ${r}`);
                 break;
             }
         }
 
         if (groupRowIdx === -1) {
-            console.warn('Could not find "Група" row, using default index 10');
+            console.warn('Не вдалося знайти рядок "Група", використовуємо стандартний індекс 10');
             groupRowIdx = 10;
         }
 
@@ -95,10 +95,10 @@ app.post('/api/upload', upload.single('schedule'), (req, res) => {
         const groups = [];
         const colMap = {};
 
-        console.log('Parsing groups from row:', groupRowIdx);
+        console.log('Парсинг груп з рядка:', groupRowIdx);
         groupRow.forEach((cell, idx) => {
             let groupName = null;
-            const groupRegex = /(\d+-\d+[а-я]*)/i; // More flexible regex for group names
+            const groupRegex = /(\d+-\d+[а-я]*)/i; // Гнучкий регулярний вираз для назв груп
 
             if (cell && typeof cell === 'string' && groupRegex.test(cell)) {
                 const match = cell.match(groupRegex);
@@ -109,13 +109,13 @@ app.post('/api/upload', upload.single('schedule'), (req, res) => {
             }
 
             if (groupName) {
-                console.log(`Found group "${groupName}" at column ${idx}`);
+                console.log(`Знайдено групу "${groupName}" у колонці ${idx}`);
                 groups.push(groupName);
                 colMap[idx] = groupName;
             }
         });
 
-        // --- STEP 1: GROUP ROWS BY LESSON SLOTS ---
+        // Крок 1: групування рядків за слотами занять
         const slots = [];
         let currentDay = 'ПОНЕДІЛОК';
         let currentLessonNum = '';
@@ -125,7 +125,7 @@ app.post('/api/upload', upload.single('schedule'), (req, res) => {
             const row = rows[i];
             if (!row || row.length === 0) continue;
 
-            // Day detection
+            // Визначення дня
             let detectedDay = '';
             for (let c = 0; c < Math.min(row.length, 5); c++) {
                 if (row[c] && typeof row[c] === 'string') {
@@ -137,7 +137,7 @@ app.post('/api/upload', upload.single('schedule'), (req, res) => {
                 }
             }
 
-            // Lesson number detection
+            // Визначення номера пари
             let foundPara = '';
             [1, 11, 19, 27].forEach(colIdx => {
                 if (!foundPara && row[colIdx] !== undefined && row[colIdx] !== null && row[colIdx] !== '') {
@@ -146,7 +146,7 @@ app.post('/api/upload', upload.single('schedule'), (req, res) => {
                 }
             });
 
-            // IMPORTANT: Only start a new slot if the day or para number has changed
+            // Початок нового слоту лише якщо змінився день або номер пари
             if (foundPara && (foundPara !== currentLessonNum || (detectedDay && detectedDay !== currentDay))) {
                 currentLessonNum = foundPara;
                 if (detectedDay) currentDay = detectedDay;
@@ -157,7 +157,7 @@ app.post('/api/upload', upload.single('schedule'), (req, res) => {
                     rows: [row]
                 });
             } else if (slots.length > 0) {
-                // If the day changed but no new para number found yet, update currentDay
+                // Якщо день змінився, але номер пари ще не знайдено - оновлення currentDay
                 if (detectedDay && detectedDay !== currentDay) currentDay = detectedDay;
                 
                 slots[slots.length - 1].rows.push(row);
@@ -166,23 +166,23 @@ app.post('/api/upload', upload.single('schedule'), (req, res) => {
 
         const teachers = new Set();
         let lessonCount = 0;
-        // Regex for Ukrainian teacher names
+        // Регулярний вираз для українських імен викладачів
         const teacherRegex = /(проф\.|доц\.|ст\.викл\.|викл\.|ас\.|асист\.)\s*([А-ЯЁІЇЄҐ][а-яёіїєґ\-]+\s+[А-ЯЁІЇЄҐ]\.\s*[А-ЯЁІЇЄҐ]\.?)?|([А-ЯЁІЇЄҐ][а-яёіїєґ\-]+\s+[А-ЯЁІЇЄҐ]\.\s*[А-ЯЁІЇЄҐ]\.?)/gi;
         const linkRegex = /(https?:\/\/[^\s]+)/gi;
         const garbageKeywords = ['пароль', 'ідентифікатор', 'код доступу', 'zoom', 'конференції', 'п:', 'ідентифікатор:'];
 
-        console.log(`Processing ${slots.length} lesson slots...`);
+        console.log(`Обробка ${slots.length} слотів занять...`);
 
-        // To avoid duplicates from merged cells, track processed lessons per group/slot
+        // Щоб уникнути дублікатів через об'єднані комірки, відстежуємо оброблені заняття для кожної групи/слоту
         const processedLessons = new Set();
 
-        // --- STEP 2: PROCESS EACH SLOT ---
+        // Крок 2: обробка кожного слоту
         slots.forEach(slot => {
             Object.keys(colMap).forEach(colIdx => {
                 const groupName = colMap[colIdx];
                 const slotKey = `${groupName}_${slot.day}_${slot.num}`;
                 
-                // Combine all cell values for this group in this slot
+                // Об'єднання всіх значень комірок для цієї групи в цьому слоті
                 const cellValues = slot.rows
                     .map(r => r[colIdx])
                     .filter(v => v && typeof v === 'string' && v.trim().length > 0);
@@ -191,20 +191,19 @@ app.post('/api/upload', upload.single('schedule'), (req, res) => {
 
                 const combinedText = cellValues.join('\n');
                 
-                // Use a hash of the content to avoid processing the same data twice
+                // Використання хешу контенту, щоб уникнути повторної обробки тих самих даних
                 const contentHash = `${slotKey}_${combinedText.trim()}`;
                 if (processedLessons.has(contentHash)) return;
                 processedLessons.add(contentHash);
 
-                // --- IMPROVED EXTRACTION ---
-                // 1. Find all teachers
+                // Пошук всіх викладачів
                 const tMatches = combinedText.match(teacherRegex) || [];
                 const foundTeachers = tMatches.map(m => m.replace(/(проф\.|доц\.|ст\.викл\.|викл\.|ас\.|асист\.)/gi, '').trim());
                 
-                // 2. Find all links
+                // Пошук всіх посилань Zoom
                 const foundLinks = combinedText.match(linkRegex) || [];
                 
-                // 3. Clean text to find the subject
+                // Очищення тексту, щоб знайти назву дисципліни
                 let cleanedText = combinedText;
                 foundLinks.forEach(l => cleanedText = cleanedText.replace(l, ' '));
                 tMatches.forEach(t => cleanedText = cleanedText.replace(t, ' '));
@@ -222,7 +221,7 @@ app.post('/api/upload', upload.single('schedule'), (req, res) => {
                     .replace(/\s+/g, ' ')
                     .trim();
 
-                // If something meaningful is left, it's our subject
+                // Якщо залишилося щось змістовне - це потрібна дисципліна
                 if (cleanedText.length > 3 || foundTeachers.length > 0) {
                     const finalSubject = cleanedText.length > 3 ? cleanedText : "Дисципліна (не вдалося розпізнати)";
                     const teacherName = foundTeachers[0] || "Невідомий викладач";
@@ -253,7 +252,7 @@ app.post('/api/upload', upload.single('schedule'), (req, res) => {
             });
         });
 
-        console.log(`Parsing finished. Total lessons: ${lessonCount}, Total groups: ${groups.length}, Total teachers: ${teachers.size}`);
+        console.log(`Обробка завершена. Всього занять: ${lessonCount}, груп: ${groups.length}, викладачів: ${teachers.size}`);
         
         fs.writeFileSync(DATA_PATH, n3Data);
         
@@ -265,7 +264,7 @@ app.post('/api/upload', upload.single('schedule'), (req, res) => {
 
         res.json({ success: true, metadata: currentMetadata });
     } catch (error) {
-        console.error('Error processing Excel:', error);
+        console.error('Помилка обробки Excel:', error);
         res.status(500).json({ error: error.message });
     }
 });
@@ -284,11 +283,11 @@ ex:user_1 ex:hasQuery ex:dynamic_query .
 ex:user_1 ex:hasRecommendation ex:rec_1 .
 ex:rec_1 a ex:Recommendation .
 ex:dynamic_query a ex:ScheduleQuery ;
-    ex:queryGroup ex:group_${group.replace(/[^a-zA-Z0-9а-яА-ЯёЁ]/g, '_')} .
+    ex:queryGroup ex:group_${group.replace(/[^a-zA-Z0-9а-яА-ЯёЁіїєґІЇЄҐ]/g, '_')} .
 `;
 
         if (day) {
-            // Ensure exact match with Excel day format
+            // Перевірка на точну відповідність формату дня в Excel
             const cleanDay = day.trim().toUpperCase();
             queryN3 += `ex:dynamic_query ex:queryDay "${cleanDay}" .\n`;
             queryN3 += `ex:dynamic_query ex:hasDayFilter "true" .\n`;
@@ -297,7 +296,7 @@ ex:dynamic_query a ex:ScheduleQuery ;
         }
 
         if (teacher) {
-            const cleanTeacherId = teacher.replace(/[^a-zA-Z0-9а-яА-ЯёЁ]/g, '_');
+            const cleanTeacherId = teacher.replace(/[^a-zA-Z0-9а-яА-ЯёЁіїєґІЇЄҐ]/g, '_');
             queryN3 += `ex:dynamic_query ex:queryTeacher ex:${cleanTeacherId} .\n`;
             queryN3 += `ex:dynamic_query ex:hasTeacherFilter "true" .\n`;
         } else {
@@ -306,10 +305,10 @@ ex:dynamic_query a ex:ScheduleQuery ;
 
         const fullData = `${ontology}\n${data}\n${rules}\n${queryN3}`;
         
-        console.log('--- REASONING START ---');
-        console.log('Active filters:', { day: !!day, teacher: !!teacher });
+        console.log('--- ПОЧАТОК REASONING ---');
+        console.log('Активні фільтри:', { day: !!day, teacher: !!teacher });
 
-        // Updated query to fetch teacher's full name along with lesson details
+        // Оновлений запит для отримання повного імені викладача разом з деталями заняття
         const query = `
 @prefix ex: <http://example.org#> .
 { 
@@ -325,7 +324,7 @@ ex:dynamic_query a ex:ScheduleQuery ;
 `;
         
         const result = await n3reasoner(fullData, query);
-        console.log('Result length:', result ? result.length : 0);
+        console.log('Довжина результату:', result ? result.length : 0);
         res.json({ result });
     } catch (error) {
         res.status(500).json({ error: error.message });
@@ -333,5 +332,5 @@ ex:dynamic_query a ex:ScheduleQuery ;
 });
 
 app.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}`);
+    console.log(`Сервер запущено на http://localhost:${PORT}`);
 });

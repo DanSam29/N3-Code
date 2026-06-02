@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loading = document.getElementById('loading');
     const toggleRaw = document.getElementById('toggleRaw');
 
-    // Handle file upload
+    // Обробка завантаження файлу
     uploadBtn.addEventListener('click', async () => {
         const file = fileInput.files[0];
         if (!file) {
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function loadMetadata(metadata) {
-        // Clear existing options except the first one
+        // Очищення існуючих опцій, крім першої
         groupSelect.innerHTML = '<option value="">-- Оберіть групу --</option>';
         teacherSelect.innerHTML = '<option value="">-- Всі викладачі --</option>';
         daySelect.innerHTML = '<option value="">-- Всі дні --</option>';
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
         uploadStatus.style.display = 'block';
     }
 
-    // Handle search
+    // Обробка пошуку
     searchBtn.addEventListener('click', async () => {
         if (!groupSelect.value) {
             alert('Вибір групи є обов\'язковим!');
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             const data = await response.json();
-            if (!response.ok) throw new Error(data.error || 'Server error');
+            if (!response.ok) throw new Error(data.error || 'Помилка сервера');
 
             loading.style.display = 'none';
             resultsCard.style.display = 'block';
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function parseAndShowRecommendations(n3) {
-        // Split N3 into separate lesson blocks (delimited by 'ex:recommendedLesson')
+        // Розділення N3 на окремі блоки занять (розділювач 'ex:recommendedLesson')
         const blocks = n3.split('ex:recommendedLesson').slice(1);
         
         if (blocks.length === 0) {
@@ -138,13 +138,13 @@ document.addEventListener('DOMContentLoaded', () => {
         recommendationsDiv.innerHTML = `<h3>Знайдено занять: ${blocks.length}</h3>`;
         
         blocks.forEach(block => {
-            // More robust extraction using individual regexes for each field
+            // Надійніше витягування даних за допомогою регулярних виразів для кожного поля
             const subjectMatch = block.match(/ex:subject\s+"([^"]+)"/);
             const dayMatch = block.match(/ex:dayOfWeek\s+"([^"]+)"/);
             const timeMatch = block.match(/ex:timeStart\s+"([^"]+)"/);
             const linkMatch = block.match(/ex:link\s+"([^"]+)"/);
             
-            // Look for the teacher's fullName property instead of just the ID
+            // Шукаємо властивість fullName викладача замість просто ID
             const teacherNameMatch = block.match(/ex:fullName\s+"([^"]+)"/);
 
             if (subjectMatch && dayMatch && timeMatch) {

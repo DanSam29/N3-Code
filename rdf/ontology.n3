@@ -6,7 +6,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 # =====================================================================
-# Ontology: classes
+# Онтологія: класи
 # =====================================================================
 
 ex:ScheduleDocument
@@ -42,7 +42,7 @@ ex:Recommendation
     rdfs:comment "Результат reasoning для конкретного запиту" .
 
 # =====================================================================
-# Datatype properties
+# Властивості типів даних (Datatype properties)
 # =====================================================================
 
 ex:filename a rdf:Property ; rdfs:domain ex:ScheduleDocument ; rdfs:range xsd:string .
@@ -58,7 +58,7 @@ ex:classroom a rdf:Property ; rdfs:domain ex:Lesson ; rdfs:range xsd:string .
 ex:isElective a rdf:Property ; rdfs:domain ex:Lesson ; rdfs:range xsd:boolean .
 
 # =====================================================================
-# Object properties
+# Властивості об'єктів (Object properties)
 # =====================================================================
 
 ex:containsLesson a rdf:Property ; rdfs:domain ex:ScheduleDocument ; rdfs:range ex:Lesson .
