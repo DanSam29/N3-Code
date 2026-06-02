@@ -37,6 +37,16 @@ const ONTOLOGY_PATH = path.join(__dirname, '..', 'rdf', 'ontology.n3');
 const DATA_PATH = path.join(__dirname, '..', 'rdf', 'data.n3');
 const RULES_PATH = path.join(__dirname, '..', 'rdf', 'rules.n3');
 
+const TIME_MAPPING = {
+    "1": "09:00 - 10:20",
+    "2": "10:40 - 12:00",
+    "3": "12:20 - 13:40",
+    "4": "14:00 - 15:20",
+    "5": "15:40 - 17:00",
+    "6": "17:20 - 18:40",
+    "7": "19:00 - 20:20"
+};
+
 // In-memory metadata to avoid re-parsing data.n3 every time
 let currentMetadata = { groups: [], teachers: [], days: ["ПОНЕДІЛОК", "ВІВТОРОК", "СЕРЕДА", "ЧЕТВЕР", "П'ЯТНИЦЯ"] };
 
@@ -219,6 +229,9 @@ app.post('/api/upload', upload.single('schedule'), (req, res) => {
                     const zoomLink = foundLinks[0] || "Дистанційно (посилання не знайдено)";
 
                     const lessonId = `lesson_${++lessonCount}`;
+                    const timeRange = TIME_MAPPING[slot.num] || "";
+                    const displayTime = timeRange ? `Пара ${slot.num} (${timeRange})` : `Пара ${slot.num}`;
+
                     if (teacherName !== "Невідомий викладач") {
                         teachers.add(teacherName);
                     }
@@ -229,7 +242,7 @@ app.post('/api/upload', upload.single('schedule'), (req, res) => {
                     n3Data += `ex:${lessonId} a ex:Lesson ;\n`;
                     n3Data += `    ex:subject "${sanitize(finalSubject)}" ;\n`;
                     n3Data += `    ex:dayOfWeek "${sanitize(slot.day)}" ;\n`;
-                    n3Data += `    ex:timeStart "Пара ${sanitize(slot.num)}" ;\n`;
+                    n3Data += `    ex:timeStart "${sanitize(displayTime)}" ;\n`;
                     n3Data += `    ex:hasTeacher ex:${cleanTeacherId} ;\n`;
                     n3Data += `    ex:link "${sanitize(zoomLink)}" ;\n`;
                     n3Data += `    ex:belongsToGroup ex:group_${cleanGroupName} .\n\n`;
