@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інтелектуальна система розкладу</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; background-color: #f4f7f6; color: #333; }
+        h1 { color: #2c3e50; text-align: center; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        select, input { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        button { background-color: #3498db; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; width: 100%; font-size: 16px; margin-top: 10px; }
+        button:hover { background-color: #2980b9; }
+        button.secondary { background-color: #95a5a6; }
+        #results { white-space: pre-wrap; background: #272822; color: #f8f8f2; padding: 15px; border-radius: 4px; overflow-x: auto; display: none; margin-top: 10px; font-size: 12px; }
+        .recommendation { border-left: 5px solid #2ecc71; padding: 15px; margin-top: 15px; background: #f9f9f9; }
+        .recommendation h3 { color: #2ecc71; margin-top: 0; }
+        .loading { text-align: center; display: none; font-style: italic; color: #666; padding: 20px; }
+        .status-msg { padding: 10px; border-radius: 4px; margin-bottom: 10px; display: none; }
+        .success { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .error { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <h1>🗓️ Аналіз розкладу університету</h1>
+    
+    <!-- Upload Section -->
+    <div class="card">
+        <h2>1. Завантаження розкладу (.xlsx)</h2>
+        <div class="form-group">
+            <input type="file" id="fileInput" accept=".xlsx">
+        </div>
+        <button id="uploadBtn">Завантажити та обробити файл</button>
+        <div id="uploadStatus" class="status-msg"></div>
+    </div>
+
+    <!-- Search Section -->
+    <div id="searchSection" class="card" style="display:none;">
+        <h2>2. Пошук занять</h2>
+        <div class="grid">
+            <div class="form-group">
+                <label for="group">Група (Обов'язково):</label>
+                <select id="group">
+                    <option value="">-- Оберіть групу --</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="day">День тижня (Опціонально):</label>
+                <select id="day">
+                    <option value="">-- Всі дні --</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="teacher">Викладач (Опціонально):</label>
+            <select id="teacher">
+                <option value="">-- Всі викладачі --</option>
+            </select>
+        </div>
+        <button id="searchBtn">Знайти заняття за допомогою AI</button>
+    </div>
+
+    <div class="loading" id="loading">AI міркує над вашим запитом...</div>
+
+    <div id="resultsCard" class="card" style="display:none;">
+        <h2>Результати аналізу:</h2>
+        <div id="recommendations"></div>
+        <hr>
+        <button id="toggleRaw" class="secondary">Показати сирий N3 результат (для звіту)</button>
+        <div id="results"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+@prefix ex:   <http://example.org#> .
+@prefix log: <http://www.w3.org/2000/10/swap/log#> .
+
+# 1. Базовий відбір по групі
+{ ?query ex:queryGroup ?group .
+  ?lesson ex:belongsToGroup ?group . }
+=>
+{ ?lesson ex:matchesGroup ?query . } .
+
+# 2. Фільтр по дню
+# Випадок А: Фільтр активований -> сувора перевірка
+{ ?lesson ex:matchesGroup ?query .
+  ?query ex:hasDayFilter "true" .
+  ?query ex:queryDay ?day .
+  ?lesson ex:dayOfWeek ?day . }
+=>
+{ ?lesson ex:passedDayFilter ?query . } .
+
+# Випадок Б: Фільтр НЕ активований -> пропускаємо все
+{ ?lesson ex:matchesGroup ?query .
+  ?query ex:noDayFilter "true" . }
+=>
+{ ?lesson ex:passedDayFilter ?query . } .
+
+# 3. Фільтр по викладачу
+# Випадок А: Фільтр активований -> сувора перевірка
+{ ?lesson ex:passedDayFilter ?query .
+  ?query ex:hasTeacherFilter "true" .
+  ?query ex:queryTeacher ?teacher .
+  ?lesson ex:hasTeacher ?teacher . }
+=>
+{ ?lesson ex:suitableForQuery ?query . } .
+
+# Випадок Б: Фільтр НЕ активований -> пропускаємо все
+{ ?lesson ex:passedDayFilter ?query .
+  ?query ex:noTeacherFilter "true" . }
+=>
+{ ?lesson ex:suitableForQuery ?query . } .
+
+# 4. Рекомендація
+{ ?user ex:hasQuery ?query .
+  ?user ex:hasRecommendation ?rec .
+  ?lesson ex:suitableForQuery ?query . 
+  ?lesson ?p ?o . }
+=>
+{ ?rec ex:recommendedLesson ?lesson . 
+  ?lesson ?p ?o .
+  ?rec ex:recStatus "available" . } .

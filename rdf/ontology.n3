@@ -1,0 +1,70 @@
+@prefix ex:   <http://example.org#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# =====================================================================
+# Ontology: classes
+# =====================================================================
+
+ex:ScheduleDocument
+    a rdfs:Class ;
+    rdfs:label "Документ розкладу" ;
+    rdfs:comment "Файл або набір даних, з якого імпортується розклад" .
+
+ex:Group
+    a rdfs:Class ;
+    rdfs:label "Академічна група" .
+
+ex:Lesson
+    a rdfs:Class ;
+    rdfs:label "Заняття" .
+
+ex:Teacher
+    a rdfs:Class ;
+    rdfs:label "Викладач" .
+
+ex:User
+    a rdfs:Class ;
+    rdfs:label "Користувач" ;
+    rdfs:comment "Студент або викладач, який формує запит до системи" .
+
+ex:ScheduleQuery
+    a rdfs:Class ;
+    rdfs:label "Запит до розкладу" ;
+    rdfs:comment "Фільтр користувача для пошуку занять" .
+
+ex:Recommendation
+    a rdfs:Class ;
+    rdfs:label "Рекомендація" ;
+    rdfs:comment "Результат reasoning для конкретного запиту" .
+
+# =====================================================================
+# Datatype properties
+# =====================================================================
+
+ex:filename a rdf:Property ; rdfs:domain ex:ScheduleDocument ; rdfs:range xsd:string .
+ex:status a rdf:Property ; rdfs:domain ex:ScheduleDocument ; rdfs:range xsd:string .
+ex:groupName a rdf:Property ; rdfs:domain ex:Group ; rdfs:range xsd:string .
+ex:fullName a rdf:Property ; rdfs:domain ex:Teacher ; rdfs:range xsd:string .
+ex:subject a rdf:Property ; rdfs:domain ex:Lesson ; rdfs:range xsd:string .
+ex:dayOfWeek a rdf:Property ; rdfs:domain ex:Lesson ; rdfs:range xsd:string .
+ex:weekType a rdf:Property ; rdfs:domain ex:Lesson ; rdfs:range xsd:string .
+ex:timeStart a rdf:Property ; rdfs:domain ex:Lesson ; rdfs:range xsd:string .
+ex:timeEnd a rdf:Property ; rdfs:domain ex:Lesson ; rdfs:range xsd:string .
+ex:classroom a rdf:Property ; rdfs:domain ex:Lesson ; rdfs:range xsd:string .
+ex:isElective a rdf:Property ; rdfs:domain ex:Lesson ; rdfs:range xsd:boolean .
+
+# =====================================================================
+# Object properties
+# =====================================================================
+
+ex:containsLesson a rdf:Property ; rdfs:domain ex:ScheduleDocument ; rdfs:range ex:Lesson .
+ex:belongsToGroup a rdf:Property ; rdfs:domain ex:Lesson ; rdfs:range ex:Group .
+ex:hasTeacher a rdf:Property ; rdfs:domain ex:Lesson ; rdfs:range ex:Teacher .
+ex:hasQuery a rdf:Property ; rdfs:domain ex:User ; rdfs:range ex:ScheduleQuery .
+ex:hasRecommendation a rdf:Property ; rdfs:domain ex:User ; rdfs:range ex:Recommendation .
+ex:suitableForQuery a rdf:Property ; rdfs:domain ex:Lesson ; rdfs:range ex:ScheduleQuery .
+ex:recommendedLesson a rdf:Property ; rdfs:domain ex:Recommendation ; rdfs:range ex:Lesson .
