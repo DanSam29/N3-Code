@@ -21,6 +21,17 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage });
 
+// Helper to sanitize strings for N3 literals
+function sanitize(str) {
+    if (!str) return "";
+    return str.toString()
+        .replace(/\\/g, '\\\\')   // escape backslashes
+        .replace(/"/g, '\\"')     // escape double quotes
+        .replace(/\n/g, ' ')      // replace newlines with space
+        .replace(/\r/g, '')       // remove carriage returns
+        .trim();
+}
+
 // Paths to N3 files
 const ONTOLOGY_PATH = path.join(__dirname, '..', 'rdf', 'ontology.n3');
 const DATA_PATH = path.join(__dirname, '..', 'rdf', 'data.n3');
@@ -33,6 +44,22 @@ app.post('/api/upload', upload.single('schedule'), (req, res) => {
     try {
         const workbook = XLSX.readFile(req.file.path);
         const sheet = workbook.Sheets[workbook.SheetNames[0]];
+        
+        // --- STEP 0: FILL MERGED CELLS ---
+        if (sheet['!merges']) {
+            sheet['!merges'].forEach(merge => {
+                const startCell = sheet[XLSX.utils.encode_cell(merge.s)];
+                if (startCell) {
+                    for (let r = merge.s.r; r <= merge.e.r; r++) {
+                        for (let c = merge.s.c; c <= merge.e.c; c++) {
+                            if (r === merge.s.r && c === merge.s.c) continue;
+                            sheet[XLSX.utils.encode_cell({ r, c })] = { ...startCell };
+                        }
+                    }
+                }
+            });
+        }
+
         const rows = XLSX.utils.sheet_to_json(sheet, { header: 1 });
 
         let n3Data = '@prefix ex: <http://example.org#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n';
@@ -78,153 +105,140 @@ app.post('/api/upload', upload.single('schedule'), (req, res) => {
             }
         });
 
-        const teachers = new Set();
-        let lessonCount = 0;
+        // --- STEP 1: GROUP ROWS BY LESSON SLOTS ---
+        const slots = [];
         let currentDay = 'ПОНЕДІЛОК';
         let currentLessonNum = '';
+        const dayNames = ["ПОНЕДІЛОК", "ВІВТОРОК", "СЕРЕДА", "ЧЕТВЕР", "П'ЯТНИЦЯ"];
 
-        console.log(`Starting lesson parsing from row ${groupRowIdx + 1}`);
-        // Parse lessons
         for (let i = groupRowIdx + 1; i < rows.length; i++) {
             const row = rows[i];
             if (!row || row.length === 0) continue;
 
             // Day detection
-            const dayNames = ["ПОНЕДІЛОК", "ВІВТОРОК", "СЕРЕДА", "ЧЕТВЕР", "П'ЯТНИЦЯ"];
-            if (row[0] && typeof row[0] === 'string') {
-                const potentialDay = row[0].trim().toUpperCase();
-                if (dayNames.some(d => potentialDay.includes(d))) {
-                    currentDay = dayNames.find(d => potentialDay.includes(d));
-                    console.log(`Detected day: ${currentDay} at row ${i}`);
+            let detectedDay = '';
+            for (let c = 0; c < Math.min(row.length, 5); c++) {
+                if (row[c] && typeof row[c] === 'string') {
+                    const potentialDay = row[c].trim().toUpperCase();
+                    if (dayNames.some(d => potentialDay.includes(d))) {
+                        detectedDay = dayNames.find(d => potentialDay.includes(d));
+                        break;
+                    }
                 }
             }
 
-            // Lesson number carry over (merged cells)
-            if (row[1] !== undefined && row[1] !== null && row[1] !== '') {
-                currentLessonNum = row[1];
-            }
-            
-            if (!currentLessonNum) continue;
-
-            // For each group column, check if there's a lesson
-            Object.keys(colMap).forEach(colIdx => {
-                const cellValue = row[colIdx];
-                if (cellValue && typeof cellValue === 'string' && cellValue.trim().length > 3) {
-                    const groupName = colMap[colIdx];
-                    
-                    // --- STRICT LESSON VALIDATION ---
-                    const lowerVal = cellValue.toLowerCase();
-                    const garbageKeywords = ['пароль', 'ідентифікатор', 'код доступу', 'zoom', 'http', 'конференції', 'п:', 'ідентифікатор:'];
-                    
-                    // 1. Skip if contains garbage keywords as main content
-                    if (garbageKeywords.some(k => lowerVal.includes(k))) return;
-                    
-                    // 2. Skip if it's just a group name (metadata caught in rows)
-                    if (cellValue.trim().match(/^\d+-\d+[а-я]*$/i)) return;
-
-                    // 3. Skip if it's too short (but allow short Ukrainian words with spaces)
-                    if (cellValue.trim().length < 3) return;
-
-                    const lessonId = `lesson_${++lessonCount}`;
-                    
-                    // --- IMPROVED TEACHER EXTRACTION ---
-                    let teacherName = "Unknown_Teacher";
-                    // Regex for teacher titles and names (more flexible)
-                    const teacherRegex = /(проф\.|доц\.|ст\.викл\.|викл\.|ас\.|асист\.)\s*([А-ЯЁ][а-яё\-]+\s+[А-ЯЁ]\.\s*[А-ЯЁ]\.?)?|([А-ЯЁ][а-яё\-]+\s+[А-ЯЁ]\.\s*[А-ЯЁ]\.?)/i;
-                    
-                    // Check multiple sources for teacher name
-                    const potentialSources = [
-                        cellValue, // Current cell
-                        rows[i + 1] ? rows[i + 1][colIdx] : null, // 1 row below
-                        rows[i + 2] ? rows[i + 2][colIdx] : null, // 2 rows below
-                    ];
-
-                    for (const source of potentialSources) {
-                        if (source && typeof source === 'string') {
-                            const match = source.match(teacherRegex);
-                            if (match) {
-                                // Prefer the full match with title if available
-                                const rawName = match[0].trim();
-                                // Clean up the name for the ID: remove titles and special chars
-                                teacherName = rawName
-                                    .replace(/(проф\.|доц\.|ст\.викл\.|викл\.|ас\.|асист\.)/gi, '')
-                                    .trim()
-                                    .replace(/\s+/g, '_')
-                                    .replace(/\./g, '');
-                                break;
-                            }
-                        }
-                    }
-                    
-                    if (teacherName !== "Unknown_Teacher" && teacherName.length > 3) {
-                        teachers.add(teacherName.replace(/_/g, ' '));
-                    }
-
-                    // --- EXTRACT ZOOM/MEET LINKS ---
-                    let zoomLink = "Дистанційно (посилання не знайдено)";
-                    const linkRegex = /(https?:\/\/[^\s]+)/gi;
-                    
-                    // Search in the same cell and cells below for links
-                    for (const source of potentialSources) {
-                        if (source && typeof source === 'string') {
-                            const linkMatch = source.match(linkRegex);
-                            if (linkMatch) {
-                                zoomLink = linkMatch[0].trim();
-                                break;
-                            }
-                        }
-                    }
-
-                    // --- IMPROVED SUBJECT CLEANING ---
-                    const cellLines = cellValue.split('\n').map(l => l.trim()).filter(l => l.length > 0);
-                    let subject = "";
-                    let foundSubject = false;
-                    
-                    for (const line of cellLines) {
-                        const lowLine = line.toLowerCase();
-                        
-                        // 1. Skip technical lines
-                        if (lowLine.includes('тільки') || lowLine.includes('пара') || 
-                            garbageKeywords.some(k => lowLine.includes(k)) || 
-                            line.match(/^\d+-\d+[а-я]*$/i)) {
-                            continue;
-                        }
-
-                        // 2. If line contains a teacher name, remove it to get the subject
-                        let cleanedLine = line;
-                        const tMatch = line.match(teacherRegex);
-                        if (tMatch) {
-                            cleanedLine = line.replace(tMatch[0], '').trim();
-                        }
-
-                        // 3. If something meaningful is left, it's our subject
-                        if (cleanedLine.length > 2 && !garbageKeywords.some(k => cleanedLine.toLowerCase().includes(k))) {
-                            subject = cleanedLine.replace(/"/g, "'").trim();
-                            foundSubject = true;
-                            break;
-                        }
-                    }
-
-                    // If no valid subject found, skip this record
-                    if (!foundSubject || subject.length < 3) return;
-
-                    const cleanGroupName = groupName.replace(/[^a-zA-Z0-9]/g, '_');
-                    // Allow Cyrillic in IDs, just replace spaces and sensitive chars
-                    const cleanTeacherId = teacherName.replace(/\s+/g, '_').replace(/["';<>(){}\[\]]/g, '');
-
-                    n3Data += `ex:${lessonId} a ex:Lesson ;\n`;
-                    n3Data += `    ex:subject "${subject}" ;\n`;
-                    n3Data += `    ex:dayOfWeek "${currentDay}" ;\n`;
-                    n3Data += `    ex:timeStart "Пара ${currentLessonNum}" ;\n`;
-                    n3Data += `    ex:hasTeacher ex:${cleanTeacherId} ;\n`;
-                    n3Data += `    ex:link "${zoomLink}" ;\n`;
-                    n3Data += `    ex:belongsToGroup ex:group_${cleanGroupName} .\n\n`;
-                    
-                    n3Data += `ex:group_${cleanGroupName} a ex:Group ; ex:groupName "${groupName}" .\n`;
-                    n3Data += `ex:${cleanTeacherId} a ex:Teacher ; ex:fullName "${teacherName.replace(/_/g, ' ')}" .\n\n`;
+            // Lesson number detection
+            let foundPara = '';
+            [1, 11, 19, 27].forEach(colIdx => {
+                if (!foundPara && row[colIdx] !== undefined && row[colIdx] !== null && row[colIdx] !== '') {
+                    const val = row[colIdx].toString().trim();
+                    if (val.match(/^\d+$/)) foundPara = val;
                 }
             });
+
+            // IMPORTANT: Only start a new slot if the day or para number has changed
+            if (foundPara && (foundPara !== currentLessonNum || (detectedDay && detectedDay !== currentDay))) {
+                currentLessonNum = foundPara;
+                if (detectedDay) currentDay = detectedDay;
+                
+                slots.push({
+                    day: currentDay,
+                    num: currentLessonNum,
+                    rows: [row]
+                });
+            } else if (slots.length > 0) {
+                // If the day changed but no new para number found yet, update currentDay
+                if (detectedDay && detectedDay !== currentDay) currentDay = detectedDay;
+                
+                slots[slots.length - 1].rows.push(row);
+            }
         }
+
+        const teachers = new Set();
+        let lessonCount = 0;
+        // Regex for Ukrainian teacher names
+        const teacherRegex = /(проф\.|доц\.|ст\.викл\.|викл\.|ас\.|асист\.)\s*([А-ЯЁІЇЄҐ][а-яёіїєґ\-]+\s+[А-ЯЁІЇЄҐ]\.\s*[А-ЯЁІЇЄҐ]\.?)?|([А-ЯЁІЇЄҐ][а-яёіїєґ\-]+\s+[А-ЯЁІЇЄҐ]\.\s*[А-ЯЁІЇЄҐ]\.?)/gi;
+        const linkRegex = /(https?:\/\/[^\s]+)/gi;
+        const garbageKeywords = ['пароль', 'ідентифікатор', 'код доступу', 'zoom', 'конференції', 'п:', 'ідентифікатор:'];
+
+        console.log(`Processing ${slots.length} lesson slots...`);
+
+        // To avoid duplicates from merged cells, track processed lessons per group/slot
+        const processedLessons = new Set();
+
+        // --- STEP 2: PROCESS EACH SLOT ---
+        slots.forEach(slot => {
+            Object.keys(colMap).forEach(colIdx => {
+                const groupName = colMap[colIdx];
+                const slotKey = `${groupName}_${slot.day}_${slot.num}`;
+                
+                // Combine all cell values for this group in this slot
+                const cellValues = slot.rows
+                    .map(r => r[colIdx])
+                    .filter(v => v && typeof v === 'string' && v.trim().length > 0);
+                
+                if (cellValues.length === 0) return;
+
+                const combinedText = cellValues.join('\n');
+                
+                // Use a hash of the content to avoid processing the same data twice
+                const contentHash = `${slotKey}_${combinedText.trim()}`;
+                if (processedLessons.has(contentHash)) return;
+                processedLessons.add(contentHash);
+
+                // --- IMPROVED EXTRACTION ---
+                // 1. Find all teachers
+                const tMatches = combinedText.match(teacherRegex) || [];
+                const foundTeachers = tMatches.map(m => m.replace(/(проф\.|доц\.|ст\.викл\.|викл\.|ас\.|асист\.)/gi, '').trim());
+                
+                // 2. Find all links
+                const foundLinks = combinedText.match(linkRegex) || [];
+                
+                // 3. Clean text to find the subject
+                let cleanedText = combinedText;
+                foundLinks.forEach(l => cleanedText = cleanedText.replace(l, ' '));
+                tMatches.forEach(t => cleanedText = cleanedText.replace(t, ' '));
+                
+                cleanedText = cleanedText
+                    .replace(/\(тільки\s+[^)]+\)/gi, ' ')
+                    .replace(/\(крім\s+[^)]+\)/gi, ' ')
+                    .replace(/ідентифікатор:?\s*[^\n]*/gi, ' ')
+                    .replace(/код доступу:?\s*[^\n]*/gi, ' ')
+                    .replace(/meeting id:?\s*[^\n]*/gi, ' ')
+                    .replace(/passcode:?\s*[^\n]*/gi, ' ')
+                    .replace(/пароль:?\s*[^\n]*/gi, ' ')
+                    .replace(/^\d+-\d+[а-я]*$/gim, ' ')
+                    .replace(/["'«»]/g, ' ')
+                    .replace(/\s+/g, ' ')
+                    .trim();
+
+                // If something meaningful is left, it's our subject
+                if (cleanedText.length > 3 || foundTeachers.length > 0) {
+                    const finalSubject = cleanedText.length > 3 ? cleanedText : "Дисципліна (не вдалося розпізнати)";
+                    const teacherName = foundTeachers[0] || "Невідомий викладач";
+                    const zoomLink = foundLinks[0] || "Дистанційно (посилання не знайдено)";
+
+                    const lessonId = `lesson_${++lessonCount}`;
+                    if (teacherName !== "Невідомий викладач") {
+                        teachers.add(teacherName);
+                    }
+
+                    const cleanGroupName = groupName.replace(/[^a-zA-Z0-9а-яА-ЯёЁіїєґІЇЄҐ]/g, '_');
+                    const cleanTeacherId = teacherName.replace(/[^a-zA-Z0-9а-яА-ЯёЁіїєґІЇЄҐ]/g, '_');
+
+                    n3Data += `ex:${lessonId} a ex:Lesson ;\n`;
+                    n3Data += `    ex:subject "${sanitize(finalSubject)}" ;\n`;
+                    n3Data += `    ex:dayOfWeek "${sanitize(slot.day)}" ;\n`;
+                    n3Data += `    ex:timeStart "Пара ${sanitize(slot.num)}" ;\n`;
+                    n3Data += `    ex:hasTeacher ex:${cleanTeacherId} ;\n`;
+                    n3Data += `    ex:link "${sanitize(zoomLink)}" ;\n`;
+                    n3Data += `    ex:belongsToGroup ex:group_${cleanGroupName} .\n\n`;
+                    
+                    n3Data += `ex:group_${cleanGroupName} a ex:Group ; ex:groupName "${sanitize(groupName)}" .\n`;
+                    n3Data += `ex:${cleanTeacherId} a ex:Teacher ; ex:fullName "${sanitize(teacherName)}" .\n\n`;
+                }
+            });
+        });
 
         console.log(`Parsing finished. Total lessons: ${lessonCount}, Total groups: ${groups.length}, Total teachers: ${teachers.size}`);
         
@@ -257,7 +271,7 @@ ex:user_1 ex:hasQuery ex:dynamic_query .
 ex:user_1 ex:hasRecommendation ex:rec_1 .
 ex:rec_1 a ex:Recommendation .
 ex:dynamic_query a ex:ScheduleQuery ;
-    ex:queryGroup ex:group_${group.replace(/-/g, '_')} .
+    ex:queryGroup ex:group_${group.replace(/[^a-zA-Z0-9а-яА-ЯёЁ]/g, '_')} .
 `;
 
         if (day) {
@@ -270,8 +284,7 @@ ex:dynamic_query a ex:ScheduleQuery ;
         }
 
         if (teacher) {
-            // Allow Cyrillic in IDs, just replace spaces and sensitive chars
-            const cleanTeacherId = teacher.replace(/\s+/g, '_').replace(/["';<>(){}\[\]]/g, '');
+            const cleanTeacherId = teacher.replace(/[^a-zA-Z0-9а-яА-ЯёЁ]/g, '_');
             queryN3 += `ex:dynamic_query ex:queryTeacher ex:${cleanTeacherId} .\n`;
             queryN3 += `ex:dynamic_query ex:hasTeacherFilter "true" .\n`;
         } else {
