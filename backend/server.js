@@ -21,6 +21,43 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage });
 
+function normalizeTeacherName(raw) {
+    const compact = raw.match(/(?:проф\.|доц\.|ст\.?\s*викл\.|викл\.|ас\.|асист\.)\s*([А-ЯЁІЇЄҐ]\.)\s*(?:([А-ЯЁІЇЄҐ])\.\s*)?([А-ЯЁІЇЄҐ][а-яёіїєґ'ʼ\-]{2,})/i);
+    if (compact) {
+        const init1 = compact[1];
+        const init2 = compact[2] ? `${compact[2]}.` : '';
+        const surname = compact[3];
+        return `${surname} ${init1}${init2}`.replace(/\s+/g, ' ').trim();
+    }
+
+    let name = raw.replace(/^(?:проф\.|доц\.|ст\.?\s*викл\.|викл\.|ас\.|асист\.)\s*/i, '').trim();
+    name = name.replace(/^(?:тільки|крім)\s+/i, '');
+    const inner = name.match(/([А-ЯЁІЇЄҐ][а-яёіїєґ'ʼ\-]{1,}(?:\s+[А-ЯЁІЇЄҐ][а-яёіїєґ'ʼ\-]+)?\s+(?:[А-ЯЁІЇЄҐ]\.\s*){1,2})/);
+    return inner ? inner[1].trim() : name;
+}
+
+function buildTeacherDirectory(n3Text) {
+    const map = {};
+    const re = /ex:([^\s]+)\s+a ex:Teacher\s*;\s*ex:fullName\s+"([^"]+)"/g;
+    let m;
+    while ((m = re.exec(n3Text)) !== null) {
+        map[`ex:${m[1]}`] = m[2];
+    }
+    return map;
+}
+
+function enrichReasonerResult(result, dataN3) {
+    if (!result) return result;
+    const teachers = buildTeacherDirectory(dataN3);
+    let extra = '';
+    for (const [id, name] of Object.entries(teachers)) {
+        if (!result.includes(`${id} ex:fullName`)) {
+            extra += `${id} ex:fullName "${name}".\n`;
+        }
+    }
+    return extra ? `${result}\n${extra}` : result;
+}
+
 // Допоміжна функція для очищення рядків для літералів N3
 function sanitize(str) {
     if (!str) return "";
@@ -47,8 +84,53 @@ const TIME_MAPPING = {
     "7": "19:00 - 20:20"
 };
 
-// Метадані в пам'яті, щоб уникнути повторного парсингу data.n3 щоразу
-let currentMetadata = { groups: [], teachers: [], days: ["ПОНЕДІЛОК", "ВІВТОРОК", "СЕРЕДА", "ЧЕТВЕР", "П'ЯТНИЦЯ"] };
+const DEFAULT_DAYS = ["ПОНЕДІЛОК", "ВІВТОРОК", "СЕРЕДА", "ЧЕТВЕР", "П'ЯТНИЦЯ"];
+
+function extractMetadataFromN3(n3Text) {
+    const groups = new Set();
+    const teachers = new Set();
+    let m;
+
+    const groupRe = /ex:groupName\s+"([^"]+)"/g;
+    while ((m = groupRe.exec(n3Text)) !== null) groups.add(m[1]);
+
+    const teacherRe = /ex:fullName\s+"([^"]+)"/g;
+    while ((m = teacherRe.exec(n3Text)) !== null) {
+        if (m[1] !== 'Невідомий викладач') teachers.add(m[1]);
+    }
+
+    const lessonCount = (n3Text.match(/\s+a ex:Lesson\s*;/g) || []).length;
+
+    return {
+        groups: [...groups].sort(),
+        teachers: [...teachers].sort(),
+        days: DEFAULT_DAYS,
+        lessonCount
+    };
+}
+
+function refreshMetadataFromDisk() {
+    if (!fs.existsSync(DATA_PATH)) {
+        return false;
+    }
+    const data = fs.readFileSync(DATA_PATH, 'utf8');
+    if (!data.includes('a ex:Lesson')) {
+        return false;
+    }
+    currentMetadata = extractMetadataFromN3(data);
+    return currentMetadata.groups.length > 0;
+}
+
+let currentMetadata = { groups: [], teachers: [], days: DEFAULT_DAYS, lessonCount: 0 };
+refreshMetadataFromDisk();
+
+app.get('/api/metadata', (req, res) => {
+    refreshMetadataFromDisk();
+    res.json({
+        loaded: currentMetadata.groups.length > 0,
+        metadata: currentMetadata
+    });
+});
 
 app.post('/api/upload', upload.single('schedule'), (req, res) => {
     try {
@@ -166,8 +248,8 @@ app.post('/api/upload', upload.single('schedule'), (req, res) => {
 
         const teachers = new Set();
         let lessonCount = 0;
-        // Регулярний вираз для українських імен викладачів
-        const teacherRegex = /(проф\.|доц\.|ст\.викл\.|викл\.|ас\.|асист\.)\s*([А-ЯЁІЇЄҐ][а-яёіїєґ\-]+\s+[А-ЯЁІЇЄҐ]\.\s*[А-ЯЁІЇЄҐ]\.?)?|([А-ЯЁІЇЄҐ][а-яёіїєґ\-]+\s+[А-ЯЁІЇЄҐ]\.\s*[А-ЯЁІЇЄҐ]\.?)/gi;
+        // ПІБ: прізвище + 1–2 ініціали (О.Й. або лише М.); звання — опційно
+        const teacherRegex = /(?:проф\.|доц\.|ст\.?\s*викл\.|викл\.|ас\.|асист\.)\s*(?:[А-ЯЁІЇЄҐ]\.\s*(?:[А-ЯЁІЇЄҐ]\.\s*)?[А-ЯЁІЇЄҐ][а-яёіїєґ'ʼ\-]{2,}|[А-ЯЁІЇЄҐ][а-яёіїєґ'ʼ\-]{1,}(?:\s+[А-ЯЁІЇЄҐ][а-яёіїєґ'ʼ\-]+)?\s+(?:[А-ЯЁІЇЄҐ]\.\s*){1,2})|[А-ЯЁІЇЄҐ][а-яёіїєґ'ʼ\-]{2,}(?:\s+[А-ЯЁІЇЄҐ][а-яёіїєґ'ʼ\-]+)?\s+(?:[А-ЯЁІЇЄҐ]\.\s*){1,2}/gi;
         const linkRegex = /(https?:\/\/[^\s]+)/gi;
         const garbageKeywords = ['пароль', 'ідентифікатор', 'код доступу', 'zoom', 'конференції', 'п:', 'ідентифікатор:'];
 
@@ -185,7 +267,8 @@ app.post('/api/upload', upload.single('schedule'), (req, res) => {
                 // Об'єднання всіх значень комірок для цієї групи в цьому слоті
                 const cellValues = slot.rows
                     .map(r => r[colIdx])
-                    .filter(v => v && typeof v === 'string' && v.trim().length > 0);
+                    .filter(v => v !== undefined && v !== null && String(v).trim().length > 0)
+                    .map(v => String(v));
                 
                 if (cellValues.length === 0) return;
 
@@ -198,7 +281,7 @@ app.post('/api/upload', upload.single('schedule'), (req, res) => {
 
                 // Пошук всіх викладачів
                 const tMatches = combinedText.match(teacherRegex) || [];
-                const foundTeachers = tMatches.map(m => m.replace(/(проф\.|доц\.|ст\.викл\.|викл\.|ас\.|асист\.)/gi, '').trim());
+                const foundTeachers = [...new Set(tMatches.map(normalizeTeacherName).filter(Boolean))];
                 
                 // Пошук всіх посилань Zoom
                 const foundLinks = combinedText.match(linkRegex) || [];
@@ -259,7 +342,8 @@ app.post('/api/upload', upload.single('schedule'), (req, res) => {
         currentMetadata = {
             groups: [...new Set(groups)],
             teachers: Array.from(teachers).sort(),
-            days: ["ПОНЕДІЛОК", "ВІВТОРОК", "СЕРЕДА", "ЧЕТВЕР", "П'ЯТНИЦЯ"]
+            days: DEFAULT_DAYS,
+            lessonCount
         };
 
         res.json({ success: true, metadata: currentMetadata });
@@ -323,7 +407,8 @@ ex:dynamic_query a ex:ScheduleQuery ;
 } .
 `;
         
-        const result = await n3reasoner(fullData, query);
+        const rawResult = await n3reasoner(fullData, query);
+        const result = enrichReasonerResult(rawResult, data);
         console.log('Довжина результату:', result ? result.length : 0);
         res.json({ result });
     } catch (error) {

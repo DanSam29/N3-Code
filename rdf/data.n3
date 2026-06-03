@@ -2,7 +2,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 ex:lesson_1 a ex:Lesson ;
-    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка" ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка Ідентификатор конференції: 514 394 9851 Код доступа: 137268" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
     ex:hasTeacher ex:Костючков_С_К_ ;
@@ -13,7 +13,7 @@ ex:group_12_131с a ex:Group ; ex:groupName "12-131с" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
 ex:lesson_2 a ex:Lesson ;
-    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка" ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка Ідентификатор конференції: 514 394 9851 Код доступа: 137268" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
     ex:hasTeacher ex:Костючков_С_К_ ;
@@ -24,7 +24,7 @@ ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
 ex:lesson_3 a ex:Lesson ;
-    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка" ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка Ідентификатор конференції: 514 394 9851 Код доступа: 137268" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
     ex:hasTeacher ex:Костючков_С_К_ ;
@@ -35,18 +35,18 @@ ex:group_12_212 a ex:Group ; ex:groupName "12-212" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
 ex:lesson_4 a ex:Lesson ;
-    ex:subject "Практикум з розв язування геометричних задач ЗАЛІК Григор П: 20252026" ;
+    ex:subject "Основи геометрії ЗАЛІК П: 20252026" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Невідомий_викладач ;
+    ex:hasTeacher ex:Григор_єва_В_Б_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/88381108769?pwd=qEay6i0k5PKfteDdrwMMFbpUNHcvFJ.1" ;
     ex:belongsToGroup ex:group_12_221 .
 
 ex:group_12_221 a ex:Group ; ex:groupName "12-221" .
-ex:Невідомий_викладач a ex:Teacher ; ex:fullName "Невідомий викладач" .
+ex:Григор_єва_В_Б_ a ex:Teacher ; ex:fullName "Григор'єва В.Б." .
 
 ex:lesson_5 a ex:Lesson ;
-    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка" ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка Ідентификатор конференції: 514 394 9851 Код доступа: 137268" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
     ex:hasTeacher ex:Костючков_С_К_ ;
@@ -57,7 +57,7 @@ ex:group_12_232 a ex:Group ; ex:groupName "12-232" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
 ex:lesson_6 a ex:Lesson ;
-    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка" ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка Ідентификатор конференції: 514 394 9851 Код доступа: 137268" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
     ex:hasTeacher ex:Костючков_С_К_ ;
@@ -68,7 +68,7 @@ ex:group_12_231 a ex:Group ; ex:groupName "12-231" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
 ex:lesson_7 a ex:Lesson ;
-    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка" ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка Ідентификатор конференції: 514 394 9851 Код доступа: 137268" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
     ex:hasTeacher ex:Костючков_С_К_ ;
@@ -79,7 +79,7 @@ ex:group_12_241 a ex:Group ; ex:groupName "12-241" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
 ex:lesson_8 a ex:Lesson ;
-    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка" ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка Ідентификатор конференції: 514 394 9851 Код доступа: 137268" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
     ex:hasTeacher ex:Костючков_С_К_ ;
@@ -90,94 +90,160 @@ ex:group_12_261 a ex:Group ; ex:groupName "12-261" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
 ex:lesson_9 a ex:Lesson ;
-    ex:subject "Формальні методи специфікації, верифікації та оптимізації програм (л.) (Дзюбенко Д., Диннік М., Жигун М., Іванов О., Савченко І., Кусік І.)" ;
+    ex:subject "Формальні методи специфікації, верифікації та оптимізації програм (пр.) ( , , , , , )" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Песчаненко_В_С_ ;
+    ex:hasTeacher ex:Дзюбенко_Д_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/6319409305?pwd=MDVWNGJPZ2oxandIY1lncHhWUTUzdz09" ;
     ex:belongsToGroup ex:group_12_441 .
 
 ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
-ex:Песчаненко_В_С_ a ex:Teacher ; ex:fullName "Песчаненко В.С." .
+ex:Дзюбенко_Д_ a ex:Teacher ; ex:fullName "Дзюбенко Д." .
 
 ex:lesson_10 a ex:Lesson ;
-    ex:subject "Формальні методи специфікації, верифікації та оптимізації програм (л.) (Федянін І.)" ;
+    ex:subject "Формальні методи специфікації, верифікації та оптимізації програм (пр.) ( )" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Песчаненко_В_С_ ;
+    ex:hasTeacher ex:Федянін_І_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/6319409305?pwd=MDVWNGJPZ2oxandIY1lncHhWUTUzdz09" ;
     ex:belongsToGroup ex:group_12_343 .
 
 ex:group_12_343 a ex:Group ; ex:groupName "12-343" .
-ex:Песчаненко_В_С_ a ex:Teacher ; ex:fullName "Песчаненко В.С." .
+ex:Федянін_І_ a ex:Teacher ; ex:fullName "Федянін І." .
 
 ex:lesson_11 a ex:Lesson ;
-    ex:subject "Паралельні та розподілені обчислення ЗАЛІК (Зубков Д.)" ;
-    ex:dayOfWeek "ПОНЕДІЛОК" ;
-    ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Топалов_А_М_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/2881086988?pwd=vBFg0SVqbaulObuHHotQAyxnBpRLDb.1" ;
-    ex:belongsToGroup ex:group_12_461 .
-
-ex:group_12_461 a ex:Group ; ex:groupName "12-461" .
-ex:Топалов_А_М_ a ex:Teacher ; ex:fullName "Топалов А.М." .
-
-ex:lesson_12 a ex:Lesson ;
-    ex:subject "Англійська мова професійного спрямування (л.) оц." ;
-    ex:dayOfWeek "ПОНЕДІЛОК" ;
-    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
-    ex:hasTeacher ex:Музика_А__д ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/9075536865?pwd=cHNadmJvVGZ1dlpUcGxjSXo0a1Q0Zz09" ;
-    ex:belongsToGroup ex:group_12_143 .
-
-ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
-ex:Музика_А__д a ex:Teacher ; ex:fullName "Музика А. д" .
-
-ex:lesson_13 a ex:Lesson ;
-    ex:subject "Загальна фізика (Оптика) (лаб)" ;
+    ex:subject "Академічна доброчесність (пр.)" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
     ex:hasTeacher ex:Зіновська_В_О_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/6241841681?pwd=wigYSjexayhYzuh0n4f8LlUsU3WS49.1" ;
-    ex:belongsToGroup ex:group_12_212 .
+    ex:belongsToGroup ex:group_12_111 .
 
-ex:group_12_212 a ex:Group ; ex:groupName "12-212" .
+ex:group_12_111 a ex:Group ; ex:groupName "12-111" .
+ex:Зіновська_В_О_ a ex:Teacher ; ex:fullName "Зіновська В.О." .
+
+ex:lesson_12 a ex:Lesson ;
+    ex:subject "Академічна доброчесність (пр.)" ;
+    ex:dayOfWeek "ПОНЕДІЛОК" ;
+    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
+    ex:hasTeacher ex:Зіновська_В_О_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/6241841681?pwd=wigYSjexayhYzuh0n4f8LlUsU3WS49.1" ;
+    ex:belongsToGroup ex:group_12_121 .
+
+ex:group_12_121 a ex:Group ; ex:groupName "12-121" .
+ex:Зіновська_В_О_ a ex:Teacher ; ex:fullName "Зіновська В.О." .
+
+ex:lesson_13 a ex:Lesson ;
+    ex:subject "Академічна доброчесність (пр.)" ;
+    ex:dayOfWeek "ПОНЕДІЛОК" ;
+    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
+    ex:hasTeacher ex:Зіновська_В_О_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/6241841681?pwd=wigYSjexayhYzuh0n4f8LlUsU3WS49.1" ;
+    ex:belongsToGroup ex:group_12_131 .
+
+ex:group_12_131 a ex:Group ; ex:groupName "12-131" .
 ex:Зіновська_В_О_ a ex:Teacher ; ex:fullName "Зіновська В.О." .
 
 ex:lesson_14 a ex:Lesson ;
-    ex:subject "Англійська мова професійного спрямування (л.) тільки оц." ;
+    ex:subject "Академічна доброчесність (пр.)" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
-    ex:hasTeacher ex:Махов_А__д ;
+    ex:hasTeacher ex:Зіновська_В_О_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/6241841681?pwd=wigYSjexayhYzuh0n4f8LlUsU3WS49.1" ;
+    ex:belongsToGroup ex:group_12_141 .
+
+ex:group_12_141 a ex:Group ; ex:groupName "12-141" .
+ex:Зіновська_В_О_ a ex:Teacher ; ex:fullName "Зіновська В.О." .
+
+ex:lesson_15 a ex:Lesson ;
+    ex:subject "Академічна доброчесність (пр.)" ;
+    ex:dayOfWeek "ПОНЕДІЛОК" ;
+    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
+    ex:hasTeacher ex:Зіновська_В_О_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/6241841681?pwd=wigYSjexayhYzuh0n4f8LlUsU3WS49.1" ;
+    ex:belongsToGroup ex:group_12_143 .
+
+ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
+ex:Зіновська_В_О_ a ex:Teacher ; ex:fullName "Зіновська В.О." .
+
+ex:lesson_16 a ex:Lesson ;
+    ex:subject "Академічна доброчесність (пр.)" ;
+    ex:dayOfWeek "ПОНЕДІЛОК" ;
+    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
+    ex:hasTeacher ex:Зіновська_В_О_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/6241841681?pwd=wigYSjexayhYzuh0n4f8LlUsU3WS49.1" ;
+    ex:belongsToGroup ex:group_12_161 .
+
+ex:group_12_161 a ex:Group ; ex:groupName "12-161" .
+ex:Зіновська_В_О_ a ex:Teacher ; ex:fullName "Зіновська В.О." .
+
+ex:lesson_17 a ex:Lesson ;
+    ex:subject "Іноземна мова (пр.)" ;
+    ex:dayOfWeek "ПОНЕДІЛОК" ;
+    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
+    ex:hasTeacher ex:Гнєдкова_О_О_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/9075536865?pwd=cHNadmJvVGZ1dlpUcGxjSXo0a1Q0Zz09" ;
+    ex:belongsToGroup ex:group_12_212 .
+
+ex:group_12_212 a ex:Group ; ex:groupName "12-212" .
+ex:Гнєдкова_О_О_ a ex:Teacher ; ex:fullName "Гнєдкова О.О." .
+
+ex:lesson_18 a ex:Lesson ;
+    ex:subject "Іноземна мова (пр.)" ;
+    ex:dayOfWeek "ПОНЕДІЛОК" ;
+    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
+    ex:hasTeacher ex:Гнєдкова_О_О_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/9075536865?pwd=cHNadmJvVGZ1dlpUcGxjSXo0a1Q0Zz09" ;
+    ex:belongsToGroup ex:group_12_221 .
+
+ex:group_12_221 a ex:Group ; ex:groupName "12-221" .
+ex:Гнєдкова_О_О_ a ex:Teacher ; ex:fullName "Гнєдкова О.О." .
+
+ex:lesson_19 a ex:Lesson ;
+    ex:subject "Іноземна мова (пр.)" ;
+    ex:dayOfWeek "ПОНЕДІЛОК" ;
+    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
+    ex:hasTeacher ex:Гнєдкова_О_О_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/9075536865?pwd=cHNadmJvVGZ1dlpUcGxjSXo0a1Q0Zz09" ;
+    ex:belongsToGroup ex:group_12_232 .
+
+ex:group_12_232 a ex:Group ; ex:groupName "12-232" .
+ex:Гнєдкова_О_О_ a ex:Teacher ; ex:fullName "Гнєдкова О.О." .
+
+ex:lesson_20 a ex:Lesson ;
+    ex:subject "Іноземна мова (пр.)" ;
+    ex:dayOfWeek "ПОНЕДІЛОК" ;
+    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
+    ex:hasTeacher ex:Гнєдкова_О_О_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/9075536865?pwd=cHNadmJvVGZ1dlpUcGxjSXo0a1Q0Zz09" ;
     ex:belongsToGroup ex:group_12_231 .
 
 ex:group_12_231 a ex:Group ; ex:groupName "12-231" .
-ex:Махов_А__д a ex:Teacher ; ex:fullName "Махов А. д" .
+ex:Гнєдкова_О_О_ a ex:Teacher ; ex:fullName "Гнєдкова О.О." .
 
-ex:lesson_15 a ex:Lesson ;
-    ex:subject "Англійська мова професійного спрямування (л.) вся група, крім оц." ;
+ex:lesson_21 a ex:Lesson ;
+    ex:subject "Іноземна мова (пр.)" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
-    ex:hasTeacher ex:Шайдича_А__д ;
+    ex:hasTeacher ex:Гнєдкова_О_О_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/9075536865?pwd=cHNadmJvVGZ1dlpUcGxjSXo0a1Q0Zz09" ;
     ex:belongsToGroup ex:group_12_241 .
 
 ex:group_12_241 a ex:Group ; ex:groupName "12-241" .
-ex:Шайдича_А__д a ex:Teacher ; ex:fullName "Шайдича А. д" .
+ex:Гнєдкова_О_О_ a ex:Teacher ; ex:fullName "Гнєдкова О.О." .
 
-ex:lesson_16 a ex:Lesson ;
-    ex:subject "Англійська мова професійного спрямування (л.) тільки Буренко А., оц." ;
+ex:lesson_22 a ex:Lesson ;
+    ex:subject "Іноземна мова (пр.)" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
-    ex:hasTeacher ex:Соценко_В__д ;
+    ex:hasTeacher ex:Гнєдкова_О_О_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/9075536865?pwd=cHNadmJvVGZ1dlpUcGxjSXo0a1Q0Zz09" ;
     ex:belongsToGroup ex:group_12_261 .
 
 ex:group_12_261 a ex:Group ; ex:groupName "12-261" .
-ex:Соценко_В__д a ex:Teacher ; ex:fullName "Соценко В. д" .
+ex:Гнєдкова_О_О_ a ex:Teacher ; ex:fullName "Гнєдкова О.О." .
 
-ex:lesson_17 a ex:Lesson ;
+ex:lesson_23 a ex:Lesson ;
     ex:subject "Програмування мультимедійних веб-додатків (л.) вся група" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
@@ -188,84 +254,106 @@ ex:lesson_17 a ex:Lesson ;
 ex:group_12_331 a ex:Group ; ex:groupName "12-331" .
 ex:Кравцов_Г_М_ a ex:Teacher ; ex:fullName "Кравцов Г.М." .
 
-ex:lesson_18 a ex:Lesson ;
-    ex:subject "Прикладна економетрика у фінансах (Кузнєцов Є., Сокольченко Р., Шляхтенко І., Юдіна А.) ЗАЛІК" ;
+ex:lesson_24 a ex:Lesson ;
+    ex:subject "Емпіричні методи програмної інженерії (л.)" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
-    ex:hasTeacher ex:Кобець_В_М_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/9034056368?pwd=pSZFJSaaoL10dRCWUvOYbxT7inaXdy.1&omn=81166961117" ;
+    ex:hasTeacher ex:Вейцбліт_О_Й_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/83524205992?pwd=UxDauaNjGg6BcDjlcZWo8QwmQFMwq2.1" ;
+    ex:belongsToGroup ex:group_12_341 .
+
+ex:group_12_341 a ex:Group ; ex:groupName "12-341" .
+ex:Вейцбліт_О_Й_ a ex:Teacher ; ex:fullName "Вейцбліт О.Й." .
+
+ex:lesson_25 a ex:Lesson ;
+    ex:subject "Емпіричні методи програмної інженерії (л.)" ;
+    ex:dayOfWeek "ПОНЕДІЛОК" ;
+    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
+    ex:hasTeacher ex:Вейцбліт_О_Й_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/83524205992?pwd=UxDauaNjGg6BcDjlcZWo8QwmQFMwq2.1" ;
+    ex:belongsToGroup ex:group_12_243 .
+
+ex:group_12_243 a ex:Group ; ex:groupName "12-243" .
+ex:Вейцбліт_О_Й_ a ex:Teacher ; ex:fullName "Вейцбліт О.Й." .
+
+ex:lesson_26 a ex:Lesson ;
+    ex:subject "Лабораторний практикум з методики навчання математики ЗАЛІК П: 20252026" ;
+    ex:dayOfWeek "ПОНЕДІЛОК" ;
+    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
+    ex:hasTeacher ex:Григор_єва_В_Б_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/88381108769?pwd=qEay6i0k5PKfteDdrwMMFbpUNHcvFJ.1" ;
+    ex:belongsToGroup ex:group_12_421 .
+
+ex:group_12_421 a ex:Group ; ex:groupName "12-421" .
+ex:Григор_єва_В_Б_ a ex:Teacher ; ex:fullName "Григор'єва В.Б." .
+
+ex:lesson_27 a ex:Lesson ;
+    ex:subject "Управління проектами (лк.)" ;
+    ex:dayOfWeek "ПОНЕДІЛОК" ;
+    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
+    ex:hasTeacher ex:Вінник_М_О_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/2162249744?pwd=edp1sgRh9vXehZ767mrua7409HavsP.1" ;
     ex:belongsToGroup ex:group_12_461 .
 
 ex:group_12_461 a ex:Group ; ex:groupName "12-461" .
-ex:Кобець_В_М_ a ex:Teacher ; ex:fullName "Кобець В.М." .
+ex:Вінник_М_О_ a ex:Teacher ; ex:fullName "Вінник М.О." .
 
-ex:lesson_19 a ex:Lesson ;
-    ex:subject "Іноземна мова (пр.)" ;
+ex:lesson_28 a ex:Lesson ;
+    ex:subject "Англійська мова професійного спрямування (л.)" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
-    ex:hasTeacher ex:Гнєдкова_О_О_ ;
+    ex:hasTeacher ex:Музика_А_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/9075536865?pwd=cHNadmJvVGZ1dlpUcGxjSXo0a1Q0Zz09" ;
+    ex:belongsToGroup ex:group_12_143 .
+
+ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
+ex:Музика_А_ a ex:Teacher ; ex:fullName "Музика А." .
+
+ex:lesson_29 a ex:Lesson ;
+    ex:subject "Загальна фізика (Оптика) (лаб.)" ;
+    ex:dayOfWeek "ПОНЕДІЛОК" ;
+    ex:timeStart "Пара 3 (12:20 - 13:40)" ;
+    ex:hasTeacher ex:Зіновська_В_О_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/6241841681?pwd=wigYSjexayhYzuh0n4f8LlUsU3WS49.1" ;
     ex:belongsToGroup ex:group_12_212 .
 
 ex:group_12_212 a ex:Group ; ex:groupName "12-212" .
-ex:Гнєдкова_О_О_ a ex:Teacher ; ex:fullName "Гнєдкова О.О." .
+ex:Зіновська_В_О_ a ex:Teacher ; ex:fullName "Зіновська В.О." .
 
-ex:lesson_20 a ex:Lesson ;
-    ex:subject "Іноземна мова (пр.)" ;
+ex:lesson_30 a ex:Lesson ;
+    ex:subject "Англійська мова професійного спрямування (л.)" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
-    ex:hasTeacher ex:Гнєдкова_О_О_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/9075536865?pwd=cHNadmJvVGZ1dlpUcGxjSXo0a1Q0Zz09" ;
-    ex:belongsToGroup ex:group_12_221 .
-
-ex:group_12_221 a ex:Group ; ex:groupName "12-221" .
-ex:Гнєдкова_О_О_ a ex:Teacher ; ex:fullName "Гнєдкова О.О." .
-
-ex:lesson_21 a ex:Lesson ;
-    ex:subject "Іноземна мова (пр.)" ;
-    ex:dayOfWeek "ПОНЕДІЛОК" ;
-    ex:timeStart "Пара 3 (12:20 - 13:40)" ;
-    ex:hasTeacher ex:Гнєдкова_О_О_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/9075536865?pwd=cHNadmJvVGZ1dlpUcGxjSXo0a1Q0Zz09" ;
-    ex:belongsToGroup ex:group_12_232 .
-
-ex:group_12_232 a ex:Group ; ex:groupName "12-232" .
-ex:Гнєдкова_О_О_ a ex:Teacher ; ex:fullName "Гнєдкова О.О." .
-
-ex:lesson_22 a ex:Lesson ;
-    ex:subject "Іноземна мова (пр.)" ;
-    ex:dayOfWeek "ПОНЕДІЛОК" ;
-    ex:timeStart "Пара 3 (12:20 - 13:40)" ;
-    ex:hasTeacher ex:Гнєдкова_О_О_ ;
+    ex:hasTeacher ex:Махов_А_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/9075536865?pwd=cHNadmJvVGZ1dlpUcGxjSXo0a1Q0Zz09" ;
     ex:belongsToGroup ex:group_12_231 .
 
 ex:group_12_231 a ex:Group ; ex:groupName "12-231" .
-ex:Гнєдкова_О_О_ a ex:Teacher ; ex:fullName "Гнєдкова О.О." .
+ex:Махов_А_ a ex:Teacher ; ex:fullName "Махов А." .
 
-ex:lesson_23 a ex:Lesson ;
-    ex:subject "Іноземна мова (пр.)" ;
+ex:lesson_31 a ex:Lesson ;
+    ex:subject "Англійська мова професійного спрямування (л.) вся група," ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
-    ex:hasTeacher ex:Гнєдкова_О_О_ ;
+    ex:hasTeacher ex:Шайдича_А_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/9075536865?pwd=cHNadmJvVGZ1dlpUcGxjSXo0a1Q0Zz09" ;
     ex:belongsToGroup ex:group_12_241 .
 
 ex:group_12_241 a ex:Group ; ex:groupName "12-241" .
-ex:Гнєдкова_О_О_ a ex:Teacher ; ex:fullName "Гнєдкова О.О." .
+ex:Шайдича_А_ a ex:Teacher ; ex:fullName "Шайдича А." .
 
-ex:lesson_24 a ex:Lesson ;
-    ex:subject "Іноземна мова (пр.)" ;
+ex:lesson_32 a ex:Lesson ;
+    ex:subject "Англійська мова професійного спрямування (л.) ," ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
-    ex:hasTeacher ex:Гнєдкова_О_О_ ;
+    ex:hasTeacher ex:Буренко_А_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/9075536865?pwd=cHNadmJvVGZ1dlpUcGxjSXo0a1Q0Zz09" ;
     ex:belongsToGroup ex:group_12_261 .
 
 ex:group_12_261 a ex:Group ; ex:groupName "12-261" .
-ex:Гнєдкова_О_О_ a ex:Teacher ; ex:fullName "Гнєдкова О.О." .
+ex:Буренко_А_ a ex:Teacher ; ex:fullName "Буренко А." .
 
-ex:lesson_25 a ex:Lesson ;
+ex:lesson_33 a ex:Lesson ;
     ex:subject "Програмування мультимедійних веб-додатків (пр.) вся група" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
@@ -276,8 +364,8 @@ ex:lesson_25 a ex:Lesson ;
 ex:group_12_331 a ex:Group ; ex:groupName "12-331" .
 ex:Кравцов_Г_М_ a ex:Teacher ; ex:fullName "Кравцов Г.М." .
 
-ex:lesson_26 a ex:Lesson ;
-    ex:subject "Емпіричні методи програмної інженерії (пр)" ;
+ex:lesson_34 a ex:Lesson ;
+    ex:subject "Емпіричні методи програмної інженерії (пр.)" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
     ex:hasTeacher ex:Вейцбліт_О_Й_ ;
@@ -287,8 +375,8 @@ ex:lesson_26 a ex:Lesson ;
 ex:group_12_341 a ex:Group ; ex:groupName "12-341" .
 ex:Вейцбліт_О_Й_ a ex:Teacher ; ex:fullName "Вейцбліт О.Й." .
 
-ex:lesson_27 a ex:Lesson ;
-    ex:subject "Емпіричні методи програмної інженерії (пр)" ;
+ex:lesson_35 a ex:Lesson ;
+    ex:subject "Емпіричні методи програмної інженерії (пр.)" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
     ex:hasTeacher ex:Вейцбліт_О_Й_ ;
@@ -298,8 +386,8 @@ ex:lesson_27 a ex:Lesson ;
 ex:group_12_243 a ex:Group ; ex:groupName "12-243" .
 ex:Вейцбліт_О_Й_ a ex:Teacher ; ex:fullName "Вейцбліт О.Й." .
 
-ex:lesson_28 a ex:Lesson ;
-    ex:subject "Управління процесами розроблення програмного забезпечення (лаб.)" ;
+ex:lesson_36 a ex:Lesson ;
+    ex:subject "Управління процесами розроблення програмного забезпечення (л.) Управління процесами розроблення програмного забезпечення (лаб.)" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
     ex:hasTeacher ex:Вінник_М_О_ ;
@@ -309,41 +397,41 @@ ex:lesson_28 a ex:Lesson ;
 ex:group_12_431 a ex:Group ; ex:groupName "12-431" .
 ex:Вінник_М_О_ a ex:Teacher ; ex:fullName "Вінник М.О." .
 
-ex:lesson_29 a ex:Lesson ;
-    ex:subject "Іноземна мова ЗАЛІК" ;
+ex:lesson_37 a ex:Lesson ;
+    ex:subject "Методи оптимізації та дослідження операцій ЗАЛІК" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 4 (14:00 - 15:20)" ;
-    ex:hasTeacher ex:Гнєдкова_О_О_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/9075536865?pwd=cHNadmJvVGZ1dlpUcGxjSXo0a1Q0Zz09" ;
+    ex:hasTeacher ex:Вейцбліт_О_Й_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/83524205992?pwd=UxDauaNjGg6BcDjlcZWo8QwmQFMwq2.1" ;
+    ex:belongsToGroup ex:group_12_131с .
+
+ex:group_12_131с a ex:Group ; ex:groupName "12-131с" .
+ex:Вейцбліт_О_Й_ a ex:Teacher ; ex:fullName "Вейцбліт О.Й." .
+
+ex:lesson_38 a ex:Lesson ;
+    ex:subject "Методи оптимізації та дослідження операцій ЗАЛІК" ;
+    ex:dayOfWeek "ПОНЕДІЛОК" ;
+    ex:timeStart "Пара 4 (14:00 - 15:20)" ;
+    ex:hasTeacher ex:Вейцбліт_О_Й_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/83524205992?pwd=UxDauaNjGg6BcDjlcZWo8QwmQFMwq2.1" ;
     ex:belongsToGroup ex:group_12_143 .
 
 ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
-ex:Гнєдкова_О_О_ a ex:Teacher ; ex:fullName "Гнєдкова О.О." .
+ex:Вейцбліт_О_Й_ a ex:Teacher ; ex:fullName "Вейцбліт О.Й." .
 
-ex:lesson_30 a ex:Lesson ;
-    ex:subject "Дизайн в цифровій мережі (пр.) вся група" ;
+ex:lesson_39 a ex:Lesson ;
+    ex:subject "Бази даних та інформаційні системи (л.)" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
-    ex:timeStart "Пара 4 (14:00 - 15:20)" ;
-    ex:hasTeacher ex:Черненко_І_Є_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/8421987655?pwd=MHhVUW5ENUZOckh5VThPV3FMUCt5QT09" ;
-    ex:belongsToGroup ex:group_12_431 .
+    ex:timeStart "Пара 5 (15:40 - 17:00)" ;
+    ex:hasTeacher ex:Валько_Н_В_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/84015839167?pwd=VFFnNmFGZjEzbzJUcys0NHBxT25pZz09" ;
+    ex:belongsToGroup ex:group_12_143 .
 
-ex:group_12_431 a ex:Group ; ex:groupName "12-431" .
-ex:Черненко_І_Є_ a ex:Teacher ; ex:fullName "Черненко І.Є." .
+ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
+ex:Валько_Н_В_ a ex:Teacher ; ex:fullName "Валько Н.В." .
 
-ex:lesson_31 a ex:Lesson ;
-    ex:subject "Дизайн в цифровій мережі (пр.) (Галькевич П., Рудчук М., Савченко І., Скорий Є.)" ;
-    ex:dayOfWeek "ПОНЕДІЛОК" ;
-    ex:timeStart "Пара 4 (14:00 - 15:20)" ;
-    ex:hasTeacher ex:Черненко_І_Є_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/8421987655?pwd=MHhVUW5ENUZOckh5VThPV3FMUCt5QT09" ;
-    ex:belongsToGroup ex:group_12_441 .
-
-ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
-ex:Черненко_І_Є_ a ex:Teacher ; ex:fullName "Черненко І.Є." .
-
-ex:lesson_32 a ex:Lesson ;
-    ex:subject "Загальна методика навчання інформатики ЗАЛІК" ;
+ex:lesson_40 a ex:Lesson ;
+    ex:subject "Бази даних / Бази даних та інформаційні системи (л.)" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
     ex:hasTeacher ex:Валько_Н_В_ ;
@@ -353,142 +441,21 @@ ex:lesson_32 a ex:Lesson ;
 ex:group_12_232 a ex:Group ; ex:groupName "12-232" .
 ex:Валько_Н_В_ a ex:Teacher ; ex:fullName "Валько Н.В." .
 
-ex:lesson_33 a ex:Lesson ;
-    ex:subject "Теорія ймовірностей та математична статистика тільки Кравченко В., Кріль Б., АЛІК" ;
+ex:lesson_41 a ex:Lesson ;
+    ex:subject "Бази даних / Бази даних та інформаційні системи (л.)" ;
     ex:dayOfWeek "ПОНЕДІЛОК" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
-    ex:hasTeacher ex:Магаляс_К___З ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/2706374951?pwd=ckdWemtOT3EzRk81UGhGemdFbXZaZz09" ;
+    ex:hasTeacher ex:Валько_Н_В_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/84015839167?pwd=VFFnNmFGZjEzbzJUcys0NHBxT25pZz09" ;
     ex:belongsToGroup ex:group_12_231 .
 
 ex:group_12_231 a ex:Group ; ex:groupName "12-231" .
-ex:Магаляс_К___З a ex:Teacher ; ex:fullName "Магаляс К. З" .
-
-ex:lesson_34 a ex:Lesson ;
-    ex:subject "Теорія ймовірностей та математична статистика (консультація) тільки АЛІК" ;
-    ex:dayOfWeek "ПОНЕДІЛОК" ;
-    ex:timeStart "Пара 5 (15:40 - 17:00)" ;
-    ex:hasTeacher ex:Родіонов_Д___З ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/2706374951?pwd=ckdWemtOT3EzRk81UGhGemdFbXZaZz09" ;
-    ex:belongsToGroup ex:group_12_261 .
-
-ex:group_12_261 a ex:Group ; ex:groupName "12-261" .
-ex:Родіонов_Д___З a ex:Teacher ; ex:fullName "Родіонов Д. З" .
-
-ex:lesson_35 a ex:Lesson ;
-    ex:subject "Штучний інтелект і нейронні мережі (пр.)" ;
-    ex:dayOfWeek "ПОНЕДІЛОК" ;
-    ex:timeStart "Пара 5 (15:40 - 17:00)" ;
-    ex:hasTeacher ex:Кльонов_Д_М_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/4555710878?pwd=dVVPVjQrbUpmYlpSVDV6OVhORnZlUT09" ;
-    ex:belongsToGroup ex:group_12_441 .
-
-ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
-ex:Кльонов_Д_М_ a ex:Teacher ; ex:fullName "Кльонов Д.М." .
-
-ex:lesson_36 a ex:Lesson ;
-    ex:subject "Штучний інтелект і нейронні мережі (пр.)" ;
-    ex:dayOfWeek "ПОНЕДІЛОК" ;
-    ex:timeStart "Пара 5 (15:40 - 17:00)" ;
-    ex:hasTeacher ex:Кльонов_Д_М_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/4555710878?pwd=dVVPVjQrbUpmYlpSVDV6OVhORnZlUT09" ;
-    ex:belongsToGroup ex:group_12_343 .
-
-ex:group_12_343 a ex:Group ; ex:groupName "12-343" .
-ex:Кльонов_Д_М_ a ex:Teacher ; ex:fullName "Кльонов Д.М." .
-
-ex:lesson_37 a ex:Lesson ;
-    ex:subject "Проєктний практикум з фулстек розробки (пр.) (Дзюбенко Д., Жигун М., Іванов О., Коршун Д., Метін Б., Петухов В.)" ;
-    ex:dayOfWeek "ПОНЕДІЛОК" ;
-    ex:timeStart "Пара 6 (17:20 - 18:40)" ;
-    ex:hasTeacher ex:Кльонов_Д_М_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/4555710878?pwd=dVVPVjQrbUpmYlpSVDV6OVhORnZlUT09" ;
-    ex:belongsToGroup ex:group_12_441 .
-
-ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
-ex:Кльонов_Д_М_ a ex:Teacher ; ex:fullName "Кльонов Д.М." .
-
-ex:lesson_38 a ex:Lesson ;
-    ex:subject "Проектний практикум з фулстек розробки (пр.) (Кузнєцов Є., Сокольченко Р., Шляхтенко І., Юдіна А.)" ;
-    ex:dayOfWeek "ПОНЕДІЛОК" ;
-    ex:timeStart "Пара 6 (17:20 - 18:40)" ;
-    ex:hasTeacher ex:Кльонов_Д_М_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/4555710878?pwd=dVVPVjQrbUpmYlpSVDV6OVhORnZlUT09" ;
-    ex:belongsToGroup ex:group_12_461 .
-
-ex:group_12_461 a ex:Group ; ex:groupName "12-461" .
-ex:Кльонов_Д_М_ a ex:Teacher ; ex:fullName "Кльонов Д.М." .
-
-ex:lesson_39 a ex:Lesson ;
-    ex:subject "12-143 (Музика А.)" ;
-    ex:dayOfWeek "ПОНЕДІЛОК" ;
-    ex:timeStart "Пара 7 (19:00 - 20:20)" ;
-    ex:hasTeacher ex:Невідомий_викладач ;
-    ex:link "Дистанційно (посилання не знайдено)" ;
-    ex:belongsToGroup ex:group_12_143 .
-
-ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
-ex:Невідомий_викладач a ex:Teacher ; ex:fullName "Невідомий викладач" .
-
-ex:lesson_40 a ex:Lesson ;
-    ex:subject "12-143 (Димніч М.)" ;
-    ex:dayOfWeek "ПОНЕДІЛОК" ;
-    ex:timeStart "Пара 7 (19:00 - 20:20)" ;
-    ex:hasTeacher ex:Невідомий_викладач ;
-    ex:link "Дистанційно (посилання не знайдено)" ;
-    ex:belongsToGroup ex:group_12_143 .
-
-ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
-ex:Невідомий_викладач a ex:Teacher ; ex:fullName "Невідомий викладач" .
-
-ex:lesson_41 a ex:Lesson ;
-    ex:subject "Бази даних та інформаційні системи (лаб.)" ;
-    ex:dayOfWeek "ВІВТОРОК" ;
-    ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Валько_Н_В_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/84015839167?pwd=VFFnNmFGZjEzbzJUcys0NHBxT25pZz09" ;
-    ex:belongsToGroup ex:group_12_143 .
-
-ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
 ex:Валько_Н_В_ a ex:Teacher ; ex:fullName "Валько Н.В." .
 
 ex:lesson_42 a ex:Lesson ;
-    ex:subject "Комп ютерне моделювання фізичних процесів (лекція) Комп ютерне моделювання фізичних процесів (лаб.)" ;
-    ex:dayOfWeek "ВІВТОРОК" ;
-    ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Бабічев_С_А_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/3389997860?pwd=RVFrRjVFMzJ2S0VOOTlVOVRCZnpSZz09" ;
-    ex:belongsToGroup ex:group_12_212 .
-
-ex:group_12_212 a ex:Group ; ex:groupName "12-212" .
-ex:Бабічев_С_А_ a ex:Teacher ; ex:fullName "Бабічев С.А." .
-
-ex:lesson_43 a ex:Lesson ;
-    ex:subject "Бази даних (лаб.)" ;
-    ex:dayOfWeek "ВІВТОРОК" ;
-    ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Валько_Н_В_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/84015839167?pwd=VFFnNmFGZjEzbzJUcys0NHBxT25pZz09" ;
-    ex:belongsToGroup ex:group_12_232 .
-
-ex:group_12_232 a ex:Group ; ex:groupName "12-232" .
-ex:Валько_Н_В_ a ex:Teacher ; ex:fullName "Валько Н.В." .
-
-ex:lesson_44 a ex:Lesson ;
-    ex:subject "Бази даних / Бази даних та інформаційні системи (лаб.)" ;
-    ex:dayOfWeek "ВІВТОРОК" ;
-    ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Валько_Н_В_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/84015839167?pwd=VFFnNmFGZjEzbzJUcys0NHBxT25pZz09" ;
-    ex:belongsToGroup ex:group_12_231 .
-
-ex:group_12_231 a ex:Group ; ex:groupName "12-231" .
-ex:Валько_Н_В_ a ex:Teacher ; ex:fullName "Валько Н.В." .
-
-ex:lesson_45 a ex:Lesson ;
-    ex:subject "Бази даних та інформаційні системи (лаб.)" ;
-    ex:dayOfWeek "ВІВТОРОК" ;
-    ex:timeStart "Пара 1 (09:00 - 10:20)" ;
+    ex:subject "Бази даних / Бази даних та інформаційні системи (л.)" ;
+    ex:dayOfWeek "ПОНЕДІЛОК" ;
+    ex:timeStart "Пара 5 (15:40 - 17:00)" ;
     ex:hasTeacher ex:Валько_Н_В_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/84015839167?pwd=VFFnNmFGZjEzbzJUcys0NHBxT25pZz09" ;
     ex:belongsToGroup ex:group_12_241 .
@@ -496,10 +463,10 @@ ex:lesson_45 a ex:Lesson ;
 ex:group_12_241 a ex:Group ; ex:groupName "12-241" .
 ex:Валько_Н_В_ a ex:Teacher ; ex:fullName "Валько Н.В." .
 
-ex:lesson_46 a ex:Lesson ;
-    ex:subject "Бази даних / Бази даних та інформаційні системи (лаб.)" ;
-    ex:dayOfWeek "ВІВТОРОК" ;
-    ex:timeStart "Пара 1 (09:00 - 10:20)" ;
+ex:lesson_43 a ex:Lesson ;
+    ex:subject "Бази даних / Бази даних та інформаційні системи (л.)" ;
+    ex:dayOfWeek "ПОНЕДІЛОК" ;
+    ex:timeStart "Пара 5 (15:40 - 17:00)" ;
     ex:hasTeacher ex:Валько_Н_В_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/84015839167?pwd=VFFnNmFGZjEzbzJUcys0NHBxT25pZz09" ;
     ex:belongsToGroup ex:group_12_261 .
@@ -507,19 +474,96 @@ ex:lesson_46 a ex:Lesson ;
 ex:group_12_261 a ex:Group ; ex:groupName "12-261" .
 ex:Валько_Н_В_ a ex:Teacher ; ex:fullName "Валько Н.В." .
 
+ex:lesson_44 a ex:Lesson ;
+    ex:subject "Схемотехніка та проектування роботів ЗАЛІК" ;
+    ex:dayOfWeek "ПОНЕДІЛОК" ;
+    ex:timeStart "Пара 5 (15:40 - 17:00)" ;
+    ex:hasTeacher ex:Валько_Н_В_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/84015839167?pwd=VFFnNmFGZjEzbzJUcys0NHBxT25pZz09" ;
+    ex:belongsToGroup ex:group_12_332 .
+
+ex:group_12_332 a ex:Group ; ex:groupName "12-332" .
+ex:Валько_Н_В_ a ex:Teacher ; ex:fullName "Валько Н.В." .
+
+ex:lesson_45 a ex:Lesson ;
+    ex:subject "Проєктний практикум з фулстек розробки (пр.) ( , , , , , )" ;
+    ex:dayOfWeek "ПОНЕДІЛОК" ;
+    ex:timeStart "Пара 6 (17:20 - 18:40)" ;
+    ex:hasTeacher ex:Дзюбенко_Д_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/4555710878?pwd=dVVPVjQrbUpmYlpSVDV6OVhORnZlUT09" ;
+    ex:belongsToGroup ex:group_12_441 .
+
+ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
+ex:Дзюбенко_Д_ a ex:Teacher ; ex:fullName "Дзюбенко Д." .
+
+ex:lesson_46 a ex:Lesson ;
+    ex:subject "Проектний практикум з фулстек розробки (пр.) ( , , , )" ;
+    ex:dayOfWeek "ПОНЕДІЛОК" ;
+    ex:timeStart "Пара 6 (17:20 - 18:40)" ;
+    ex:hasTeacher ex:Кузнєцов_Є_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/4555710878?pwd=dVVPVjQrbUpmYlpSVDV6OVhORnZlUT09" ;
+    ex:belongsToGroup ex:group_12_461 .
+
+ex:group_12_461 a ex:Group ; ex:groupName "12-461" .
+ex:Кузнєцов_Є_ a ex:Teacher ; ex:fullName "Кузнєцов Є." .
+
 ex:lesson_47 a ex:Lesson ;
-    ex:subject "Методика та техніка дистанційного навчання тільки АЛІК" ;
+    ex:subject "12-143 ( )" ;
+    ex:dayOfWeek "ПОНЕДІЛОК" ;
+    ex:timeStart "Пара 7 (19:00 - 20:20)" ;
+    ex:hasTeacher ex:Музика_А_ ;
+    ex:link "Дистанційно (посилання не знайдено)" ;
+    ex:belongsToGroup ex:group_12_143 .
+
+ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
+ex:Музика_А_ a ex:Teacher ; ex:fullName "Музика А." .
+
+ex:lesson_48 a ex:Lesson ;
+    ex:subject "12-143 ( )" ;
+    ex:dayOfWeek "ПОНЕДІЛОК" ;
+    ex:timeStart "Пара 7 (19:00 - 20:20)" ;
+    ex:hasTeacher ex:Димніч_М_ ;
+    ex:link "Дистанційно (посилання не знайдено)" ;
+    ex:belongsToGroup ex:group_12_143 .
+
+ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
+ex:Димніч_М_ a ex:Teacher ; ex:fullName "Димніч М." .
+
+ex:lesson_49 a ex:Lesson ;
+    ex:subject "Теоретична фізика / Теоретична фізика (Фізика атомного ядра та елементарних частинок) (пр.) Код доступа: dVFG3X" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Колеснік_В___З ;
+    ex:hasTeacher ex:Зіновська_В_О_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/6241841681?pwd=wigYSjexayhYzuh0n4f8LlUsU3WS49.1" ;
     ex:belongsToGroup ex:group_12_411 .
 
 ex:group_12_411 a ex:Group ; ex:groupName "12-411" .
-ex:Колеснік_В___З a ex:Teacher ; ex:fullName "Колеснік В. З" .
+ex:Зіновська_В_О_ a ex:Teacher ; ex:fullName "Зіновська В.О." .
 
-ex:lesson_48 a ex:Lesson ;
-    ex:subject "Технології віртуальної та доповненої реальності (пр.) вся група" ;
+ex:lesson_50 a ex:Lesson ;
+    ex:subject "Теоретична фізика / Теоретична фізика (Фізика атомного ядра та елементарних частинок) (пр.) Код доступа: dVFG3X" ;
+    ex:dayOfWeek "ВІВТОРОК" ;
+    ex:timeStart "Пара 1 (09:00 - 10:20)" ;
+    ex:hasTeacher ex:Зіновська_В_О_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/6241841681?pwd=wigYSjexayhYzuh0n4f8LlUsU3WS49.1" ;
+    ex:belongsToGroup ex:group_12_412 .
+
+ex:group_12_412 a ex:Group ; ex:groupName "12-412" .
+ex:Зіновська_В_О_ a ex:Teacher ; ex:fullName "Зіновська В.О." .
+
+ex:lesson_51 a ex:Lesson ;
+    ex:subject "Методика та технології створення дистанційних курсів ЗАЛІК" ;
+    ex:dayOfWeek "ВІВТОРОК" ;
+    ex:timeStart "Пара 1 (09:00 - 10:20)" ;
+    ex:hasTeacher ex:Гнєдкова_О_О_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/9075536865?pwd=cHNadmJvVGZ1dlpUcGxjSXo0a1Q0Zz09" ;
+    ex:belongsToGroup ex:group_12_432 .
+
+ex:group_12_432 a ex:Group ; ex:groupName "12-432" .
+ex:Гнєдкова_О_О_ a ex:Teacher ; ex:fullName "Гнєдкова О.О." .
+
+ex:lesson_52 a ex:Lesson ;
+    ex:subject "Технології віртуальної та доповненої реальності (л.) вся група" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
     ex:hasTeacher ex:Кравцов_Г_М_ ;
@@ -529,41 +573,52 @@ ex:lesson_48 a ex:Lesson ;
 ex:group_12_431 a ex:Group ; ex:groupName "12-431" .
 ex:Кравцов_Г_М_ a ex:Teacher ; ex:fullName "Кравцов Г.М." .
 
-ex:lesson_49 a ex:Lesson ;
-    ex:subject "Технології віртуальної та доповненої реальності (пр.) (Бацалай І., Березинський Д., Галькевич П., Коршун Д., Кульман Д., Метін Б., Олейніченко В., Петухов В., Рудчук М., Яворський О., Скорий Є.)" ;
+ex:lesson_53 a ex:Lesson ;
+    ex:subject "Технології віртуальної та доповненої реальності (л.) ( , , , , , , , , , , )" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Кравцов_Г_М_ ;
+    ex:hasTeacher ex:Бацалай_І_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/3199062903?pwd=cEg0Qmd3enN6bGV2aUpGYWZralovdz09" ;
     ex:belongsToGroup ex:group_12_441 .
 
 ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
-ex:Кравцов_Г_М_ a ex:Teacher ; ex:fullName "Кравцов Г.М." .
+ex:Бацалай_І_ a ex:Teacher ; ex:fullName "Бацалай І." .
 
-ex:lesson_50 a ex:Lesson ;
-    ex:subject "Формальні методи специфікації, верифікації та оптимізації програм (пр.) (Дзюбенко Д., Диннік М., Жигун М., Іванов О., Савченко І., Кусік І.)" ;
+ex:lesson_54 a ex:Lesson ;
+    ex:subject "Формальні методи специфікації, верифікації та оптимізації програм (л.) ( , , , , , )" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Песчаненко_В_С_ ;
+    ex:hasTeacher ex:Дзюбенко_Д_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/6319409305?pwd=MDVWNGJPZ2oxandIY1lncHhWUTUzdz09" ;
     ex:belongsToGroup ex:group_12_441 .
 
 ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
-ex:Песчаненко_В_С_ a ex:Teacher ; ex:fullName "Песчаненко В.С." .
+ex:Дзюбенко_Д_ a ex:Teacher ; ex:fullName "Дзюбенко Д." .
 
-ex:lesson_51 a ex:Lesson ;
-    ex:subject "Формальні методи специфікації, верифікації та оптимізації програм (пр.) (Федянін І.)" ;
+ex:lesson_55 a ex:Lesson ;
+    ex:subject "Формальні методи специфікації, верифікації та оптимізації програм (л.) ( )" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Песчаненко_В_С_ ;
+    ex:hasTeacher ex:Федянін_І_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/6319409305?pwd=MDVWNGJPZ2oxandIY1lncHhWUTUzdz09" ;
     ex:belongsToGroup ex:group_12_343 .
 
 ex:group_12_343 a ex:Group ; ex:groupName "12-343" .
-ex:Песчаненко_В_С_ a ex:Teacher ; ex:fullName "Песчаненко В.С." .
+ex:Федянін_І_ a ex:Teacher ; ex:fullName "Федянін І." .
 
-ex:lesson_52 a ex:Lesson ;
-    ex:subject "Дискретна математика (лекція) /" ;
+ex:lesson_56 a ex:Lesson ;
+    ex:subject "Історія фізики (залік) Ідетнтифікатор: 743 407 3357" ;
+    ex:dayOfWeek "ВІВТОРОК" ;
+    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
+    ex:hasTeacher ex:Гончаренко_Т_Л_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/7434073357?pwd=YkY3OS9mQi94THpkam1pOXZIdDZhUT09" ;
+    ex:belongsToGroup ex:group_12_111 .
+
+ex:group_12_111 a ex:Group ; ex:groupName "12-111" .
+ex:Гончаренко_Т_Л_ a ex:Teacher ; ex:fullName "Гончаренко Т.Л." .
+
+ex:lesson_57 a ex:Lesson ;
+    ex:subject "Дискретна математика (л.) /" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
     ex:hasTeacher ex:Співаковський_О_В_ ;
@@ -573,8 +628,8 @@ ex:lesson_52 a ex:Lesson ;
 ex:group_12_131 a ex:Group ; ex:groupName "12-131" .
 ex:Співаковський_О_В_ a ex:Teacher ; ex:fullName "Співаковський О.В." .
 
-ex:lesson_53 a ex:Lesson ;
-    ex:subject "Дискретна математика (лекція) /" ;
+ex:lesson_58 a ex:Lesson ;
+    ex:subject "Дискретна математика (л.) /" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
     ex:hasTeacher ex:Співаковський_О_В_ ;
@@ -584,8 +639,8 @@ ex:lesson_53 a ex:Lesson ;
 ex:group_12_131с a ex:Group ; ex:groupName "12-131с" .
 ex:Співаковський_О_В_ a ex:Teacher ; ex:fullName "Співаковський О.В." .
 
-ex:lesson_54 a ex:Lesson ;
-    ex:subject "Дискретна математика (лекція) /" ;
+ex:lesson_59 a ex:Lesson ;
+    ex:subject "Дискретна математика (л.) /" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
     ex:hasTeacher ex:Співаковський_О_В_ ;
@@ -595,8 +650,8 @@ ex:lesson_54 a ex:Lesson ;
 ex:group_12_141 a ex:Group ; ex:groupName "12-141" .
 ex:Співаковський_О_В_ a ex:Teacher ; ex:fullName "Співаковський О.В." .
 
-ex:lesson_55 a ex:Lesson ;
-    ex:subject "Дискретна математика (лекція) /" ;
+ex:lesson_60 a ex:Lesson ;
+    ex:subject "Дискретна математика (л.) /" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
     ex:hasTeacher ex:Співаковський_О_В_ ;
@@ -606,8 +661,8 @@ ex:lesson_55 a ex:Lesson ;
 ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
 ex:Співаковський_О_В_ a ex:Teacher ; ex:fullName "Співаковський О.В." .
 
-ex:lesson_56 a ex:Lesson ;
-    ex:subject "Дискретна математика (лекція) /" ;
+ex:lesson_61 a ex:Lesson ;
+    ex:subject "Дискретна математика (л.) /" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
     ex:hasTeacher ex:Співаковський_О_В_ ;
@@ -617,18 +672,7 @@ ex:lesson_56 a ex:Lesson ;
 ex:group_12_161 a ex:Group ; ex:groupName "12-161" .
 ex:Співаковський_О_В_ a ex:Teacher ; ex:fullName "Співаковський О.В." .
 
-ex:lesson_57 a ex:Lesson ;
-    ex:subject "Комп ютерне моделювання фізичних процесів (лаб.)" ;
-    ex:dayOfWeek "ВІВТОРОК" ;
-    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
-    ex:hasTeacher ex:Бабічев_С_А_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/3389997860?pwd=RVFrRjVFMzJ2S0VOOTlVOVRCZnpSZz09" ;
-    ex:belongsToGroup ex:group_12_212 .
-
-ex:group_12_212 a ex:Group ; ex:groupName "12-212" .
-ex:Бабічев_С_А_ a ex:Teacher ; ex:fullName "Бабічев С.А." .
-
-ex:lesson_58 a ex:Lesson ;
+ex:lesson_62 a ex:Lesson ;
     ex:subject "Математична логіка та теорія алгоритмів (л.)" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
@@ -639,7 +683,7 @@ ex:lesson_58 a ex:Lesson ;
 ex:group_12_331 a ex:Group ; ex:groupName "12-331" .
 ex:Шишко_Л_С_ a ex:Teacher ; ex:fullName "Шишко Л.С." .
 
-ex:lesson_59 a ex:Lesson ;
+ex:lesson_63 a ex:Lesson ;
     ex:subject "Математична логіка та теорія алгоритмів (л.)" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
@@ -650,7 +694,7 @@ ex:lesson_59 a ex:Lesson ;
 ex:group_12_341 a ex:Group ; ex:groupName "12-341" .
 ex:Шишко_Л_С_ a ex:Teacher ; ex:fullName "Шишко Л.С." .
 
-ex:lesson_60 a ex:Lesson ;
+ex:lesson_64 a ex:Lesson ;
     ex:subject "Математична логіка та теорія алгоритмів (л.)" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
@@ -660,50 +704,6 @@ ex:lesson_60 a ex:Lesson ;
 
 ex:group_12_243 a ex:Group ; ex:groupName "12-243" .
 ex:Шишко_Л_С_ a ex:Teacher ; ex:fullName "Шишко Л.С." .
-
-ex:lesson_61 a ex:Lesson ;
-    ex:subject "Технології віртуальної та доповненої реальності (л.) вся група" ;
-    ex:dayOfWeek "ВІВТОРОК" ;
-    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
-    ex:hasTeacher ex:Кравцов_Г_М_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/3199062903?pwd=cEg0Qmd3enN6bGV2aUpGYWZralovdz09" ;
-    ex:belongsToGroup ex:group_12_431 .
-
-ex:group_12_431 a ex:Group ; ex:groupName "12-431" .
-ex:Кравцов_Г_М_ a ex:Teacher ; ex:fullName "Кравцов Г.М." .
-
-ex:lesson_62 a ex:Lesson ;
-    ex:subject "Технології віртуальної та доповненої реальності (л.) (Бацалай І., Березинський Д., Галькевич П., Коршун Д., Кульман Д., Метін Б., Олейніченко В., Петухов В., Рудчук М., Яворський О., Скорий Є.)" ;
-    ex:dayOfWeek "ВІВТОРОК" ;
-    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
-    ex:hasTeacher ex:Кравцов_Г_М_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/3199062903?pwd=cEg0Qmd3enN6bGV2aUpGYWZralovdz09" ;
-    ex:belongsToGroup ex:group_12_441 .
-
-ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
-ex:Кравцов_Г_М_ a ex:Teacher ; ex:fullName "Кравцов Г.М." .
-
-ex:lesson_63 a ex:Lesson ;
-    ex:subject "Системне адміністрування хмарних сервісів (пр.) (Бацалай І., Березинський І., Диннік М., Кульман Д., Олейніченко В., Яворський О., Кусік І.)" ;
-    ex:dayOfWeek "ВІВТОРОК" ;
-    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
-    ex:hasTeacher ex:Кльонов_Д_М_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/4555710878?pwd=dVVPVjQrbUpmYlpSVDV6OVhORnZlUT09" ;
-    ex:belongsToGroup ex:group_12_441 .
-
-ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
-ex:Кльонов_Д_М_ a ex:Teacher ; ex:fullName "Кльонов Д.М." .
-
-ex:lesson_64 a ex:Lesson ;
-    ex:subject "Системне адміністрування хмарних сервісів (пр.) (Федянін І.)" ;
-    ex:dayOfWeek "ВІВТОРОК" ;
-    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
-    ex:hasTeacher ex:Кльонов_Д_М_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/4555710878?pwd=dVVPVjQrbUpmYlpSVDV6OVhORnZlUT09" ;
-    ex:belongsToGroup ex:group_12_343 .
-
-ex:group_12_343 a ex:Group ; ex:groupName "12-343" .
-ex:Кльонов_Д_М_ a ex:Teacher ; ex:fullName "Кльонов Д.М." .
 
 ex:lesson_65 a ex:Lesson ;
     ex:subject "Дискретна математика (пр.) /" ;
@@ -761,106 +761,40 @@ ex:group_12_161 a ex:Group ; ex:groupName "12-161" .
 ex:Співаковський_О_В_ a ex:Teacher ; ex:fullName "Співаковський О.В." .
 
 ex:lesson_70 a ex:Lesson ;
-    ex:subject "Англійська мова професійного спрямування (л.) тільки оц." ;
+    ex:subject "Англійська мова професійного спрямування (л.)" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
-    ex:hasTeacher ex:Махов_А__д ;
+    ex:hasTeacher ex:Махов_А_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/9075536865?pwd=cHNadmJvVGZ1dlpUcGxjSXo0a1Q0Zz09" ;
     ex:belongsToGroup ex:group_12_231 .
 
 ex:group_12_231 a ex:Group ; ex:groupName "12-231" .
-ex:Махов_А__д a ex:Teacher ; ex:fullName "Махов А. д" .
+ex:Махов_А_ a ex:Teacher ; ex:fullName "Махов А." .
 
 ex:lesson_71 a ex:Lesson ;
-    ex:subject "Англійська мова професійного спрямування (л.) вся група, крім оц." ;
+    ex:subject "Англійська мова професійного спрямування (л.) вся група," ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
-    ex:hasTeacher ex:Шайдича_А__д ;
+    ex:hasTeacher ex:Шайдича_А_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/9075536865?pwd=cHNadmJvVGZ1dlpUcGxjSXo0a1Q0Zz09" ;
     ex:belongsToGroup ex:group_12_241 .
 
 ex:group_12_241 a ex:Group ; ex:groupName "12-241" .
-ex:Шайдича_А__д a ex:Teacher ; ex:fullName "Шайдича А. д" .
+ex:Шайдича_А_ a ex:Teacher ; ex:fullName "Шайдича А." .
 
 ex:lesson_72 a ex:Lesson ;
-    ex:subject "Англійська мова професійного спрямування (л.) тільки Буренко А., оц." ;
+    ex:subject "Англійська мова професійного спрямування (л.) ," ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
-    ex:hasTeacher ex:Соценко_В__д ;
+    ex:hasTeacher ex:Буренко_А_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/9075536865?pwd=cHNadmJvVGZ1dlpUcGxjSXo0a1Q0Zz09" ;
     ex:belongsToGroup ex:group_12_261 .
 
 ex:group_12_261 a ex:Group ; ex:groupName "12-261" .
-ex:Соценко_В__д a ex:Teacher ; ex:fullName "Соценко В. д" .
+ex:Буренко_А_ a ex:Teacher ; ex:fullName "Буренко А." .
 
 ex:lesson_73 a ex:Lesson ;
-    ex:subject "Інтелектуальні інформаційні системи (л.)" ;
-    ex:dayOfWeek "ВІВТОРОК" ;
-    ex:timeStart "Пара 3 (12:20 - 13:40)" ;
-    ex:hasTeacher ex:Полторацький_М_Ю_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/5711356260?pwd=UG1DbDhGVEV2ODNaSTIxMHorTmJvUT09" ;
-    ex:belongsToGroup ex:group_12_341 .
-
-ex:group_12_341 a ex:Group ; ex:groupName "12-341" .
-ex:Полторацький_М_Ю_ a ex:Teacher ; ex:fullName "Полторацький М.Ю." .
-
-ex:lesson_74 a ex:Lesson ;
-    ex:subject "Інтелектуальні інформаційні системи (л.)" ;
-    ex:dayOfWeek "ВІВТОРОК" ;
-    ex:timeStart "Пара 3 (12:20 - 13:40)" ;
-    ex:hasTeacher ex:Полторацький_М_Ю_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/5711356260?pwd=UG1DbDhGVEV2ODNaSTIxMHorTmJvUT09" ;
-    ex:belongsToGroup ex:group_12_243 .
-
-ex:group_12_243 a ex:Group ; ex:groupName "12-243" .
-ex:Полторацький_М_Ю_ a ex:Teacher ; ex:fullName "Полторацький М.Ю." .
-
-ex:lesson_75 a ex:Lesson ;
-    ex:subject "Операційні системи та системне програмування (лаб.)" ;
-    ex:dayOfWeek "ВІВТОРОК" ;
-    ex:timeStart "Пара 3 (12:20 - 13:40)" ;
-    ex:hasTeacher ex:Кльонов_Д_М_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/4555710878?pwd=dVVPVjQrbUpmYlpSVDV6OVhORnZlUT09" ;
-    ex:belongsToGroup ex:group_12_431 .
-
-ex:group_12_431 a ex:Group ; ex:groupName "12-431" .
-ex:Кльонов_Д_М_ a ex:Teacher ; ex:fullName "Кльонов Д.М." .
-
-ex:lesson_76 a ex:Lesson ;
-    ex:subject "Операційні системи та системне програмування (лаб.)" ;
-    ex:dayOfWeek "ВІВТОРОК" ;
-    ex:timeStart "Пара 3 (12:20 - 13:40)" ;
-    ex:hasTeacher ex:Кльонов_Д_М_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/4555710878?pwd=dVVPVjQrbUpmYlpSVDV6OVhORnZlUT09" ;
-    ex:belongsToGroup ex:group_12_441 .
-
-ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
-ex:Кльонов_Д_М_ a ex:Teacher ; ex:fullName "Кльонов Д.М." .
-
-ex:lesson_77 a ex:Lesson ;
-    ex:subject "Операційні системи та системне програмування (лаб.)" ;
-    ex:dayOfWeek "ВІВТОРОК" ;
-    ex:timeStart "Пара 3 (12:20 - 13:40)" ;
-    ex:hasTeacher ex:Кльонов_Д_М_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/4555710878?pwd=dVVPVjQrbUpmYlpSVDV6OVhORnZlUT09" ;
-    ex:belongsToGroup ex:group_12_343 .
-
-ex:group_12_343 a ex:Group ; ex:groupName "12-343" .
-ex:Кльонов_Д_М_ a ex:Teacher ; ex:fullName "Кльонов Д.М." .
-
-ex:lesson_78 a ex:Lesson ;
-    ex:subject "Операційні системи та системне програмування АЛІК" ;
-    ex:dayOfWeek "ВІВТОРОК" ;
-    ex:timeStart "Пара 3 (12:20 - 13:40)" ;
-    ex:hasTeacher ex:Зубков_Д_____З ;
-    ex:link "Дистанційно (посилання не знайдено)" ;
-    ex:belongsToGroup ex:group_12_461 .
-
-ex:group_12_461 a ex:Group ; ex:groupName "12-461" .
-ex:Зубков_Д_____З a ex:Teacher ; ex:fullName "Зубков Д.   З" .
-
-ex:lesson_79 a ex:Lesson ;
-    ex:subject "Методи оптимізації та дослідження операцій (лекція) Методи оптимізації та дослідження операцій (лаб.)" ;
+    ex:subject "Методи оптимізації та дослідження операцій (лаб.) Методи оптимізації та дослідження операцій (лекція)" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 4 (14:00 - 15:20)" ;
     ex:hasTeacher ex:Вейцбліт_О_Й_ ;
@@ -870,8 +804,8 @@ ex:lesson_79 a ex:Lesson ;
 ex:group_12_231 a ex:Group ; ex:groupName "12-231" .
 ex:Вейцбліт_О_Й_ a ex:Teacher ; ex:fullName "Вейцбліт О.Й." .
 
-ex:lesson_80 a ex:Lesson ;
-    ex:subject "Методи оптимізації та дослідження операцій (лекція) Методи оптимізації та дослідження операцій (лаб.)" ;
+ex:lesson_74 a ex:Lesson ;
+    ex:subject "Методи оптимізації та дослідження операцій (лаб.) Методи оптимізації та дослідження операцій (лекція)" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 4 (14:00 - 15:20)" ;
     ex:hasTeacher ex:Вейцбліт_О_Й_ ;
@@ -881,8 +815,8 @@ ex:lesson_80 a ex:Lesson ;
 ex:group_12_241 a ex:Group ; ex:groupName "12-241" .
 ex:Вейцбліт_О_Й_ a ex:Teacher ; ex:fullName "Вейцбліт О.Й." .
 
-ex:lesson_81 a ex:Lesson ;
-    ex:subject "Методи оптимізації та дослідження операцій (лекція) Методи оптимізації та дослідження операцій (лаб.)" ;
+ex:lesson_75 a ex:Lesson ;
+    ex:subject "Методи оптимізації та дослідження операцій (лаб.) Методи оптимізації та дослідження операцій (лекція)" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 4 (14:00 - 15:20)" ;
     ex:hasTeacher ex:Вейцбліт_О_Й_ ;
@@ -892,7 +826,7 @@ ex:lesson_81 a ex:Lesson ;
 ex:group_12_261 a ex:Group ; ex:groupName "12-261" .
 ex:Вейцбліт_О_Й_ a ex:Teacher ; ex:fullName "Вейцбліт О.Й." .
 
-ex:lesson_82 a ex:Lesson ;
+ex:lesson_76 a ex:Lesson ;
     ex:subject "Технології блокчейну в економіці та фінансах (л.)" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 4 (14:00 - 15:20)" ;
@@ -903,29 +837,7 @@ ex:lesson_82 a ex:Lesson ;
 ex:group_12_361 a ex:Group ; ex:groupName "12-361" .
 ex:Полторацький_М_Ю_ a ex:Teacher ; ex:fullName "Полторацький М.Ю." .
 
-ex:lesson_83 a ex:Lesson ;
-    ex:subject "Дизайн в цифровій мережі (л.) вся група" ;
-    ex:dayOfWeek "ВІВТОРОК" ;
-    ex:timeStart "Пара 4 (14:00 - 15:20)" ;
-    ex:hasTeacher ex:Вінник_М_О_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/2162249744?pwd=edp1sgRh9vXehZ767mrua7409HavsP.1" ;
-    ex:belongsToGroup ex:group_12_431 .
-
-ex:group_12_431 a ex:Group ; ex:groupName "12-431" .
-ex:Вінник_М_О_ a ex:Teacher ; ex:fullName "Вінник М.О." .
-
-ex:lesson_84 a ex:Lesson ;
-    ex:subject "Дизайн в цифровій мережі (л.) (Галькевич П., Рудчук М., Савченко І., Скорий Є.)" ;
-    ex:dayOfWeek "ВІВТОРОК" ;
-    ex:timeStart "Пара 4 (14:00 - 15:20)" ;
-    ex:hasTeacher ex:Вінник_М_О_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/2162249744?pwd=edp1sgRh9vXehZ767mrua7409HavsP.1" ;
-    ex:belongsToGroup ex:group_12_441 .
-
-ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
-ex:Вінник_М_О_ a ex:Teacher ; ex:fullName "Вінник М.О." .
-
-ex:lesson_85 a ex:Lesson ;
+ex:lesson_77 a ex:Lesson ;
     ex:subject "Бази даних та інформаційні системи (лаб.)" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
@@ -936,7 +848,7 @@ ex:lesson_85 a ex:Lesson ;
 ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
 ex:Валько_Н_В_ a ex:Teacher ; ex:fullName "Валько Н.В." .
 
-ex:lesson_86 a ex:Lesson ;
+ex:lesson_78 a ex:Lesson ;
     ex:subject "Бази даних / Бази даних та інформаційні системи (лаб.)" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
@@ -947,7 +859,7 @@ ex:lesson_86 a ex:Lesson ;
 ex:group_12_232 a ex:Group ; ex:groupName "12-232" .
 ex:Валько_Н_В_ a ex:Teacher ; ex:fullName "Валько Н.В." .
 
-ex:lesson_87 a ex:Lesson ;
+ex:lesson_79 a ex:Lesson ;
     ex:subject "Бази даних / Бази даних та інформаційні системи (лаб.)" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
@@ -958,7 +870,7 @@ ex:lesson_87 a ex:Lesson ;
 ex:group_12_231 a ex:Group ; ex:groupName "12-231" .
 ex:Валько_Н_В_ a ex:Teacher ; ex:fullName "Валько Н.В." .
 
-ex:lesson_88 a ex:Lesson ;
+ex:lesson_80 a ex:Lesson ;
     ex:subject "Бази даних / Бази даних та інформаційні системи (лаб.)" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
@@ -969,7 +881,7 @@ ex:lesson_88 a ex:Lesson ;
 ex:group_12_241 a ex:Group ; ex:groupName "12-241" .
 ex:Валько_Н_В_ a ex:Teacher ; ex:fullName "Валько Н.В." .
 
-ex:lesson_89 a ex:Lesson ;
+ex:lesson_81 a ex:Lesson ;
     ex:subject "Бази даних / Бази даних та інформаційні системи (лаб.)" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
@@ -980,8 +892,8 @@ ex:lesson_89 a ex:Lesson ;
 ex:group_12_261 a ex:Group ; ex:groupName "12-261" .
 ex:Валько_Н_В_ a ex:Teacher ; ex:fullName "Валько Н.В." .
 
-ex:lesson_90 a ex:Lesson ;
-    ex:subject "Технології блокчейну в економіці та фінансах (лаб.) Технології блокчейну в економіці та фінансах (лаб.)" ;
+ex:lesson_82 a ex:Lesson ;
+    ex:subject "Технології блокчейну в економіці та фінансах (лаб.)" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
     ex:hasTeacher ex:Полторацький_М_Ю_ ;
@@ -991,30 +903,30 @@ ex:lesson_90 a ex:Lesson ;
 ex:group_12_361 a ex:Group ; ex:groupName "12-361" .
 ex:Полторацький_М_Ю_ a ex:Teacher ; ex:fullName "Полторацький М.Ю." .
 
-ex:lesson_91 a ex:Lesson ;
-    ex:subject "Проектний практикум з фулстек розробки (л.) (Дзюбенко Д., Жигун М., Іванов О., Коршун Д., Метін Б., Петухов В.)" ;
+ex:lesson_83 a ex:Lesson ;
+    ex:subject "Проектний практикум з фулстек розробки (л.) ( , , , , , )" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 6 (17:20 - 18:40)" ;
-    ex:hasTeacher ex:Лемещук_О_І_ ;
+    ex:hasTeacher ex:Дзюбенко_Д_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/81029537506?pwd=NjZMNm40d0hFbklPZUwremliUkNtdz09" ;
     ex:belongsToGroup ex:group_12_441 .
 
 ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
-ex:Лемещук_О_І_ a ex:Teacher ; ex:fullName "Лемещук О.І." .
+ex:Дзюбенко_Д_ a ex:Teacher ; ex:fullName "Дзюбенко Д." .
 
-ex:lesson_92 a ex:Lesson ;
-    ex:subject "Проектний практикум з фулстек розробки (л.) (Кузнєцов Є., Сокольченко Р., Шляхтенко І., Юдіна А.)" ;
+ex:lesson_84 a ex:Lesson ;
+    ex:subject "Проектний практикум з фулстек розробки (л.) ( , , , )" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 6 (17:20 - 18:40)" ;
-    ex:hasTeacher ex:Лемещук_О_І_ ;
+    ex:hasTeacher ex:Кузнєцов_Є_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/81029537506?pwd=NjZMNm40d0hFbklPZUwremliUkNtdz09" ;
     ex:belongsToGroup ex:group_12_461 .
 
 ex:group_12_461 a ex:Group ; ex:groupName "12-461" .
-ex:Лемещук_О_І_ a ex:Teacher ; ex:fullName "Лемещук О.І." .
+ex:Кузнєцов_Є_ a ex:Teacher ; ex:fullName "Кузнєцов Є." .
 
-ex:lesson_93 a ex:Lesson ;
-    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка" ;
+ex:lesson_85 a ex:Lesson ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка 28.04 ЗАЛІК Ідентификатор конференції: 514 394 9851 Код доступа: 137268" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 7 (19:00 - 20:20)" ;
     ex:hasTeacher ex:Костючков_С_К_ ;
@@ -1024,8 +936,8 @@ ex:lesson_93 a ex:Lesson ;
 ex:group_12_131с a ex:Group ; ex:groupName "12-131с" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
-ex:lesson_94 a ex:Lesson ;
-    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка 12-143 (Музика А.)" ;
+ex:lesson_86 a ex:Lesson ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка 28.04 ЗАЛІК Ідентификатор конференції: 514 394 9851 Код доступа: 137268" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 7 (19:00 - 20:20)" ;
     ex:hasTeacher ex:Костючков_С_К_ ;
@@ -1035,19 +947,8 @@ ex:lesson_94 a ex:Lesson ;
 ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
-ex:lesson_95 a ex:Lesson ;
-    ex:subject "12-143 (Димніч М.)" ;
-    ex:dayOfWeek "ВІВТОРОК" ;
-    ex:timeStart "Пара 7 (19:00 - 20:20)" ;
-    ex:hasTeacher ex:Невідомий_викладач ;
-    ex:link "Дистанційно (посилання не знайдено)" ;
-    ex:belongsToGroup ex:group_12_143 .
-
-ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
-ex:Невідомий_викладач a ex:Teacher ; ex:fullName "Невідомий викладач" .
-
-ex:lesson_96 a ex:Lesson ;
-    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка" ;
+ex:lesson_87 a ex:Lesson ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка 28.04 ЗАЛІК Ідентификатор конференції: 514 394 9851 Код доступа: 137268" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 7 (19:00 - 20:20)" ;
     ex:hasTeacher ex:Костючков_С_К_ ;
@@ -1057,8 +958,8 @@ ex:lesson_96 a ex:Lesson ;
 ex:group_12_212 a ex:Group ; ex:groupName "12-212" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
-ex:lesson_97 a ex:Lesson ;
-    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка" ;
+ex:lesson_88 a ex:Lesson ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка 28.04 ЗАЛІК Ідентификатор конференції: 514 394 9851 Код доступа: 137268" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 7 (19:00 - 20:20)" ;
     ex:hasTeacher ex:Костючков_С_К_ ;
@@ -1068,8 +969,8 @@ ex:lesson_97 a ex:Lesson ;
 ex:group_12_232 a ex:Group ; ex:groupName "12-232" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
-ex:lesson_98 a ex:Lesson ;
-    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка" ;
+ex:lesson_89 a ex:Lesson ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка 28.04 ЗАЛІК Ідентификатор конференції: 514 394 9851 Код доступа: 137268" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 7 (19:00 - 20:20)" ;
     ex:hasTeacher ex:Костючков_С_К_ ;
@@ -1079,8 +980,8 @@ ex:lesson_98 a ex:Lesson ;
 ex:group_12_231 a ex:Group ; ex:groupName "12-231" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
-ex:lesson_99 a ex:Lesson ;
-    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка" ;
+ex:lesson_90 a ex:Lesson ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка 28.04 ЗАЛІК Ідентификатор конференції: 514 394 9851 Код доступа: 137268" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 7 (19:00 - 20:20)" ;
     ex:hasTeacher ex:Костючков_С_К_ ;
@@ -1090,8 +991,8 @@ ex:lesson_99 a ex:Lesson ;
 ex:group_12_241 a ex:Group ; ex:groupName "12-241" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
-ex:lesson_100 a ex:Lesson ;
-    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка" ;
+ex:lesson_91 a ex:Lesson ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка 28.04 ЗАЛІК Ідентификатор конференції: 514 394 9851 Код доступа: 137268" ;
     ex:dayOfWeek "ВІВТОРОК" ;
     ex:timeStart "Пара 7 (19:00 - 20:20)" ;
     ex:hasTeacher ex:Костючков_С_К_ ;
@@ -1101,18 +1002,29 @@ ex:lesson_100 a ex:Lesson ;
 ex:group_12_261 a ex:Group ; ex:groupName "12-261" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
-ex:lesson_101 a ex:Lesson ;
-    ex:subject "Історія фізики (консультація) Історія фізики (залік) Ідетнтифікатор: 743 407 3357" ;
-    ex:dayOfWeek "СЕРЕДА" ;
-    ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Гончаренко_Т_Л_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/7434073357?pwd=YkY3OS9mQi94THpkam1pOXZIdDZhUT09" ;
-    ex:belongsToGroup ex:group_12_111 .
+ex:lesson_92 a ex:Lesson ;
+    ex:subject "12-143 ( )" ;
+    ex:dayOfWeek "ВІВТОРОК" ;
+    ex:timeStart "Пара 8" ;
+    ex:hasTeacher ex:Музика_А_ ;
+    ex:link "Дистанційно (посилання не знайдено)" ;
+    ex:belongsToGroup ex:group_12_143 .
 
-ex:group_12_111 a ex:Group ; ex:groupName "12-111" .
-ex:Гончаренко_Т_Л_ a ex:Teacher ; ex:fullName "Гончаренко Т.Л." .
+ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
+ex:Музика_А_ a ex:Teacher ; ex:fullName "Музика А." .
 
-ex:lesson_102 a ex:Lesson ;
+ex:lesson_93 a ex:Lesson ;
+    ex:subject "12-143 ( )" ;
+    ex:dayOfWeek "ВІВТОРОК" ;
+    ex:timeStart "Пара 8" ;
+    ex:hasTeacher ex:Димніч_М_ ;
+    ex:link "Дистанційно (посилання не знайдено)" ;
+    ex:belongsToGroup ex:group_12_143 .
+
+ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
+ex:Димніч_М_ a ex:Teacher ; ex:fullName "Димніч М." .
+
+ex:lesson_94 a ex:Lesson ;
     ex:subject "Фізичне виховання (пр.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
@@ -1123,7 +1035,7 @@ ex:lesson_102 a ex:Lesson ;
 ex:group_12_131 a ex:Group ; ex:groupName "12-131" .
 ex:Глухова_Г_Г_ a ex:Teacher ; ex:fullName "Глухова Г.Г." .
 
-ex:lesson_103 a ex:Lesson ;
+ex:lesson_95 a ex:Lesson ;
     ex:subject "Фізичне виховання (пр.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
@@ -1134,7 +1046,7 @@ ex:lesson_103 a ex:Lesson ;
 ex:group_12_141 a ex:Group ; ex:groupName "12-141" .
 ex:Глухова_Г_Г_ a ex:Teacher ; ex:fullName "Глухова Г.Г." .
 
-ex:lesson_104 a ex:Lesson ;
+ex:lesson_96 a ex:Lesson ;
     ex:subject "Фізичне виховання (пр.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
@@ -1145,7 +1057,7 @@ ex:lesson_104 a ex:Lesson ;
 ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
 ex:Глухова_Г_Г_ a ex:Teacher ; ex:fullName "Глухова Г.Г." .
 
-ex:lesson_105 a ex:Lesson ;
+ex:lesson_97 a ex:Lesson ;
     ex:subject "Фізичне виховання (пр.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
@@ -1156,84 +1068,18 @@ ex:lesson_105 a ex:Lesson ;
 ex:group_12_161 a ex:Group ; ex:groupName "12-161" .
 ex:Глухова_Г_Г_ a ex:Teacher ; ex:fullName "Глухова Г.Г." .
 
-ex:lesson_106 a ex:Lesson ;
-    ex:subject "Філософія (семінар)" ;
+ex:lesson_98 a ex:Lesson ;
+    ex:subject "Моделювання та програмування роботів (л.) Моделювання та програмування роботів (пр.) ( та )" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Приймак_Ю_О_ ;
-    ex:link "Дистанційно (посилання не знайдено)" ;
-    ex:belongsToGroup ex:group_12_212 .
-
-ex:group_12_212 a ex:Group ; ex:groupName "12-212" .
-ex:Приймак_Ю_О_ a ex:Teacher ; ex:fullName "Приймак Ю.О." .
-
-ex:lesson_107 a ex:Lesson ;
-    ex:subject "Філософія (семінар)" ;
-    ex:dayOfWeek "СЕРЕДА" ;
-    ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Приймак_Ю_О_ ;
-    ex:link "Дистанційно (посилання не знайдено)" ;
-    ex:belongsToGroup ex:group_12_221 .
-
-ex:group_12_221 a ex:Group ; ex:groupName "12-221" .
-ex:Приймак_Ю_О_ a ex:Teacher ; ex:fullName "Приймак Ю.О." .
-
-ex:lesson_108 a ex:Lesson ;
-    ex:subject "Філософія (семінар)" ;
-    ex:dayOfWeek "СЕРЕДА" ;
-    ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Приймак_Ю_О_ ;
-    ex:link "Дистанційно (посилання не знайдено)" ;
-    ex:belongsToGroup ex:group_12_232 .
-
-ex:group_12_232 a ex:Group ; ex:groupName "12-232" .
-ex:Приймак_Ю_О_ a ex:Teacher ; ex:fullName "Приймак Ю.О." .
-
-ex:lesson_109 a ex:Lesson ;
-    ex:subject "Філософія (семінар)" ;
-    ex:dayOfWeek "СЕРЕДА" ;
-    ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Приймак_Ю_О_ ;
-    ex:link "Дистанційно (посилання не знайдено)" ;
-    ex:belongsToGroup ex:group_12_231 .
-
-ex:group_12_231 a ex:Group ; ex:groupName "12-231" .
-ex:Приймак_Ю_О_ a ex:Teacher ; ex:fullName "Приймак Ю.О." .
-
-ex:lesson_110 a ex:Lesson ;
-    ex:subject "Філософія (семінар)" ;
-    ex:dayOfWeek "СЕРЕДА" ;
-    ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Приймак_Ю_О_ ;
-    ex:link "Дистанційно (посилання не знайдено)" ;
-    ex:belongsToGroup ex:group_12_241 .
-
-ex:group_12_241 a ex:Group ; ex:groupName "12-241" .
-ex:Приймак_Ю_О_ a ex:Teacher ; ex:fullName "Приймак Ю.О." .
-
-ex:lesson_111 a ex:Lesson ;
-    ex:subject "Філософія (семінар)" ;
-    ex:dayOfWeek "СЕРЕДА" ;
-    ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Приймак_Ю_О_ ;
-    ex:link "Дистанційно (посилання не знайдено)" ;
-    ex:belongsToGroup ex:group_12_261 .
-
-ex:group_12_261 a ex:Group ; ex:groupName "12-261" .
-ex:Приймак_Ю_О_ a ex:Teacher ; ex:fullName "Приймак Ю.О." .
-
-ex:lesson_112 a ex:Lesson ;
-    ex:subject "Моделювання та програмування роботів (л.) Моделювання та програмування роботів (пр.)" ;
-    ex:dayOfWeek "СЕРЕДА" ;
-    ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Захарченко_Л____т ;
+    ex:hasTeacher ex:Захарченко_Л_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/3389997860?pwd=RVFrRjVFMzJ2S0VOOTlVOVRCZnpSZz09" ;
     ex:belongsToGroup ex:group_12_411 .
 
 ex:group_12_411 a ex:Group ; ex:groupName "12-411" .
-ex:Захарченко_Л____т a ex:Teacher ; ex:fullName "Захарченко Л.  т" .
+ex:Захарченко_Л_ a ex:Teacher ; ex:fullName "Захарченко Л." .
 
-ex:lesson_113 a ex:Lesson ;
+ex:lesson_99 a ex:Lesson ;
     ex:subject "Моделювання та програмування роботів (л.) Моделювання та програмування роботів (пр.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
@@ -1244,8 +1090,8 @@ ex:lesson_113 a ex:Lesson ;
 ex:group_12_412 a ex:Group ; ex:groupName "12-412" .
 ex:Бабічев_С_А_ a ex:Teacher ; ex:fullName "Бабічев С.А." .
 
-ex:lesson_114 a ex:Lesson ;
-    ex:subject "Штучний інтелект і нейронні мережі (л.)" ;
+ex:lesson_100 a ex:Lesson ;
+    ex:subject "Штучний інтелект і нейронні мережі (пр.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
     ex:hasTeacher ex:Кльонов_Д_М_ ;
@@ -1255,8 +1101,8 @@ ex:lesson_114 a ex:Lesson ;
 ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
 ex:Кльонов_Д_М_ a ex:Teacher ; ex:fullName "Кльонов Д.М." .
 
-ex:lesson_115 a ex:Lesson ;
-    ex:subject "Штучний інтелект і нейронні мережі (л.)" ;
+ex:lesson_101 a ex:Lesson ;
+    ex:subject "Штучний інтелект і нейронні мережі (пр.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
     ex:hasTeacher ex:Кльонов_Д_М_ ;
@@ -1266,8 +1112,8 @@ ex:lesson_115 a ex:Lesson ;
 ex:group_12_343 a ex:Group ; ex:groupName "12-343" .
 ex:Кльонов_Д_М_ a ex:Teacher ; ex:fullName "Кльонов Д.М." .
 
-ex:lesson_116 a ex:Lesson ;
-    ex:subject "Загальна фізика (Оптика) (л.) Ідетнтифікатор: 743 407 3357" ;
+ex:lesson_102 a ex:Lesson ;
+    ex:subject "Загальна фізика (Оптика) (пр) Загальна фізика (Оптика) (л) Ідетнтифікатор: 743 407 3357" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
     ex:hasTeacher ex:Гончаренко_Т_Л_ ;
@@ -1277,19 +1123,8 @@ ex:lesson_116 a ex:Lesson ;
 ex:group_12_212 a ex:Group ; ex:groupName "12-212" .
 ex:Гончаренко_Т_Л_ a ex:Teacher ; ex:fullName "Гончаренко Т.Л." .
 
-ex:lesson_117 a ex:Lesson ;
-    ex:subject "Практикум з розв язування олімпіадних задач з інформатики ЗАЛІК" ;
-    ex:dayOfWeek "СЕРЕДА" ;
-    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
-    ex:hasTeacher ex:Львов_М_С_ ;
-    ex:link "Дистанційно (посилання не знайдено)" ;
-    ex:belongsToGroup ex:group_12_232 .
-
-ex:group_12_232 a ex:Group ; ex:groupName "12-232" .
-ex:Львов_М_С_ a ex:Teacher ; ex:fullName "Львов М.С." .
-
-ex:lesson_118 a ex:Lesson ;
-    ex:subject "Проектування програмних систем (лаб.) ст." ;
+ex:lesson_103 a ex:Lesson ;
+    ex:subject "Проектування програмних систем (л.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
     ex:hasTeacher ex:Черненко_І_Є_ ;
@@ -1299,8 +1134,8 @@ ex:lesson_118 a ex:Lesson ;
 ex:group_12_231 a ex:Group ; ex:groupName "12-231" .
 ex:Черненко_І_Є_ a ex:Teacher ; ex:fullName "Черненко І.Є." .
 
-ex:lesson_119 a ex:Lesson ;
-    ex:subject "Проектування програмних систем (лаб.) ст." ;
+ex:lesson_104 a ex:Lesson ;
+    ex:subject "Проектування програмних систем (л.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
     ex:hasTeacher ex:Черненко_І_Є_ ;
@@ -1310,29 +1145,18 @@ ex:lesson_119 a ex:Lesson ;
 ex:group_12_241 a ex:Group ; ex:groupName "12-241" .
 ex:Черненко_І_Є_ a ex:Teacher ; ex:fullName "Черненко І.Є." .
 
-ex:lesson_120 a ex:Lesson ;
-    ex:subject "Методика навчання математики ЗАЛІК Код доступа: 315179" ;
+ex:lesson_105 a ex:Lesson ;
+    ex:subject "Моделювання та програмування роботів (пр.) ( та )" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
-    ex:hasTeacher ex:Таточенко_В_І_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/9607316733?pwd=NHQwTCtnb0dKOC9pTEtjL2hCRzhFdz09&omn=83267817414" ;
-    ex:belongsToGroup ex:group_12_321 .
-
-ex:group_12_321 a ex:Group ; ex:groupName "12-321" .
-ex:Таточенко_В_І_ a ex:Teacher ; ex:fullName "Таточенко В.І." .
-
-ex:lesson_121 a ex:Lesson ;
-    ex:subject "Моделювання та програмування роботів (пр.)" ;
-    ex:dayOfWeek "СЕРЕДА" ;
-    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
-    ex:hasTeacher ex:Захарченко_Л____т ;
+    ex:hasTeacher ex:Захарченко_Л_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/3389997860?pwd=RVFrRjVFMzJ2S0VOOTlVOVRCZnpSZz09" ;
     ex:belongsToGroup ex:group_12_411 .
 
 ex:group_12_411 a ex:Group ; ex:groupName "12-411" .
-ex:Захарченко_Л____т a ex:Teacher ; ex:fullName "Захарченко Л.  т" .
+ex:Захарченко_Л_ a ex:Teacher ; ex:fullName "Захарченко Л." .
 
-ex:lesson_122 a ex:Lesson ;
+ex:lesson_106 a ex:Lesson ;
     ex:subject "Моделювання та програмування роботів (пр.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
@@ -1343,8 +1167,30 @@ ex:lesson_122 a ex:Lesson ;
 ex:group_12_412 a ex:Group ; ex:groupName "12-412" .
 ex:Бабічев_С_А_ a ex:Teacher ; ex:fullName "Бабічев С.А." .
 
-ex:lesson_123 a ex:Lesson ;
-    ex:subject "Загальна фізика (Оптика) (пр.) Ідетнтифікатор: 743 407 3357" ;
+ex:lesson_107 a ex:Lesson ;
+    ex:subject "Штучний інтелект і нейронні мережі (пр.)" ;
+    ex:dayOfWeek "СЕРЕДА" ;
+    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
+    ex:hasTeacher ex:Кльонов_Д_М_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/4555710878?pwd=dVVPVjQrbUpmYlpSVDV6OVhORnZlUT09" ;
+    ex:belongsToGroup ex:group_12_441 .
+
+ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
+ex:Кльонов_Д_М_ a ex:Teacher ; ex:fullName "Кльонов Д.М." .
+
+ex:lesson_108 a ex:Lesson ;
+    ex:subject "Штучний інтелект і нейронні мережі (пр.)" ;
+    ex:dayOfWeek "СЕРЕДА" ;
+    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
+    ex:hasTeacher ex:Кльонов_Д_М_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/4555710878?pwd=dVVPVjQrbUpmYlpSVDV6OVhORnZlUT09" ;
+    ex:belongsToGroup ex:group_12_343 .
+
+ex:group_12_343 a ex:Group ; ex:groupName "12-343" .
+ex:Кльонов_Д_М_ a ex:Teacher ; ex:fullName "Кльонов Д.М." .
+
+ex:lesson_109 a ex:Lesson ;
+    ex:subject "Загальна фізика (Оптика) (пр) Ідетнтифікатор: 743 407 3357" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
     ex:hasTeacher ex:Гончаренко_Т_Л_ ;
@@ -1354,29 +1200,7 @@ ex:lesson_123 a ex:Lesson ;
 ex:group_12_212 a ex:Group ; ex:groupName "12-212" .
 ex:Гончаренко_Т_Л_ a ex:Teacher ; ex:fullName "Гончаренко Т.Л." .
 
-ex:lesson_124 a ex:Lesson ;
-    ex:subject "Обробка зображень та мультимедіа ЗАЛІК тільки а т." ;
-    ex:dayOfWeek "СЕРЕДА" ;
-    ex:timeStart "Пара 3 (12:20 - 13:40)" ;
-    ex:hasTeacher ex:Кухарська_Г____т ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/8421987655?pwd=MHhVUW5ENUZOckh5VThPV3FMUCt5QT09" ;
-    ex:belongsToGroup ex:group_12_231 .
-
-ex:group_12_231 a ex:Group ; ex:groupName "12-231" .
-ex:Кухарська_Г____т a ex:Teacher ; ex:fullName "Кухарська Г.  т" .
-
-ex:lesson_125 a ex:Lesson ;
-    ex:subject "Обробка зображень та мультимедіа ЗАЛІК тільки т." ;
-    ex:dayOfWeek "СЕРЕДА" ;
-    ex:timeStart "Пара 3 (12:20 - 13:40)" ;
-    ex:hasTeacher ex:Шайдич_А___с ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/8421987655?pwd=MHhVUW5ENUZOckh5VThPV3FMUCt5QT09" ;
-    ex:belongsToGroup ex:group_12_241 .
-
-ex:group_12_241 a ex:Group ; ex:groupName "12-241" .
-ex:Шайдич_А___с a ex:Teacher ; ex:fullName "Шайдич А.  с" .
-
-ex:lesson_126 a ex:Lesson ;
+ex:lesson_110 a ex:Lesson ;
     ex:subject "Безпека програм та даних (л.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
@@ -1387,7 +1211,7 @@ ex:lesson_126 a ex:Lesson ;
 ex:group_12_331 a ex:Group ; ex:groupName "12-331" .
 ex:Кравцов_Г_М_ a ex:Teacher ; ex:fullName "Кравцов Г.М." .
 
-ex:lesson_127 a ex:Lesson ;
+ex:lesson_111 a ex:Lesson ;
     ex:subject "Безпека програм та даних (л.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
@@ -1398,7 +1222,7 @@ ex:lesson_127 a ex:Lesson ;
 ex:group_12_341 a ex:Group ; ex:groupName "12-341" .
 ex:Кравцов_Г_М_ a ex:Teacher ; ex:fullName "Кравцов Г.М." .
 
-ex:lesson_128 a ex:Lesson ;
+ex:lesson_112 a ex:Lesson ;
     ex:subject "Безпека програм та даних (л.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
@@ -1409,7 +1233,7 @@ ex:lesson_128 a ex:Lesson ;
 ex:group_12_243 a ex:Group ; ex:groupName "12-243" .
 ex:Кравцов_Г_М_ a ex:Teacher ; ex:fullName "Кравцов Г.М." .
 
-ex:lesson_129 a ex:Lesson ;
+ex:lesson_113 a ex:Lesson ;
     ex:subject "Безпека програм та даних (л.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
@@ -1420,8 +1244,8 @@ ex:lesson_129 a ex:Lesson ;
 ex:group_12_361 a ex:Group ; ex:groupName "12-361" .
 ex:Кравцов_Г_М_ a ex:Teacher ; ex:fullName "Кравцов Г.М." .
 
-ex:lesson_130 a ex:Lesson ;
-    ex:subject "Теоретична фізика (Статистична фізика та термодинаміка) (л.)" ;
+ex:lesson_114 a ex:Lesson ;
+    ex:subject "Теоретична фізика (Статистична фізика та термодинаміка) (пр.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
     ex:hasTeacher ex:Івашина_Ю_К_ ;
@@ -1431,30 +1255,8 @@ ex:lesson_130 a ex:Lesson ;
 ex:group_12_412 a ex:Group ; ex:groupName "12-412" .
 ex:Івашина_Ю_К_ a ex:Teacher ; ex:fullName "Івашина Ю.К." .
 
-ex:lesson_131 a ex:Lesson ;
-    ex:subject "Проектний практикум з фулстек розробки (л.) (Дзюбенко Д., Жигун М., Іванов О., Коршун Д., Метін Б., Петухов В.)" ;
-    ex:dayOfWeek "СЕРЕДА" ;
-    ex:timeStart "Пара 4 (14:00 - 15:20)" ;
-    ex:hasTeacher ex:Лемещук_О_І_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/81029537506?pwd=NjZMNm40d0hFbklPZUwremliUkNtdz09" ;
-    ex:belongsToGroup ex:group_12_441 .
-
-ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
-ex:Лемещук_О_І_ a ex:Teacher ; ex:fullName "Лемещук О.І." .
-
-ex:lesson_132 a ex:Lesson ;
-    ex:subject "Проектний практикум з фулстек розробки (л.) (Кузнєцов Є., Сокольченко Р., Шляхтенко І., Юдіна А.)" ;
-    ex:dayOfWeek "СЕРЕДА" ;
-    ex:timeStart "Пара 4 (14:00 - 15:20)" ;
-    ex:hasTeacher ex:Лемещук_О_І_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/81029537506?pwd=NjZMNm40d0hFbklPZUwremliUkNtdz09" ;
-    ex:belongsToGroup ex:group_12_461 .
-
-ex:group_12_461 a ex:Group ; ex:groupName "12-461" .
-ex:Лемещук_О_І_ a ex:Teacher ; ex:fullName "Лемещук О.І." .
-
-ex:lesson_133 a ex:Lesson ;
-    ex:subject "Математичний аналіз (л.) Математичний аналіз (пр.) Математичний аналіз (л.) Математичний аналіз (пр.) Математичний аналіз (л.) Математичний аналіз (пр.) Математичний аналіз (л.) Математичний аналіз (пр.)" ;
+ex:lesson_115 a ex:Lesson ;
+    ex:subject "Математичний аналіз (л.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
     ex:hasTeacher ex:Котова_О_В_ ;
@@ -1464,8 +1266,8 @@ ex:lesson_133 a ex:Lesson ;
 ex:group_12_111 a ex:Group ; ex:groupName "12-111" .
 ex:Котова_О_В_ a ex:Teacher ; ex:fullName "Котова О.В." .
 
-ex:lesson_134 a ex:Lesson ;
-    ex:subject "Математичний аналіз (л.) Математичний аналіз (пр.) Математичний аналіз (л.) Математичний аналіз (пр.) Математичний аналіз (л.) Математичний аналіз (пр.) Математичний аналіз (л.) Математичний аналіз (пр.)" ;
+ex:lesson_116 a ex:Lesson ;
+    ex:subject "Математичний аналіз (л.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
     ex:hasTeacher ex:Котова_О_В_ ;
@@ -1475,8 +1277,8 @@ ex:lesson_134 a ex:Lesson ;
 ex:group_12_131 a ex:Group ; ex:groupName "12-131" .
 ex:Котова_О_В_ a ex:Teacher ; ex:fullName "Котова О.В." .
 
-ex:lesson_135 a ex:Lesson ;
-    ex:subject "Математичний аналіз (л.) Математичний аналіз (пр.) Математичний аналіз (л.) Математичний аналіз (пр.) Математичний аналіз (л.) Математичний аналіз (пр.) Математичний аналіз (л.) Математичний аналіз (пр.)" ;
+ex:lesson_117 a ex:Lesson ;
+    ex:subject "Математичний аналіз (л.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
     ex:hasTeacher ex:Котова_О_В_ ;
@@ -1486,8 +1288,8 @@ ex:lesson_135 a ex:Lesson ;
 ex:group_12_141 a ex:Group ; ex:groupName "12-141" .
 ex:Котова_О_В_ a ex:Teacher ; ex:fullName "Котова О.В." .
 
-ex:lesson_136 a ex:Lesson ;
-    ex:subject "Математичний аналіз (л.) Математичний аналіз (пр.) Математичний аналіз (л.) Математичний аналіз (пр.) Математичний аналіз (л.) Математичний аналіз (пр.) Математичний аналіз (л.) Математичний аналіз (пр.)" ;
+ex:lesson_118 a ex:Lesson ;
+    ex:subject "Математичний аналіз (л.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
     ex:hasTeacher ex:Котова_О_В_ ;
@@ -1497,8 +1299,8 @@ ex:lesson_136 a ex:Lesson ;
 ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
 ex:Котова_О_В_ a ex:Teacher ; ex:fullName "Котова О.В." .
 
-ex:lesson_137 a ex:Lesson ;
-    ex:subject "Математичний аналіз (л.) Математичний аналіз (пр.) Математичний аналіз (л.) Математичний аналіз (пр.) Математичний аналіз (л.) Математичний аналіз (пр.) Математичний аналіз (л.) Математичний аналіз (пр.)" ;
+ex:lesson_119 a ex:Lesson ;
+    ex:subject "Математичний аналіз (л.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
     ex:hasTeacher ex:Котова_О_В_ ;
@@ -1508,7 +1310,18 @@ ex:lesson_137 a ex:Lesson ;
 ex:group_12_161 a ex:Group ; ex:groupName "12-161" .
 ex:Котова_О_В_ a ex:Teacher ; ex:fullName "Котова О.В." .
 
-ex:lesson_138 a ex:Lesson ;
+ex:lesson_120 a ex:Lesson ;
+    ex:subject "Історія фізики (залік) Ідетнтифікатор: 743 407 3357" ;
+    ex:dayOfWeek "СЕРЕДА" ;
+    ex:timeStart "Пара 5 (15:40 - 17:00)" ;
+    ex:hasTeacher ex:Гончаренко_Т_Л_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/7434073357?pwd=YkY3OS9mQi94THpkam1pOXZIdDZhUT09" ;
+    ex:belongsToGroup ex:group_12_212 .
+
+ex:group_12_212 a ex:Group ; ex:groupName "12-212" .
+ex:Гончаренко_Т_Л_ a ex:Teacher ; ex:fullName "Гончаренко Т.Л." .
+
+ex:lesson_121 a ex:Lesson ;
     ex:subject "Математичний аналіз (пр.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 6 (17:20 - 18:40)" ;
@@ -1519,7 +1332,7 @@ ex:lesson_138 a ex:Lesson ;
 ex:group_12_111 a ex:Group ; ex:groupName "12-111" .
 ex:Котова_О_В_ a ex:Teacher ; ex:fullName "Котова О.В." .
 
-ex:lesson_139 a ex:Lesson ;
+ex:lesson_122 a ex:Lesson ;
     ex:subject "Математичний аналіз (пр.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 6 (17:20 - 18:40)" ;
@@ -1530,7 +1343,7 @@ ex:lesson_139 a ex:Lesson ;
 ex:group_12_131 a ex:Group ; ex:groupName "12-131" .
 ex:Котова_О_В_ a ex:Teacher ; ex:fullName "Котова О.В." .
 
-ex:lesson_140 a ex:Lesson ;
+ex:lesson_123 a ex:Lesson ;
     ex:subject "Математичний аналіз (пр.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 6 (17:20 - 18:40)" ;
@@ -1541,7 +1354,7 @@ ex:lesson_140 a ex:Lesson ;
 ex:group_12_141 a ex:Group ; ex:groupName "12-141" .
 ex:Котова_О_В_ a ex:Teacher ; ex:fullName "Котова О.В." .
 
-ex:lesson_141 a ex:Lesson ;
+ex:lesson_124 a ex:Lesson ;
     ex:subject "Математичний аналіз (пр.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 6 (17:20 - 18:40)" ;
@@ -1552,7 +1365,7 @@ ex:lesson_141 a ex:Lesson ;
 ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
 ex:Котова_О_В_ a ex:Teacher ; ex:fullName "Котова О.В." .
 
-ex:lesson_142 a ex:Lesson ;
+ex:lesson_125 a ex:Lesson ;
     ex:subject "Математичний аналіз (пр.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 6 (17:20 - 18:40)" ;
@@ -1563,7 +1376,7 @@ ex:lesson_142 a ex:Lesson ;
 ex:group_12_161 a ex:Group ; ex:groupName "12-161" .
 ex:Котова_О_В_ a ex:Teacher ; ex:fullName "Котова О.В." .
 
-ex:lesson_143 a ex:Lesson ;
+ex:lesson_126 a ex:Lesson ;
     ex:subject "Дизайн в цифровій мережі (л.) вся група" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 6 (17:20 - 18:40)" ;
@@ -1574,73 +1387,73 @@ ex:lesson_143 a ex:Lesson ;
 ex:group_12_431 a ex:Group ; ex:groupName "12-431" .
 ex:Вінник_М_О_ a ex:Teacher ; ex:fullName "Вінник М.О." .
 
-ex:lesson_144 a ex:Lesson ;
-    ex:subject "Дизайн в цифровій мережі (л.) (Галькевич П., Рудчук М., Савченко І., Скорий Є.)" ;
+ex:lesson_127 a ex:Lesson ;
+    ex:subject "Дизайн в цифровій мережі (л.) ( , , , )" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 6 (17:20 - 18:40)" ;
-    ex:hasTeacher ex:Вінник_М_О_ ;
+    ex:hasTeacher ex:Галькевич_П_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/2162249744?pwd=edp1sgRh9vXehZ767mrua7409HavsP.1" ;
     ex:belongsToGroup ex:group_12_441 .
 
 ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
-ex:Вінник_М_О_ a ex:Teacher ; ex:fullName "Вінник М.О." .
+ex:Галькевич_П_ a ex:Teacher ; ex:fullName "Галькевич П." .
 
-ex:lesson_145 a ex:Lesson ;
-    ex:subject "Системне адміністрування хмарних сервісів (л.) (Бацалай І., Березинський І., Диннік М., Кульман Д., Олейніченко В., Яворський О., Кусік І.)" ;
+ex:lesson_128 a ex:Lesson ;
+    ex:subject "Системне адміністрування хмарних сервісів (л.) Системне адміністрування хмарних сервісів (пр.) ( , , , , , , )" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 6 (17:20 - 18:40)" ;
-    ex:hasTeacher ex:Кльонов_Д_М_ ;
+    ex:hasTeacher ex:Бацалай_І_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/4555710878?pwd=dVVPVjQrbUpmYlpSVDV6OVhORnZlUT09" ;
     ex:belongsToGroup ex:group_12_441 .
 
 ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
-ex:Кльонов_Д_М_ a ex:Teacher ; ex:fullName "Кльонов Д.М." .
+ex:Бацалай_І_ a ex:Teacher ; ex:fullName "Бацалай І." .
 
-ex:lesson_146 a ex:Lesson ;
-    ex:subject "Системне адміністрування хмарних сервісів (л.) (Федянін І.)" ;
+ex:lesson_129 a ex:Lesson ;
+    ex:subject "Системне адміністрування хмарних сервісів (л.) Системне адміністрування хмарних сервісів (пр.) ( )" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 6 (17:20 - 18:40)" ;
-    ex:hasTeacher ex:Кльонов_Д_М_ ;
+    ex:hasTeacher ex:Федянін_І_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/4555710878?pwd=dVVPVjQrbUpmYlpSVDV6OVhORnZlUT09" ;
     ex:belongsToGroup ex:group_12_343 .
 
 ex:group_12_343 a ex:Group ; ex:groupName "12-343" .
-ex:Кльонов_Д_М_ a ex:Teacher ; ex:fullName "Кльонов Д.М." .
+ex:Федянін_І_ a ex:Teacher ; ex:fullName "Федянін І." .
 
-ex:lesson_147 a ex:Lesson ;
-    ex:subject "12-143 (Музика А.)" ;
+ex:lesson_130 a ex:Lesson ;
+    ex:subject "12-143 ( )" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 7 (19:00 - 20:20)" ;
-    ex:hasTeacher ex:Невідомий_викладач ;
+    ex:hasTeacher ex:Музика_А_ ;
     ex:link "Дистанційно (посилання не знайдено)" ;
     ex:belongsToGroup ex:group_12_143 .
 
 ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
-ex:Невідомий_викладач a ex:Teacher ; ex:fullName "Невідомий викладач" .
+ex:Музика_А_ a ex:Teacher ; ex:fullName "Музика А." .
 
-ex:lesson_148 a ex:Lesson ;
-    ex:subject "12-143 (Димніч М.)" ;
+ex:lesson_131 a ex:Lesson ;
+    ex:subject "12-143 ( )" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 7 (19:00 - 20:20)" ;
-    ex:hasTeacher ex:Невідомий_викладач ;
+    ex:hasTeacher ex:Димніч_М_ ;
     ex:link "Дистанційно (посилання не знайдено)" ;
     ex:belongsToGroup ex:group_12_143 .
 
 ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
-ex:Невідомий_викладач a ex:Teacher ; ex:fullName "Невідомий викладач" .
+ex:Димніч_М_ a ex:Teacher ; ex:fullName "Димніч М." .
 
-ex:lesson_149 a ex:Lesson ;
-    ex:subject "Методика навчання фізики та шкільний фізичний експеримент (лекція) Методика навчання фізики та шкільний фізичний експеримент (пр.)" ;
+ex:lesson_132 a ex:Lesson ;
+    ex:subject "Методика навчання фізики та шкільний фізичний експеримент (лаб.) Методика навчання фізики та шкільний фізичний експеримент (лекція) Методика навчання фізики та шкільний фізичний експеримент (пр.)" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 7 (19:00 - 20:20)" ;
-    ex:hasTeacher ex:Єрмакова_Черченко_Н_О_ ;
+    ex:hasTeacher ex:Черченко_Н_О_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/82338792861?pwd=9Zu48pR2rTVpfBT4crWo9O9H8HnMof.1" ;
     ex:belongsToGroup ex:group_12_411 .
 
 ex:group_12_411 a ex:Group ; ex:groupName "12-411" .
-ex:Єрмакова_Черченко_Н_О_ a ex:Teacher ; ex:fullName "Єрмакова-Черченко Н.О." .
+ex:Черченко_Н_О_ a ex:Teacher ; ex:fullName "Черченко Н.О." .
 
-ex:lesson_150 a ex:Lesson ;
+ex:lesson_133 a ex:Lesson ;
     ex:subject "Дизайн в цифровій мережі (пр.) вся група" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 7 (19:00 - 20:20)" ;
@@ -1651,40 +1464,40 @@ ex:lesson_150 a ex:Lesson ;
 ex:group_12_431 a ex:Group ; ex:groupName "12-431" .
 ex:Черненко_І_Є_ a ex:Teacher ; ex:fullName "Черненко І.Є." .
 
-ex:lesson_151 a ex:Lesson ;
-    ex:subject "Дизайн в цифровій мережі (пр.) (Галькевич П., Рудчук М., Савченко І., Скорий Є.)" ;
+ex:lesson_134 a ex:Lesson ;
+    ex:subject "Дизайн в цифровій мережі (пр.) ( , , , )" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 7 (19:00 - 20:20)" ;
-    ex:hasTeacher ex:Черненко_І_Є_ ;
+    ex:hasTeacher ex:Галькевич_П_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/8421987655?pwd=MHhVUW5ENUZOckh5VThPV3FMUCt5QT09" ;
     ex:belongsToGroup ex:group_12_441 .
 
 ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
-ex:Черненко_І_Є_ a ex:Teacher ; ex:fullName "Черненко І.Є." .
+ex:Галькевич_П_ a ex:Teacher ; ex:fullName "Галькевич П." .
 
-ex:lesson_152 a ex:Lesson ;
-    ex:subject "Системне адміністрування хмарних сервісів (пр.) (Бацалай І., Березинський І., Диннік М., Кульман Д., Олейніченко В., Яворський О., Кусік І.)" ;
+ex:lesson_135 a ex:Lesson ;
+    ex:subject "Системне адміністрування хмарних сервісів (пр.) ( , , , , , , )" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 7 (19:00 - 20:20)" ;
-    ex:hasTeacher ex:Кльонов_Д_М_ ;
+    ex:hasTeacher ex:Бацалай_І_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/4555710878?pwd=dVVPVjQrbUpmYlpSVDV6OVhORnZlUT09" ;
     ex:belongsToGroup ex:group_12_441 .
 
 ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
-ex:Кльонов_Д_М_ a ex:Teacher ; ex:fullName "Кльонов Д.М." .
+ex:Бацалай_І_ a ex:Teacher ; ex:fullName "Бацалай І." .
 
-ex:lesson_153 a ex:Lesson ;
-    ex:subject "Системне адміністрування хмарних сервісів (пр.) (Федянін І.)" ;
+ex:lesson_136 a ex:Lesson ;
+    ex:subject "Системне адміністрування хмарних сервісів (пр.) ( )" ;
     ex:dayOfWeek "СЕРЕДА" ;
     ex:timeStart "Пара 7 (19:00 - 20:20)" ;
-    ex:hasTeacher ex:Кльонов_Д_М_ ;
+    ex:hasTeacher ex:Федянін_І_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/4555710878?pwd=dVVPVjQrbUpmYlpSVDV6OVhORnZlUT09" ;
     ex:belongsToGroup ex:group_12_343 .
 
 ex:group_12_343 a ex:Group ; ex:groupName "12-343" .
-ex:Кльонов_Д_М_ a ex:Teacher ; ex:fullName "Кльонов Д.М." .
+ex:Федянін_І_ a ex:Teacher ; ex:fullName "Федянін І." .
 
-ex:lesson_154 a ex:Lesson ;
+ex:lesson_137 a ex:Lesson ;
     ex:subject "Українська мова (за професійним спрямуванням) (пр.)" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
@@ -1695,7 +1508,7 @@ ex:lesson_154 a ex:Lesson ;
 ex:group_12_111 a ex:Group ; ex:groupName "12-111" .
 ex:Карабута_О_П_ a ex:Teacher ; ex:fullName "Карабута О.П." .
 
-ex:lesson_155 a ex:Lesson ;
+ex:lesson_138 a ex:Lesson ;
     ex:subject "Українська мова (за професійним спрямуванням) (пр.)" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
@@ -1706,7 +1519,7 @@ ex:lesson_155 a ex:Lesson ;
 ex:group_12_121 a ex:Group ; ex:groupName "12-121" .
 ex:Карабута_О_П_ a ex:Teacher ; ex:fullName "Карабута О.П." .
 
-ex:lesson_156 a ex:Lesson ;
+ex:lesson_139 a ex:Lesson ;
     ex:subject "Українська мова (за професійним спрямуванням) (пр.)" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
@@ -1717,8 +1530,8 @@ ex:lesson_156 a ex:Lesson ;
 ex:group_12_131 a ex:Group ; ex:groupName "12-131" .
 ex:Карабута_О_П_ a ex:Teacher ; ex:fullName "Карабута О.П." .
 
-ex:lesson_157 a ex:Lesson ;
-    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка" ;
+ex:lesson_140 a ex:Lesson ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка Ідентификатор конференції: 514 394 9851 Код доступа: 137268 Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка Ідентификатор конференції: 514 394 9851 Код доступа: 137268 Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 12. Виживання Ідентификатор конференції: 569 548 0402 Код доступа: 635301 Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 12. Виживання Ідентификатор конференції: 569 548 0402 Код доступа: 635301" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
     ex:hasTeacher ex:Костючков_С_К_ ;
@@ -1728,7 +1541,7 @@ ex:lesson_157 a ex:Lesson ;
 ex:group_12_131с a ex:Group ; ex:groupName "12-131с" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
-ex:lesson_158 a ex:Lesson ;
+ex:lesson_141 a ex:Lesson ;
     ex:subject "Українська мова (за професійним спрямуванням) (пр.)" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
@@ -1739,8 +1552,8 @@ ex:lesson_158 a ex:Lesson ;
 ex:group_12_141 a ex:Group ; ex:groupName "12-141" .
 ex:Карабута_О_П_ a ex:Teacher ; ex:fullName "Карабута О.П." .
 
-ex:lesson_159 a ex:Lesson ;
-    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка" ;
+ex:lesson_142 a ex:Lesson ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка Ідентификатор конференції: 514 394 9851 Код доступа: 137268 Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка Ідентификатор конференції: 514 394 9851 Код доступа: 137268 Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 12. Виживання Ідентификатор конференції: 569 548 0402 Код доступа: 635301 Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 12. Виживання Ідентификатор конференції: 569 548 0402 Код доступа: 635301" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
     ex:hasTeacher ex:Костючков_С_К_ ;
@@ -1750,7 +1563,7 @@ ex:lesson_159 a ex:Lesson ;
 ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
-ex:lesson_160 a ex:Lesson ;
+ex:lesson_143 a ex:Lesson ;
     ex:subject "Українська мова (за професійним спрямуванням) (пр.)" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
@@ -1761,8 +1574,8 @@ ex:lesson_160 a ex:Lesson ;
 ex:group_12_161 a ex:Group ; ex:groupName "12-161" .
 ex:Карабута_О_П_ a ex:Teacher ; ex:fullName "Карабута О.П." .
 
-ex:lesson_161 a ex:Lesson ;
-    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка Загальна фізика (Оптика) (л) Ідетнтифікатор: 743 407 3357 Загальна фізика (Оптика) (л) Ідетнтифікатор: 743 407 3357" ;
+ex:lesson_144 a ex:Lesson ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка Ідентификатор конференції: 514 394 9851 Код доступа: 137268 Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка Ідентификатор конференції: 514 394 9851 Код доступа: 137268 Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 12. Виживання Ідентификатор конференції: 569 548 0402 Код доступа: 635301 Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 12. Виживання Ідентификатор конференції: 569 548 0402 Код доступа: 635301" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
     ex:hasTeacher ex:Костючков_С_К_ ;
@@ -1772,8 +1585,8 @@ ex:lesson_161 a ex:Lesson ;
 ex:group_12_212 a ex:Group ; ex:groupName "12-212" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
-ex:lesson_162 a ex:Lesson ;
-    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка" ;
+ex:lesson_145 a ex:Lesson ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка Ідентификатор конференції: 514 394 9851 Код доступа: 137268 Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка Ідентификатор конференції: 514 394 9851 Код доступа: 137268 Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 12. Виживання Ідентификатор конференції: 569 548 0402 Код доступа: 635301 Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 12. Виживання Ідентификатор конференції: 569 548 0402 Код доступа: 635301" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
     ex:hasTeacher ex:Костючков_С_К_ ;
@@ -1783,8 +1596,8 @@ ex:lesson_162 a ex:Lesson ;
 ex:group_12_232 a ex:Group ; ex:groupName "12-232" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
-ex:lesson_163 a ex:Lesson ;
-    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка" ;
+ex:lesson_146 a ex:Lesson ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка Ідентификатор конференції: 514 394 9851 Код доступа: 137268 Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка Ідентификатор конференції: 514 394 9851 Код доступа: 137268 Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 12. Виживання Ідентификатор конференції: 569 548 0402 Код доступа: 635301 Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 12. Виживання Ідентификатор конференції: 569 548 0402 Код доступа: 635301" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
     ex:hasTeacher ex:Костючков_С_К_ ;
@@ -1794,8 +1607,8 @@ ex:lesson_163 a ex:Lesson ;
 ex:group_12_231 a ex:Group ; ex:groupName "12-231" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
-ex:lesson_164 a ex:Lesson ;
-    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка" ;
+ex:lesson_147 a ex:Lesson ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка Ідентификатор конференції: 514 394 9851 Код доступа: 137268 Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка Ідентификатор конференції: 514 394 9851 Код доступа: 137268 Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 12. Виживання Ідентификатор конференції: 569 548 0402 Код доступа: 635301 Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 12. Виживання Ідентификатор конференції: 569 548 0402 Код доступа: 635301" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
     ex:hasTeacher ex:Костючков_С_К_ ;
@@ -1805,8 +1618,8 @@ ex:lesson_164 a ex:Lesson ;
 ex:group_12_241 a ex:Group ; ex:groupName "12-241" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
-ex:lesson_165 a ex:Lesson ;
-    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка Базова загальновійськова підготовка (теоретична підготовка)* (практ) Тема 11. Вогнева підготовка" ;
+ex:lesson_148 a ex:Lesson ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка Ідентификатор конференції: 514 394 9851 Код доступа: 137268 Базова загальновійськова підготовка (теоретична підготовка)* (практ.) Тема 11. Вогнева підготовка Ідентификатор конференції: 514 394 9851 Код доступа: 137268 Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 12. Виживання Ідентификатор конференції: 569 548 0402 Код доступа: 635301 Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 12. Виживання Ідентификатор конференції: 569 548 0402 Код доступа: 635301" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
     ex:hasTeacher ex:Костючков_С_К_ ;
@@ -1816,40 +1629,73 @@ ex:lesson_165 a ex:Lesson ;
 ex:group_12_261 a ex:Group ; ex:groupName "12-261" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
-ex:lesson_166 a ex:Lesson ;
-    ex:subject "Формальні методи специфікації, верифікації та оптимізації програм (л.) (Дзюбенко Д., Диннік М., Жигун М., Іванов О., Савченко І., Кусік І.)" ;
+ex:lesson_149 a ex:Lesson ;
+    ex:subject "Технології віртуальної та доповненої реальності (л.) вся група" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Песчаненко_В_С_ ;
+    ex:hasTeacher ex:Кравцов_Г_М_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/3199062903?pwd=cEg0Qmd3enN6bGV2aUpGYWZralovdz09" ;
+    ex:belongsToGroup ex:group_12_431 .
+
+ex:group_12_431 a ex:Group ; ex:groupName "12-431" .
+ex:Кравцов_Г_М_ a ex:Teacher ; ex:fullName "Кравцов Г.М." .
+
+ex:lesson_150 a ex:Lesson ;
+    ex:subject "Технології віртуальної та доповненої реальності (л.) ( , , , , , , , , , , )" ;
+    ex:dayOfWeek "ЧЕТВЕР" ;
+    ex:timeStart "Пара 1 (09:00 - 10:20)" ;
+    ex:hasTeacher ex:Бацалай_І_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/3199062903?pwd=cEg0Qmd3enN6bGV2aUpGYWZralovdz09" ;
+    ex:belongsToGroup ex:group_12_441 .
+
+ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
+ex:Бацалай_І_ a ex:Teacher ; ex:fullName "Бацалай І." .
+
+ex:lesson_151 a ex:Lesson ;
+    ex:subject "Формальні методи специфікації, верифікації та оптимізації програм (л.) ( , , , , , )" ;
+    ex:dayOfWeek "ЧЕТВЕР" ;
+    ex:timeStart "Пара 1 (09:00 - 10:20)" ;
+    ex:hasTeacher ex:Дзюбенко_Д_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/6319409305?pwd=MDVWNGJPZ2oxandIY1lncHhWUTUzdz09" ;
     ex:belongsToGroup ex:group_12_441 .
 
 ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
-ex:Песчаненко_В_С_ a ex:Teacher ; ex:fullName "Песчаненко В.С." .
+ex:Дзюбенко_Д_ a ex:Teacher ; ex:fullName "Дзюбенко Д." .
 
-ex:lesson_167 a ex:Lesson ;
-    ex:subject "Формальні методи специфікації, верифікації та оптимізації програм (л.) (Федянін І.)" ;
+ex:lesson_152 a ex:Lesson ;
+    ex:subject "Формальні методи специфікації, верифікації та оптимізації програм (л.) ( )" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Песчаненко_В_С_ ;
+    ex:hasTeacher ex:Федянін_І_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/6319409305?pwd=MDVWNGJPZ2oxandIY1lncHhWUTUzdz09" ;
     ex:belongsToGroup ex:group_12_343 .
 
 ex:group_12_343 a ex:Group ; ex:groupName "12-343" .
-ex:Песчаненко_В_С_ a ex:Teacher ; ex:fullName "Песчаненко В.С." .
+ex:Федянін_І_ a ex:Teacher ; ex:fullName "Федянін І." .
 
-ex:lesson_168 a ex:Lesson ;
-    ex:subject "Об єктно-орієнтоване та функціональне програмування мовою Python ЗАЛІК" ;
+ex:lesson_153 a ex:Lesson ;
+    ex:subject "Психологія (пр.) Iдентифікатор: 464 655 3441" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
-    ex:hasTeacher ex:Бабічев_С_А_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/3389997860?pwd=RVFrRjVFMzJ2S0VOOTlVOVRCZnpSZz09" ;
+    ex:hasTeacher ex:Фоміна_І_С_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/4646553441?pwd=ZUlpRklIaGE3Y1R4dVVRZzJ2b1hqZz09" ;
     ex:belongsToGroup ex:group_12_111 .
 
 ex:group_12_111 a ex:Group ; ex:groupName "12-111" .
-ex:Бабічев_С_А_ a ex:Teacher ; ex:fullName "Бабічев С.А." .
+ex:Фоміна_І_С_ a ex:Teacher ; ex:fullName "Фоміна І.С." .
 
-ex:lesson_169 a ex:Lesson ;
+ex:lesson_154 a ex:Lesson ;
+    ex:subject "Психологія (пр.) Iдентифікатор: 464 655 3441" ;
+    ex:dayOfWeek "ЧЕТВЕР" ;
+    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
+    ex:hasTeacher ex:Фоміна_І_С_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/4646553441?pwd=ZUlpRklIaGE3Y1R4dVVRZzJ2b1hqZz09" ;
+    ex:belongsToGroup ex:group_12_121 .
+
+ex:group_12_121 a ex:Group ; ex:groupName "12-121" .
+ex:Фоміна_І_С_ a ex:Teacher ; ex:fullName "Фоміна І.С." .
+
+ex:lesson_155 a ex:Lesson ;
     ex:subject "Програмування (ОАП) / Алгоритмізація та програмування (л.) Програмування (ОАП) / Алгоритмізація та програмування (л.) Програмування (ОАП) / Алгоритмізація та програмування (лаб.) Програмування (ОАП) / Алгоритмізація та програмування (лаб.)" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
@@ -1860,7 +1706,7 @@ ex:lesson_169 a ex:Lesson ;
 ex:group_12_131 a ex:Group ; ex:groupName "12-131" .
 ex:Львов_М_С_ a ex:Teacher ; ex:fullName "Львов М.С." .
 
-ex:lesson_170 a ex:Lesson ;
+ex:lesson_156 a ex:Lesson ;
     ex:subject "Програмування (ОАП) / Алгоритмізація та програмування (л.) Програмування (ОАП) / Алгоритмізація та програмування (л.) Програмування (ОАП) / Алгоритмізація та програмування (лаб.) Програмування (ОАП) / Алгоритмізація та програмування (лаб.)" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
@@ -1871,7 +1717,7 @@ ex:lesson_170 a ex:Lesson ;
 ex:group_12_131с a ex:Group ; ex:groupName "12-131с" .
 ex:Львов_М_С_ a ex:Teacher ; ex:fullName "Львов М.С." .
 
-ex:lesson_171 a ex:Lesson ;
+ex:lesson_157 a ex:Lesson ;
     ex:subject "Програмування (ОАП) / Алгоритмізація та програмування (л.) Програмування (ОАП) / Алгоритмізація та програмування (л.) Програмування (ОАП) / Алгоритмізація та програмування (лаб.) Програмування (ОАП) / Алгоритмізація та програмування (лаб.)" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
@@ -1882,7 +1728,7 @@ ex:lesson_171 a ex:Lesson ;
 ex:group_12_141 a ex:Group ; ex:groupName "12-141" .
 ex:Львов_М_С_ a ex:Teacher ; ex:fullName "Львов М.С." .
 
-ex:lesson_172 a ex:Lesson ;
+ex:lesson_158 a ex:Lesson ;
     ex:subject "Програмування (ОАП) / Алгоритмізація та програмування (л.) Програмування (ОАП) / Алгоритмізація та програмування (л.) Програмування (ОАП) / Алгоритмізація та програмування (лаб.) Програмування (ОАП) / Алгоритмізація та програмування (лаб.)" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
@@ -1893,7 +1739,7 @@ ex:lesson_172 a ex:Lesson ;
 ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
 ex:Львов_М_С_ a ex:Teacher ; ex:fullName "Львов М.С." .
 
-ex:lesson_173 a ex:Lesson ;
+ex:lesson_159 a ex:Lesson ;
     ex:subject "Програмування (ОАП) / Алгоритмізація та програмування (л.) Програмування (ОАП) / Алгоритмізація та програмування (л.) Програмування (ОАП) / Алгоритмізація та програмування (лаб.) Програмування (ОАП) / Алгоритмізація та програмування (лаб.)" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
@@ -1904,18 +1750,7 @@ ex:lesson_173 a ex:Lesson ;
 ex:group_12_161 a ex:Group ; ex:groupName "12-161" .
 ex:Львов_М_С_ a ex:Teacher ; ex:fullName "Львов М.С." .
 
-ex:lesson_174 a ex:Lesson ;
-    ex:subject "Загальна фізика (Оптика) (л) Загальна фізика (Оптика) (пр.) Ідетнтифікатор: 743 407 3357" ;
-    ex:dayOfWeek "ЧЕТВЕР" ;
-    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
-    ex:hasTeacher ex:Гончаренко_Т_Л_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/7434073357?pwd=YkY3OS9mQi94THpkam1pOXZIdDZhUT09" ;
-    ex:belongsToGroup ex:group_12_212 .
-
-ex:group_12_212 a ex:Group ; ex:groupName "12-212" .
-ex:Гончаренко_Т_Л_ a ex:Teacher ; ex:fullName "Гончаренко Т.Л." .
-
-ex:lesson_175 a ex:Lesson ;
+ex:lesson_160 a ex:Lesson ;
     ex:subject "Безпека програм та даних (лаб.)" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
@@ -1926,7 +1761,7 @@ ex:lesson_175 a ex:Lesson ;
 ex:group_12_331 a ex:Group ; ex:groupName "12-331" .
 ex:Кравцов_Г_М_ a ex:Teacher ; ex:fullName "Кравцов Г.М." .
 
-ex:lesson_176 a ex:Lesson ;
+ex:lesson_161 a ex:Lesson ;
     ex:subject "Безпека програм та даних (лаб.)" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
@@ -1937,7 +1772,7 @@ ex:lesson_176 a ex:Lesson ;
 ex:group_12_341 a ex:Group ; ex:groupName "12-341" .
 ex:Кравцов_Г_М_ a ex:Teacher ; ex:fullName "Кравцов Г.М." .
 
-ex:lesson_177 a ex:Lesson ;
+ex:lesson_162 a ex:Lesson ;
     ex:subject "Безпека програм та даних (лаб.)" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
@@ -1948,7 +1783,7 @@ ex:lesson_177 a ex:Lesson ;
 ex:group_12_243 a ex:Group ; ex:groupName "12-243" .
 ex:Кравцов_Г_М_ a ex:Teacher ; ex:fullName "Кравцов Г.М." .
 
-ex:lesson_178 a ex:Lesson ;
+ex:lesson_163 a ex:Lesson ;
     ex:subject "Безпека програм та даних (лаб.)" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
@@ -1959,8 +1794,8 @@ ex:lesson_178 a ex:Lesson ;
 ex:group_12_361 a ex:Group ; ex:groupName "12-361" .
 ex:Кравцов_Г_М_ a ex:Teacher ; ex:fullName "Кравцов Г.М." .
 
-ex:lesson_179 a ex:Lesson ;
-    ex:subject "Управління процесами розроблення програмного забезпечення (л.)" ;
+ex:lesson_164 a ex:Lesson ;
+    ex:subject "Управління процесами розроблення програмного забезпечення (лаб.)" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
     ex:hasTeacher ex:Вінник_М_О_ ;
@@ -1970,7 +1805,7 @@ ex:lesson_179 a ex:Lesson ;
 ex:group_12_431 a ex:Group ; ex:groupName "12-431" .
 ex:Вінник_М_О_ a ex:Teacher ; ex:fullName "Вінник М.О." .
 
-ex:lesson_180 a ex:Lesson ;
+ex:lesson_165 a ex:Lesson ;
     ex:subject "Програмування (ОАП) / Алгоритмізація та програмування (лаб.)" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
@@ -1981,7 +1816,7 @@ ex:lesson_180 a ex:Lesson ;
 ex:group_12_131 a ex:Group ; ex:groupName "12-131" .
 ex:Шишко_Л_С_ a ex:Teacher ; ex:fullName "Шишко Л.С." .
 
-ex:lesson_181 a ex:Lesson ;
+ex:lesson_166 a ex:Lesson ;
     ex:subject "Програмування (ОАП) / Алгоритмізація та програмування (лаб.)" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
@@ -1992,7 +1827,7 @@ ex:lesson_181 a ex:Lesson ;
 ex:group_12_131с a ex:Group ; ex:groupName "12-131с" .
 ex:Шишко_Л_С_ a ex:Teacher ; ex:fullName "Шишко Л.С." .
 
-ex:lesson_182 a ex:Lesson ;
+ex:lesson_167 a ex:Lesson ;
     ex:subject "Програмування (ОАП) / Алгоритмізація та програмування (лаб.)" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
@@ -2003,7 +1838,7 @@ ex:lesson_182 a ex:Lesson ;
 ex:group_12_141 a ex:Group ; ex:groupName "12-141" .
 ex:Шишко_Л_С_ a ex:Teacher ; ex:fullName "Шишко Л.С." .
 
-ex:lesson_183 a ex:Lesson ;
+ex:lesson_168 a ex:Lesson ;
     ex:subject "Програмування (ОАП) / Алгоритмізація та програмування (лаб.)" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
@@ -2014,7 +1849,7 @@ ex:lesson_183 a ex:Lesson ;
 ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
 ex:Шишко_Л_С_ a ex:Teacher ; ex:fullName "Шишко Л.С." .
 
-ex:lesson_184 a ex:Lesson ;
+ex:lesson_169 a ex:Lesson ;
     ex:subject "Програмування (ОАП) / Алгоритмізація та програмування (лаб.)" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
@@ -2025,7 +1860,7 @@ ex:lesson_184 a ex:Lesson ;
 ex:group_12_161 a ex:Group ; ex:groupName "12-161" .
 ex:Шишко_Л_С_ a ex:Teacher ; ex:fullName "Шишко Л.С." .
 
-ex:lesson_185 a ex:Lesson ;
+ex:lesson_170 a ex:Lesson ;
     ex:subject "Філософія (л.) Код доступа: 137268" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
@@ -2036,7 +1871,7 @@ ex:lesson_185 a ex:Lesson ;
 ex:group_12_212 a ex:Group ; ex:groupName "12-212" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
-ex:lesson_186 a ex:Lesson ;
+ex:lesson_171 a ex:Lesson ;
     ex:subject "Філософія (л.) Код доступа: 137268" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
@@ -2047,7 +1882,7 @@ ex:lesson_186 a ex:Lesson ;
 ex:group_12_221 a ex:Group ; ex:groupName "12-221" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
-ex:lesson_187 a ex:Lesson ;
+ex:lesson_172 a ex:Lesson ;
     ex:subject "Філософія (л.) Код доступа: 137268" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
@@ -2058,7 +1893,7 @@ ex:lesson_187 a ex:Lesson ;
 ex:group_12_232 a ex:Group ; ex:groupName "12-232" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
-ex:lesson_188 a ex:Lesson ;
+ex:lesson_173 a ex:Lesson ;
     ex:subject "Філософія (л.) Код доступа: 137268" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
@@ -2069,7 +1904,7 @@ ex:lesson_188 a ex:Lesson ;
 ex:group_12_231 a ex:Group ; ex:groupName "12-231" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
-ex:lesson_189 a ex:Lesson ;
+ex:lesson_174 a ex:Lesson ;
     ex:subject "Філософія (л.) Код доступа: 137268" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
@@ -2080,7 +1915,7 @@ ex:lesson_189 a ex:Lesson ;
 ex:group_12_241 a ex:Group ; ex:groupName "12-241" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
-ex:lesson_190 a ex:Lesson ;
+ex:lesson_175 a ex:Lesson ;
     ex:subject "Філософія (л.) Код доступа: 137268" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
@@ -2091,41 +1926,30 @@ ex:lesson_190 a ex:Lesson ;
 ex:group_12_261 a ex:Group ; ex:groupName "12-261" .
 ex:Костючков_С_К_ a ex:Teacher ; ex:fullName "Костючков С.К." .
 
-ex:lesson_191 a ex:Lesson ;
-    ex:subject "Взаємодія людини та машини (пр.) Взаємодія людини та машини (лекція)" ;
+ex:lesson_176 a ex:Lesson ;
+    ex:subject "Взаємодія людини та машини (лекція) О" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
-    ex:hasTeacher ex:Вінник_М_О ;
+    ex:hasTeacher ex:Вінник_М_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/2162249744?pwd=edp1sgRh9vXehZ767mrua7409HavsP.1" ;
     ex:belongsToGroup ex:group_12_331 .
 
 ex:group_12_331 a ex:Group ; ex:groupName "12-331" .
-ex:Вінник_М_О a ex:Teacher ; ex:fullName "Вінник М.О" .
+ex:Вінник_М_ a ex:Teacher ; ex:fullName "Вінник М." .
 
-ex:lesson_192 a ex:Lesson ;
-    ex:subject "Теоретична фізика (Статистична фізика та термодинаміка) (пр.)" ;
-    ex:dayOfWeek "ЧЕТВЕР" ;
-    ex:timeStart "Пара 3 (12:20 - 13:40)" ;
-    ex:hasTeacher ex:Івашина_Ю_К_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/7614169742?pwd=a1BMVFZpdzhKSjI4RFRjV3FBNmtpQT09" ;
-    ex:belongsToGroup ex:group_12_412 .
-
-ex:group_12_412 a ex:Group ; ex:groupName "12-412" .
-ex:Івашина_Ю_К_ a ex:Teacher ; ex:fullName "Івашина Ю.К." .
-
-ex:lesson_193 a ex:Lesson ;
-    ex:subject "Астрономія (пр.) Код доступа: 327617" ;
+ex:lesson_177 a ex:Lesson ;
+    ex:subject "Функціональний аналіз ЗАЛІК" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 4 (14:00 - 15:20)" ;
-    ex:hasTeacher ex:Кузьменков_С_Г_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/8796647281?pwd=R296c0I0bnFZbHR6TlVsV2tGaHFVdz09" ;
-    ex:belongsToGroup ex:group_12_412 .
+    ex:hasTeacher ex:Кузьмич_В_І_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/89035556896?pwd=dHErUlJ4eG9uNEtZVThZQkE0dWdmZz09" ;
+    ex:belongsToGroup ex:group_12_421 .
 
-ex:group_12_412 a ex:Group ; ex:groupName "12-412" .
-ex:Кузьменков_С_Г_ a ex:Teacher ; ex:fullName "Кузьменков С.Г." .
+ex:group_12_421 a ex:Group ; ex:groupName "12-421" .
+ex:Кузьмич_В_І_ a ex:Teacher ; ex:fullName "Кузьмич В.І." .
 
-ex:lesson_194 a ex:Lesson ;
-    ex:subject "Астрономія (пр.) Код доступа: 327617" ;
+ex:lesson_178 a ex:Lesson ;
+    ex:subject "Астрономія (л.) Код доступа: 327617" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
     ex:hasTeacher ex:Кузьменков_С_Г_ ;
@@ -2135,8 +1959,8 @@ ex:lesson_194 a ex:Lesson ;
 ex:group_12_212 a ex:Group ; ex:groupName "12-212" .
 ex:Кузьменков_С_Г_ a ex:Teacher ; ex:fullName "Кузьменков С.Г." .
 
-ex:lesson_195 a ex:Lesson ;
-    ex:subject "Астрономія (пр.) Код доступа: 327617" ;
+ex:lesson_179 a ex:Lesson ;
+    ex:subject "Астрономія (л.) Код доступа: 327617" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
     ex:hasTeacher ex:Кузьменков_С_Г_ ;
@@ -2146,8 +1970,8 @@ ex:lesson_195 a ex:Lesson ;
 ex:group_12_411 a ex:Group ; ex:groupName "12-411" .
 ex:Кузьменков_С_Г_ a ex:Teacher ; ex:fullName "Кузьменков С.Г." .
 
-ex:lesson_196 a ex:Lesson ;
-    ex:subject "Астрономія (пр.) Код доступа: 327617" ;
+ex:lesson_180 a ex:Lesson ;
+    ex:subject "Астрономія (л.) Код доступа: 327617" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
     ex:hasTeacher ex:Кузьменков_С_Г_ ;
@@ -2157,41 +1981,129 @@ ex:lesson_196 a ex:Lesson ;
 ex:group_12_412 a ex:Group ; ex:groupName "12-412" .
 ex:Кузьменков_С_Г_ a ex:Teacher ; ex:fullName "Кузьменков С.Г." .
 
-ex:lesson_197 a ex:Lesson ;
-    ex:subject "12-143 (Музика А.)" ;
+ex:lesson_181 a ex:Lesson ;
+    ex:subject "Астрономія (пр.) Код доступа: 327617" ;
+    ex:dayOfWeek "ЧЕТВЕР" ;
+    ex:timeStart "Пара 6 (17:20 - 18:40)" ;
+    ex:hasTeacher ex:Кузьменков_С_Г_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/8796647281?pwd=R296c0I0bnFZbHR6TlVsV2tGaHFVdz09" ;
+    ex:belongsToGroup ex:group_12_412 .
+
+ex:group_12_412 a ex:Group ; ex:groupName "12-412" .
+ex:Кузьменков_С_Г_ a ex:Teacher ; ex:fullName "Кузьменков С.Г." .
+
+ex:lesson_182 a ex:Lesson ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 7 (19:00 - 20:20)" ;
-    ex:hasTeacher ex:Невідомий_викладач ;
+    ex:hasTeacher ex:Батенко_Г_В_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/7302701590?pwd=VzRsdkh0U3d4TFBOMCtHcld3aU1YQT09" ;
+    ex:belongsToGroup ex:group_12_131с .
+
+ex:group_12_131с a ex:Group ; ex:groupName "12-131с" .
+ex:Батенко_Г_В_ a ex:Teacher ; ex:fullName "Батенко Г.В." .
+
+ex:lesson_183 a ex:Lesson ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК 12-143 ( )" ;
+    ex:dayOfWeek "ЧЕТВЕР" ;
+    ex:timeStart "Пара 7 (19:00 - 20:20)" ;
+    ex:hasTeacher ex:Батенко_Г_В_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/7302701590?pwd=VzRsdkh0U3d4TFBOMCtHcld3aU1YQT09" ;
+    ex:belongsToGroup ex:group_12_143 .
+
+ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
+ex:Батенко_Г_В_ a ex:Teacher ; ex:fullName "Батенко Г.В." .
+
+ex:lesson_184 a ex:Lesson ;
+    ex:subject "12-143 ( )" ;
+    ex:dayOfWeek "ЧЕТВЕР" ;
+    ex:timeStart "Пара 7 (19:00 - 20:20)" ;
+    ex:hasTeacher ex:Димніч_М_ ;
     ex:link "Дистанційно (посилання не знайдено)" ;
     ex:belongsToGroup ex:group_12_143 .
 
 ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
-ex:Невідомий_викладач a ex:Teacher ; ex:fullName "Невідомий викладач" .
+ex:Димніч_М_ a ex:Teacher ; ex:fullName "Димніч М." .
 
-ex:lesson_198 a ex:Lesson ;
-    ex:subject "12-143 (Димніч М.)" ;
+ex:lesson_185 a ex:Lesson ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК" ;
     ex:dayOfWeek "ЧЕТВЕР" ;
     ex:timeStart "Пара 7 (19:00 - 20:20)" ;
-    ex:hasTeacher ex:Невідомий_викладач ;
-    ex:link "Дистанційно (посилання не знайдено)" ;
-    ex:belongsToGroup ex:group_12_143 .
+    ex:hasTeacher ex:Батенко_Г_В_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/7302701590?pwd=VzRsdkh0U3d4TFBOMCtHcld3aU1YQT09" ;
+    ex:belongsToGroup ex:group_12_212 .
 
-ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
-ex:Невідомий_викладач a ex:Teacher ; ex:fullName "Невідомий викладач" .
+ex:group_12_212 a ex:Group ; ex:groupName "12-212" .
+ex:Батенко_Г_В_ a ex:Teacher ; ex:fullName "Батенко Г.В." .
 
-ex:lesson_199 a ex:Lesson ;
-    ex:subject "Взаємодія людини та машини (пр.)" ;
+ex:lesson_186 a ex:Lesson ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК" ;
+    ex:dayOfWeek "ЧЕТВЕР" ;
+    ex:timeStart "Пара 7 (19:00 - 20:20)" ;
+    ex:hasTeacher ex:Батенко_Г_В_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/7302701590?pwd=VzRsdkh0U3d4TFBOMCtHcld3aU1YQT09" ;
+    ex:belongsToGroup ex:group_12_232 .
+
+ex:group_12_232 a ex:Group ; ex:groupName "12-232" .
+ex:Батенко_Г_В_ a ex:Teacher ; ex:fullName "Батенко Г.В." .
+
+ex:lesson_187 a ex:Lesson ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК" ;
+    ex:dayOfWeek "ЧЕТВЕР" ;
+    ex:timeStart "Пара 7 (19:00 - 20:20)" ;
+    ex:hasTeacher ex:Батенко_Г_В_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/7302701590?pwd=VzRsdkh0U3d4TFBOMCtHcld3aU1YQT09" ;
+    ex:belongsToGroup ex:group_12_231 .
+
+ex:group_12_231 a ex:Group ; ex:groupName "12-231" .
+ex:Батенко_Г_В_ a ex:Teacher ; ex:fullName "Батенко Г.В." .
+
+ex:lesson_188 a ex:Lesson ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК" ;
+    ex:dayOfWeek "ЧЕТВЕР" ;
+    ex:timeStart "Пара 7 (19:00 - 20:20)" ;
+    ex:hasTeacher ex:Батенко_Г_В_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/7302701590?pwd=VzRsdkh0U3d4TFBOMCtHcld3aU1YQT09" ;
+    ex:belongsToGroup ex:group_12_241 .
+
+ex:group_12_241 a ex:Group ; ex:groupName "12-241" .
+ex:Батенко_Г_В_ a ex:Teacher ; ex:fullName "Батенко Г.В." .
+
+ex:lesson_189 a ex:Lesson ;
+    ex:subject "Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК Базова загальновійськова підготовка (теоретична підготовка)* (лекція) Тема 13. Міжнародне гуманітарне право Ідентификатор конференції: 730 270 1590 Код доступа: 202223 ЗАЛІК" ;
+    ex:dayOfWeek "ЧЕТВЕР" ;
+    ex:timeStart "Пара 7 (19:00 - 20:20)" ;
+    ex:hasTeacher ex:Батенко_Г_В_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/7302701590?pwd=VzRsdkh0U3d4TFBOMCtHcld3aU1YQT09" ;
+    ex:belongsToGroup ex:group_12_261 .
+
+ex:group_12_261 a ex:Group ; ex:groupName "12-261" .
+ex:Батенко_Г_В_ a ex:Teacher ; ex:fullName "Батенко Г.В." .
+
+ex:lesson_190 a ex:Lesson ;
+    ex:subject "Історія фізики (консультація) Ідетнтифікатор: 743 407 3357" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Вінник_М_О ;
+    ex:hasTeacher ex:Гончаренко_Т_Л_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/7434073357?pwd=YkY3OS9mQi94THpkam1pOXZIdDZhUT09" ;
+    ex:belongsToGroup ex:group_12_111 .
+
+ex:group_12_111 a ex:Group ; ex:groupName "12-111" .
+ex:Гончаренко_Т_Л_ a ex:Teacher ; ex:fullName "Гончаренко Т.Л." .
+
+ex:lesson_191 a ex:Lesson ;
+    ex:subject "Взаємодія людини та машини (пр.) О" ;
+    ex:dayOfWeek "П'ЯТНИЦЯ" ;
+    ex:timeStart "Пара 1 (09:00 - 10:20)" ;
+    ex:hasTeacher ex:Вінник_М_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/2162249744?pwd=edp1sgRh9vXehZ767mrua7409HavsP.1" ;
     ex:belongsToGroup ex:group_12_331 .
 
 ex:group_12_331 a ex:Group ; ex:groupName "12-331" .
-ex:Вінник_М_О a ex:Teacher ; ex:fullName "Вінник М.О" .
+ex:Вінник_М_ a ex:Teacher ; ex:fullName "Вінник М." .
 
-ex:lesson_200 a ex:Lesson ;
-    ex:subject "Технології віртуальної та доповненої реальності (л.) Технології віртуальної та доповненої реальності (пр.) вся група" ;
+ex:lesson_192 a ex:Lesson ;
+    ex:subject "Технології віртуальної та доповненої реальності (пр.) вся група" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
     ex:hasTeacher ex:Кравцов_Г_М_ ;
@@ -2201,96 +2113,19 @@ ex:lesson_200 a ex:Lesson ;
 ex:group_12_431 a ex:Group ; ex:groupName "12-431" .
 ex:Кравцов_Г_М_ a ex:Teacher ; ex:fullName "Кравцов Г.М." .
 
-ex:lesson_201 a ex:Lesson ;
-    ex:subject "Технології віртуальної та доповненої реальності (л.) Технології віртуальної та доповненої реальності (пр.) (Бацалай І., Березинський Д., Галькевич П., Коршун Д., Кульман Д., Метін Б., Олейніченко В., Петухов В., Рудчук М., Яворський О., Скорий Є.)" ;
+ex:lesson_193 a ex:Lesson ;
+    ex:subject "Технології віртуальної та доповненої реальності (пр.) ( , , , , , , , , , , )" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Кравцов_Г_М_ ;
+    ex:hasTeacher ex:Бацалай_І_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/3199062903?pwd=cEg0Qmd3enN6bGV2aUpGYWZralovdz09" ;
     ex:belongsToGroup ex:group_12_441 .
 
 ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
-ex:Кравцов_Г_М_ a ex:Teacher ; ex:fullName "Кравцов Г.М." .
+ex:Бацалай_І_ a ex:Teacher ; ex:fullName "Бацалай І." .
 
-ex:lesson_202 a ex:Lesson ;
-    ex:subject "Формальні методи специфікації, верифікації та оптимізації програм (пр.) (Дзюбенко Д., Диннік М., Жигун М., Іванов О., Савченко І., Кусік І.)" ;
-    ex:dayOfWeek "П'ЯТНИЦЯ" ;
-    ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Песчаненко_В_С_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/6319409305?pwd=MDVWNGJPZ2oxandIY1lncHhWUTUzdz09" ;
-    ex:belongsToGroup ex:group_12_441 .
-
-ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
-ex:Песчаненко_В_С_ a ex:Teacher ; ex:fullName "Песчаненко В.С." .
-
-ex:lesson_203 a ex:Lesson ;
-    ex:subject "Формальні методи специфікації, верифікації та оптимізації програм (пр.) (Федянін І.)" ;
-    ex:dayOfWeek "П'ЯТНИЦЯ" ;
-    ex:timeStart "Пара 1 (09:00 - 10:20)" ;
-    ex:hasTeacher ex:Песчаненко_В_С_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/6319409305?pwd=MDVWNGJPZ2oxandIY1lncHhWUTUzdz09" ;
-    ex:belongsToGroup ex:group_12_343 .
-
-ex:group_12_343 a ex:Group ; ex:groupName "12-343" .
-ex:Песчаненко_В_С_ a ex:Teacher ; ex:fullName "Песчаненко В.С." .
-
-ex:lesson_204 a ex:Lesson ;
-    ex:subject "Дискретна математика (пр.) /" ;
-    ex:dayOfWeek "П'ЯТНИЦЯ" ;
-    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
-    ex:hasTeacher ex:Співаковський_О_В_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/8421987655?pwd=MHhVUW5ENUZOckh5VThPV3FMUCt5QT09" ;
-    ex:belongsToGroup ex:group_12_131 .
-
-ex:group_12_131 a ex:Group ; ex:groupName "12-131" .
-ex:Співаковський_О_В_ a ex:Teacher ; ex:fullName "Співаковський О.В." .
-
-ex:lesson_205 a ex:Lesson ;
-    ex:subject "Дискретна математика (пр.) /" ;
-    ex:dayOfWeek "П'ЯТНИЦЯ" ;
-    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
-    ex:hasTeacher ex:Співаковський_О_В_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/8421987655?pwd=MHhVUW5ENUZOckh5VThPV3FMUCt5QT09" ;
-    ex:belongsToGroup ex:group_12_131с .
-
-ex:group_12_131с a ex:Group ; ex:groupName "12-131с" .
-ex:Співаковський_О_В_ a ex:Teacher ; ex:fullName "Співаковський О.В." .
-
-ex:lesson_206 a ex:Lesson ;
-    ex:subject "Дискретна математика (пр.) /" ;
-    ex:dayOfWeek "П'ЯТНИЦЯ" ;
-    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
-    ex:hasTeacher ex:Співаковський_О_В_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/8421987655?pwd=MHhVUW5ENUZOckh5VThPV3FMUCt5QT09" ;
-    ex:belongsToGroup ex:group_12_141 .
-
-ex:group_12_141 a ex:Group ; ex:groupName "12-141" .
-ex:Співаковський_О_В_ a ex:Teacher ; ex:fullName "Співаковський О.В." .
-
-ex:lesson_207 a ex:Lesson ;
-    ex:subject "Дискретна математика (пр.) /" ;
-    ex:dayOfWeek "П'ЯТНИЦЯ" ;
-    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
-    ex:hasTeacher ex:Співаковський_О_В_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/8421987655?pwd=MHhVUW5ENUZOckh5VThPV3FMUCt5QT09" ;
-    ex:belongsToGroup ex:group_12_143 .
-
-ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
-ex:Співаковський_О_В_ a ex:Teacher ; ex:fullName "Співаковський О.В." .
-
-ex:lesson_208 a ex:Lesson ;
-    ex:subject "Дискретна математика (пр.) /" ;
-    ex:dayOfWeek "П'ЯТНИЦЯ" ;
-    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
-    ex:hasTeacher ex:Співаковський_О_В_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/8421987655?pwd=MHhVUW5ENUZOckh5VThPV3FMUCt5QT09" ;
-    ex:belongsToGroup ex:group_12_161 .
-
-ex:group_12_161 a ex:Group ; ex:groupName "12-161" .
-ex:Співаковський_О_В_ a ex:Teacher ; ex:fullName "Співаковський О.В." .
-
-ex:lesson_209 a ex:Lesson ;
-    ex:subject "Історія фізики (залік) Ідетнтифікатор: 743 407 3357" ;
+ex:lesson_194 a ex:Lesson ;
+    ex:subject "Загальна фізика (Оптика) (л) Ідетнтифікатор: 743 407 3357" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
     ex:hasTeacher ex:Гончаренко_Т_Л_ ;
@@ -2300,7 +2135,7 @@ ex:lesson_209 a ex:Lesson ;
 ex:group_12_212 a ex:Group ; ex:groupName "12-212" .
 ex:Гончаренко_Т_Л_ a ex:Teacher ; ex:fullName "Гончаренко Т.Л." .
 
-ex:lesson_210 a ex:Lesson ;
+ex:lesson_195 a ex:Lesson ;
     ex:subject "Математична логіка та теорія алгоритмів (пр.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
@@ -2311,7 +2146,7 @@ ex:lesson_210 a ex:Lesson ;
 ex:group_12_331 a ex:Group ; ex:groupName "12-331" .
 ex:Шишко_Л_С_ a ex:Teacher ; ex:fullName "Шишко Л.С." .
 
-ex:lesson_211 a ex:Lesson ;
+ex:lesson_196 a ex:Lesson ;
     ex:subject "Математична логіка та теорія алгоритмів (пр.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
@@ -2322,7 +2157,7 @@ ex:lesson_211 a ex:Lesson ;
 ex:group_12_341 a ex:Group ; ex:groupName "12-341" .
 ex:Шишко_Л_С_ a ex:Teacher ; ex:fullName "Шишко Л.С." .
 
-ex:lesson_212 a ex:Lesson ;
+ex:lesson_197 a ex:Lesson ;
     ex:subject "Математична логіка та теорія алгоритмів (пр.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
@@ -2333,41 +2168,30 @@ ex:lesson_212 a ex:Lesson ;
 ex:group_12_243 a ex:Group ; ex:groupName "12-243" .
 ex:Шишко_Л_С_ a ex:Teacher ; ex:fullName "Шишко Л.С." .
 
-ex:lesson_213 a ex:Lesson ;
-    ex:subject "Машинне навчання в бізнес-аналітиці (л.) Пара 10.04 перенесена по розпорядженню на 17.04" ;
+ex:lesson_198 a ex:Lesson ;
+    ex:subject "Машинне навчання в бізнес-аналітиці (л.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
-    ex:hasTeacher ex:Кобець_В_М_ ;
+    ex:hasTeacher ex:Кобець_В_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/9034056368?pwd=pSZFJSaaoL10dRCWUvOYbxT7inaXdy.1&omn=81166961117" ;
     ex:belongsToGroup ex:group_12_361 .
 
 ex:group_12_361 a ex:Group ; ex:groupName "12-361" .
-ex:Кобець_В_М_ a ex:Teacher ; ex:fullName "Кобець В.М." .
+ex:Кобець_В_ a ex:Teacher ; ex:fullName "Кобець В." .
 
-ex:lesson_214 a ex:Lesson ;
-    ex:subject "Формальні методи специфікації, верифікації та оптимізації програм (пр.) (Дзюбенко Д., Диннік М., Жигун М., Іванов О., Савченко І., Кусік І.)" ;
+ex:lesson_199 a ex:Lesson ;
+    ex:subject "Проєктування інформаційно-освітнього середовища сучасної школи ЗАЛІК" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
-    ex:hasTeacher ex:Песчаненко_В_С_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/6319409305?pwd=MDVWNGJPZ2oxandIY1lncHhWUTUzdz09" ;
-    ex:belongsToGroup ex:group_12_441 .
+    ex:hasTeacher ex:Гнєдкова_О_О_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/9075536865?pwd=cHNadmJvVGZ1dlpUcGxjSXo0a1Q0Zz09" ;
+    ex:belongsToGroup ex:group_12_432 .
 
-ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
-ex:Песчаненко_В_С_ a ex:Teacher ; ex:fullName "Песчаненко В.С." .
+ex:group_12_432 a ex:Group ; ex:groupName "12-432" .
+ex:Гнєдкова_О_О_ a ex:Teacher ; ex:fullName "Гнєдкова О.О." .
 
-ex:lesson_215 a ex:Lesson ;
-    ex:subject "Формальні методи специфікації, верифікації та оптимізації програм (пр.) (Федянін І.)" ;
-    ex:dayOfWeek "П'ЯТНИЦЯ" ;
-    ex:timeStart "Пара 2 (10:40 - 12:00)" ;
-    ex:hasTeacher ex:Песчаненко_В_С_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/6319409305?pwd=MDVWNGJPZ2oxandIY1lncHhWUTUzdz09" ;
-    ex:belongsToGroup ex:group_12_343 .
-
-ex:group_12_343 a ex:Group ; ex:groupName "12-343" .
-ex:Песчаненко_В_С_ a ex:Teacher ; ex:fullName "Песчаненко В.С." .
-
-ex:lesson_216 a ex:Lesson ;
-    ex:subject "Управління проектами (л.)" ;
+ex:lesson_200 a ex:Lesson ;
+    ex:subject "Управління проектами (пр.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 2 (10:40 - 12:00)" ;
     ex:hasTeacher ex:Вінник_М_О_ ;
@@ -2377,7 +2201,7 @@ ex:lesson_216 a ex:Lesson ;
 ex:group_12_461 a ex:Group ; ex:groupName "12-461" .
 ex:Вінник_М_О_ a ex:Teacher ; ex:fullName "Вінник М.О." .
 
-ex:lesson_217 a ex:Lesson ;
+ex:lesson_201 a ex:Lesson ;
     ex:subject "Іноземна мова (пр.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
@@ -2388,7 +2212,7 @@ ex:lesson_217 a ex:Lesson ;
 ex:group_12_111 a ex:Group ; ex:groupName "12-111" .
 ex:Гнєдкова_О_О_ a ex:Teacher ; ex:fullName "Гнєдкова О.О." .
 
-ex:lesson_218 a ex:Lesson ;
+ex:lesson_202 a ex:Lesson ;
     ex:subject "Іноземна мова (пр.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
@@ -2399,7 +2223,7 @@ ex:lesson_218 a ex:Lesson ;
 ex:group_12_121 a ex:Group ; ex:groupName "12-121" .
 ex:Гнєдкова_О_О_ a ex:Teacher ; ex:fullName "Гнєдкова О.О." .
 
-ex:lesson_219 a ex:Lesson ;
+ex:lesson_203 a ex:Lesson ;
     ex:subject "Іноземна мова (пр.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
@@ -2410,7 +2234,7 @@ ex:lesson_219 a ex:Lesson ;
 ex:group_12_131 a ex:Group ; ex:groupName "12-131" .
 ex:Гнєдкова_О_О_ a ex:Teacher ; ex:fullName "Гнєдкова О.О." .
 
-ex:lesson_220 a ex:Lesson ;
+ex:lesson_204 a ex:Lesson ;
     ex:subject "Іноземна мова (пр.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
@@ -2421,7 +2245,7 @@ ex:lesson_220 a ex:Lesson ;
 ex:group_12_141 a ex:Group ; ex:groupName "12-141" .
 ex:Гнєдкова_О_О_ a ex:Teacher ; ex:fullName "Гнєдкова О.О." .
 
-ex:lesson_221 a ex:Lesson ;
+ex:lesson_205 a ex:Lesson ;
     ex:subject "Іноземна мова (пр.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
@@ -2432,19 +2256,19 @@ ex:lesson_221 a ex:Lesson ;
 ex:group_12_161 a ex:Group ; ex:groupName "12-161" .
 ex:Гнєдкова_О_О_ a ex:Teacher ; ex:fullName "Гнєдкова О.О." .
 
-ex:lesson_222 a ex:Lesson ;
-    ex:subject "Проектування програмних систем (ЗАЛІК) тільки Вережак Б., т." ;
+ex:lesson_206 a ex:Lesson ;
+    ex:subject "Загальна фізика (Оптика) (пр) Ідетнтифікатор: 743 407 3357" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
-    ex:hasTeacher ex:Стогній_Р__с ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/5711356260?pwd=UG1DbDhGVEV2ODNaSTIxMHorTmJvUT09" ;
-    ex:belongsToGroup ex:group_12_261 .
+    ex:hasTeacher ex:Гончаренко_Т_Л_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/7434073357?pwd=YkY3OS9mQi94THpkam1pOXZIdDZhUT09" ;
+    ex:belongsToGroup ex:group_12_212 .
 
-ex:group_12_261 a ex:Group ; ex:groupName "12-261" .
-ex:Стогній_Р__с a ex:Teacher ; ex:fullName "Стогній Р. с" .
+ex:group_12_212 a ex:Group ; ex:groupName "12-212" .
+ex:Гончаренко_Т_Л_ a ex:Teacher ; ex:fullName "Гончаренко Т.Л." .
 
-ex:lesson_223 a ex:Lesson ;
-    ex:subject "Інтелектуальні інформаційні системи (пр.)" ;
+ex:lesson_207 a ex:Lesson ;
+    ex:subject "Інтелектуальні інформаційні системи (л.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
     ex:hasTeacher ex:Полторацький_М_Ю_ ;
@@ -2454,8 +2278,8 @@ ex:lesson_223 a ex:Lesson ;
 ex:group_12_341 a ex:Group ; ex:groupName "12-341" .
 ex:Полторацький_М_Ю_ a ex:Teacher ; ex:fullName "Полторацький М.Ю." .
 
-ex:lesson_224 a ex:Lesson ;
-    ex:subject "Інтелектуальні інформаційні системи (пр.)" ;
+ex:lesson_208 a ex:Lesson ;
+    ex:subject "Інтелектуальні інформаційні системи (л.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
     ex:hasTeacher ex:Полторацький_М_Ю_ ;
@@ -2465,8 +2289,8 @@ ex:lesson_224 a ex:Lesson ;
 ex:group_12_243 a ex:Group ; ex:groupName "12-243" .
 ex:Полторацький_М_Ю_ a ex:Teacher ; ex:fullName "Полторацький М.Ю." .
 
-ex:lesson_225 a ex:Lesson ;
-    ex:subject "(Машинне навчання в бізнес-аналітиці (пр.)" ;
+ex:lesson_209 a ex:Lesson ;
+    ex:subject "Машинне навчання в бізнес-аналітиці (л.) Машинне навчання в бізнес-аналітиці (пр.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
     ex:hasTeacher ex:Кобець_В_М_ ;
@@ -2476,8 +2300,8 @@ ex:lesson_225 a ex:Lesson ;
 ex:group_12_361 a ex:Group ; ex:groupName "12-361" .
 ex:Кобець_В_М_ a ex:Teacher ; ex:fullName "Кобець В.М." .
 
-ex:lesson_226 a ex:Lesson ;
-    ex:subject "Управління проектами (пр.)" ;
+ex:lesson_210 a ex:Lesson ;
+    ex:subject "Управління проектами (л.) Управління проектами (пр.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 3 (12:20 - 13:40)" ;
     ex:hasTeacher ex:Вінник_М_О_ ;
@@ -2487,51 +2311,73 @@ ex:lesson_226 a ex:Lesson ;
 ex:group_12_461 a ex:Group ; ex:groupName "12-461" .
 ex:Вінник_М_О_ a ex:Teacher ; ex:fullName "Вінник М.О." .
 
-ex:lesson_227 a ex:Lesson ;
-    ex:subject "Англійська мова професійного спрямування (пр.) оц." ;
+ex:lesson_211 a ex:Lesson ;
+    ex:subject "Англійська мова професійного спрямування (пр.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 4 (14:00 - 15:20)" ;
-    ex:hasTeacher ex:Музика_А__д ;
+    ex:hasTeacher ex:Музика_А_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/9075536865?pwd=cHNadmJvVGZ1dlpUcGxjSXo0a1Q0Zz09" ;
     ex:belongsToGroup ex:group_12_143 .
 
 ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
-ex:Музика_А__д a ex:Teacher ; ex:fullName "Музика А. д" .
+ex:Музика_А_ a ex:Teacher ; ex:fullName "Музика А." .
 
-ex:lesson_228 a ex:Lesson ;
-    ex:subject "Англійська мова професійного спрямування (пр.) тільки оц." ;
+ex:lesson_212 a ex:Lesson ;
+    ex:subject "Англійська мова професійного спрямування (пр.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 4 (14:00 - 15:20)" ;
-    ex:hasTeacher ex:Махов_А__д ;
+    ex:hasTeacher ex:Махов_А_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/9075536865?pwd=cHNadmJvVGZ1dlpUcGxjSXo0a1Q0Zz09" ;
     ex:belongsToGroup ex:group_12_231 .
 
 ex:group_12_231 a ex:Group ; ex:groupName "12-231" .
-ex:Махов_А__д a ex:Teacher ; ex:fullName "Махов А. д" .
+ex:Махов_А_ a ex:Teacher ; ex:fullName "Махов А." .
 
-ex:lesson_229 a ex:Lesson ;
-    ex:subject "Англійська мова професійного спрямування (пр.) вся група, крім оц." ;
+ex:lesson_213 a ex:Lesson ;
+    ex:subject "Англійська мова професійного спрямування (пр.) вся група," ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 4 (14:00 - 15:20)" ;
-    ex:hasTeacher ex:Шайдича_А__д ;
+    ex:hasTeacher ex:Шайдича_А_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/9075536865?pwd=cHNadmJvVGZ1dlpUcGxjSXo0a1Q0Zz09" ;
     ex:belongsToGroup ex:group_12_241 .
 
 ex:group_12_241 a ex:Group ; ex:groupName "12-241" .
-ex:Шайдича_А__д a ex:Teacher ; ex:fullName "Шайдича А. д" .
+ex:Шайдича_А_ a ex:Teacher ; ex:fullName "Шайдича А." .
 
-ex:lesson_230 a ex:Lesson ;
-    ex:subject "Англійська мова професійного спрямування (пр.) тільки Буренко А., оц." ;
+ex:lesson_214 a ex:Lesson ;
+    ex:subject "Англійська мова професійного спрямування (пр.) ," ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 4 (14:00 - 15:20)" ;
-    ex:hasTeacher ex:Соценко_В__д ;
+    ex:hasTeacher ex:Буренко_А_ ;
     ex:link "https://ksu-ks-ua.zoom.us/j/9075536865?pwd=cHNadmJvVGZ1dlpUcGxjSXo0a1Q0Zz09" ;
     ex:belongsToGroup ex:group_12_261 .
 
 ex:group_12_261 a ex:Group ; ex:groupName "12-261" .
-ex:Соценко_В__д a ex:Teacher ; ex:fullName "Соценко В. д" .
+ex:Буренко_А_ a ex:Teacher ; ex:fullName "Буренко А." .
 
-ex:lesson_231 a ex:Lesson ;
+ex:lesson_215 a ex:Lesson ;
+    ex:subject "Інтелектуальні інформаційні системи (пр.)" ;
+    ex:dayOfWeek "П'ЯТНИЦЯ" ;
+    ex:timeStart "Пара 4 (14:00 - 15:20)" ;
+    ex:hasTeacher ex:Полторацький_М_Ю_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/5711356260?pwd=UG1DbDhGVEV2ODNaSTIxMHorTmJvUT09" ;
+    ex:belongsToGroup ex:group_12_341 .
+
+ex:group_12_341 a ex:Group ; ex:groupName "12-341" .
+ex:Полторацький_М_Ю_ a ex:Teacher ; ex:fullName "Полторацький М.Ю." .
+
+ex:lesson_216 a ex:Lesson ;
+    ex:subject "Інтелектуальні інформаційні системи (пр.)" ;
+    ex:dayOfWeek "П'ЯТНИЦЯ" ;
+    ex:timeStart "Пара 4 (14:00 - 15:20)" ;
+    ex:hasTeacher ex:Полторацький_М_Ю_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/5711356260?pwd=UG1DbDhGVEV2ODNaSTIxMHorTmJvUT09" ;
+    ex:belongsToGroup ex:group_12_243 .
+
+ex:group_12_243 a ex:Group ; ex:groupName "12-243" .
+ex:Полторацький_М_Ю_ a ex:Teacher ; ex:fullName "Полторацький М.Ю." .
+
+ex:lesson_217 a ex:Lesson ;
     ex:subject "Бази даних та інформаційні системи (л.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
@@ -2542,8 +2388,19 @@ ex:lesson_231 a ex:Lesson ;
 ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
 ex:Валько_Н_В_ a ex:Teacher ; ex:fullName "Валько Н.В." .
 
-ex:lesson_232 a ex:Lesson ;
-    ex:subject "Бази даних / Бази даних та інформаційні системи (л.)" ;
+ex:lesson_218 a ex:Lesson ;
+    ex:subject "Астрономія (пр.) Код доступа: 327617" ;
+    ex:dayOfWeek "П'ЯТНИЦЯ" ;
+    ex:timeStart "Пара 5 (15:40 - 17:00)" ;
+    ex:hasTeacher ex:Кузьменков_С_Г_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/8796647281?pwd=R296c0I0bnFZbHR6TlVsV2tGaHFVdz09" ;
+    ex:belongsToGroup ex:group_12_212 .
+
+ex:group_12_212 a ex:Group ; ex:groupName "12-212" .
+ex:Кузьменков_С_Г_ a ex:Teacher ; ex:fullName "Кузьменков С.Г." .
+
+ex:lesson_219 a ex:Lesson ;
+    ex:subject "Бази даних та інформаційні системи (л.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
     ex:hasTeacher ex:Валько_Н_В_ ;
@@ -2553,8 +2410,8 @@ ex:lesson_232 a ex:Lesson ;
 ex:group_12_232 a ex:Group ; ex:groupName "12-232" .
 ex:Валько_Н_В_ a ex:Teacher ; ex:fullName "Валько Н.В." .
 
-ex:lesson_233 a ex:Lesson ;
-    ex:subject "Бази даних / Бази даних та інформаційні системи (л.)" ;
+ex:lesson_220 a ex:Lesson ;
+    ex:subject "Бази даних та інформаційні системи (л.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
     ex:hasTeacher ex:Валько_Н_В_ ;
@@ -2564,8 +2421,8 @@ ex:lesson_233 a ex:Lesson ;
 ex:group_12_231 a ex:Group ; ex:groupName "12-231" .
 ex:Валько_Н_В_ a ex:Teacher ; ex:fullName "Валько Н.В." .
 
-ex:lesson_234 a ex:Lesson ;
-    ex:subject "Бази даних / Бази даних та інформаційні системи (л.)" ;
+ex:lesson_221 a ex:Lesson ;
+    ex:subject "Бази даних та інформаційні системи (л.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
     ex:hasTeacher ex:Валько_Н_В_ ;
@@ -2575,8 +2432,8 @@ ex:lesson_234 a ex:Lesson ;
 ex:group_12_241 a ex:Group ; ex:groupName "12-241" .
 ex:Валько_Н_В_ a ex:Teacher ; ex:fullName "Валько Н.В." .
 
-ex:lesson_235 a ex:Lesson ;
-    ex:subject "Бази даних / Бази даних та інформаційні системи (л.)" ;
+ex:lesson_222 a ex:Lesson ;
+    ex:subject "Бази даних та інформаційні системи (л.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
     ex:hasTeacher ex:Валько_Н_В_ ;
@@ -2586,19 +2443,8 @@ ex:lesson_235 a ex:Lesson ;
 ex:group_12_261 a ex:Group ; ex:groupName "12-261" .
 ex:Валько_Н_В_ a ex:Teacher ; ex:fullName "Валько Н.В." .
 
-ex:lesson_236 a ex:Lesson ;
-    ex:subject "Теоретична фізика / Теоретична фізика (Фізика атомного ядра та елементарних частинок) (л.) Код доступа: 327617" ;
-    ex:dayOfWeek "П'ЯТНИЦЯ" ;
-    ex:timeStart "Пара 5 (15:40 - 17:00)" ;
-    ex:hasTeacher ex:Кузьменков_С_Г_ ;
-    ex:link "https://ksu-ks-ua.zoom.us/j/8796647281?pwd=R296c0I0bnFZbHR6TlVsV2tGaHFVdz09" ;
-    ex:belongsToGroup ex:group_12_411 .
-
-ex:group_12_411 a ex:Group ; ex:groupName "12-411" .
-ex:Кузьменков_С_Г_ a ex:Teacher ; ex:fullName "Кузьменков С.Г." .
-
-ex:lesson_237 a ex:Lesson ;
-    ex:subject "Теоретична фізика / Теоретична фізика (Фізика атомного ядра та елементарних частинок) (л.) Код доступа: 327617 Теоретична фізика (Фізика атомного ядра та елементарних частинок) (л.) Код доступа: 327617 Теоретична фізика (Фізика атомного ядра та елементарних частинок) (л.) Код доступа: 327617 Теоретична фізика (Фізика атомного ядра та елементарних частинок) (л.) Код доступа: 327617" ;
+ex:lesson_223 a ex:Lesson ;
+    ex:subject "Астрономія (пр.) Код доступа: 327617" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
     ex:hasTeacher ex:Кузьменков_С_Г_ ;
@@ -2608,8 +2454,8 @@ ex:lesson_237 a ex:Lesson ;
 ex:group_12_412 a ex:Group ; ex:groupName "12-412" .
 ex:Кузьменков_С_Г_ a ex:Teacher ; ex:fullName "Кузьменков С.Г." .
 
-ex:lesson_238 a ex:Lesson ;
-    ex:subject "Операційні системи та системне програмування (л.)" ;
+ex:lesson_224 a ex:Lesson ;
+    ex:subject "Операційні системи та системне програмування (лекція)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
     ex:hasTeacher ex:Львов_М_С_ ;
@@ -2619,8 +2465,8 @@ ex:lesson_238 a ex:Lesson ;
 ex:group_12_431 a ex:Group ; ex:groupName "12-431" .
 ex:Львов_М_С_ a ex:Teacher ; ex:fullName "Львов М.С." .
 
-ex:lesson_239 a ex:Lesson ;
-    ex:subject "Операційні системи та системне програмування (л.)" ;
+ex:lesson_225 a ex:Lesson ;
+    ex:subject "Операційні системи та системне програмування (лекція)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
     ex:hasTeacher ex:Львов_М_С_ ;
@@ -2630,8 +2476,8 @@ ex:lesson_239 a ex:Lesson ;
 ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
 ex:Львов_М_С_ a ex:Teacher ; ex:fullName "Львов М.С." .
 
-ex:lesson_240 a ex:Lesson ;
-    ex:subject "Операційні системи та системне програмування (л.)" ;
+ex:lesson_226 a ex:Lesson ;
+    ex:subject "Операційні системи та системне програмування (лекція)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 5 (15:40 - 17:00)" ;
     ex:hasTeacher ex:Львов_М_С_ ;
@@ -2641,8 +2487,8 @@ ex:lesson_240 a ex:Lesson ;
 ex:group_12_343 a ex:Group ; ex:groupName "12-343" .
 ex:Львов_М_С_ a ex:Teacher ; ex:fullName "Львов М.С." .
 
-ex:lesson_241 a ex:Lesson ;
-    ex:subject "Бази даних та інформаційні системи (л.) Бази даних / Бази даних та інформаційні системи (лаб.)" ;
+ex:lesson_227 a ex:Lesson ;
+    ex:subject "Бази даних та інформаційні системи (лаб.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 6 (17:20 - 18:40)" ;
     ex:hasTeacher ex:Валько_Н_В_ ;
@@ -2652,8 +2498,8 @@ ex:lesson_241 a ex:Lesson ;
 ex:group_12_143 a ex:Group ; ex:groupName "12-143" .
 ex:Валько_Н_В_ a ex:Teacher ; ex:fullName "Валько Н.В." .
 
-ex:lesson_242 a ex:Lesson ;
-    ex:subject "Бази даних / Бази даних та інформаційні системи (л.) (10.04 пару перенесено на 13.04) Бази даних / Бази даних та інформаційні системи (лаб.)" ;
+ex:lesson_228 a ex:Lesson ;
+    ex:subject "Бази даних / Бази даних та інформаційні системи (лаб.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 6 (17:20 - 18:40)" ;
     ex:hasTeacher ex:Валько_Н_В_ ;
@@ -2663,8 +2509,8 @@ ex:lesson_242 a ex:Lesson ;
 ex:group_12_232 a ex:Group ; ex:groupName "12-232" .
 ex:Валько_Н_В_ a ex:Teacher ; ex:fullName "Валько Н.В." .
 
-ex:lesson_243 a ex:Lesson ;
-    ex:subject "Бази даних / Бази даних та інформаційні системи (л.) (10.04 пару перенесено на 13.04) Бази даних / Бази даних та інформаційні системи (лаб.)" ;
+ex:lesson_229 a ex:Lesson ;
+    ex:subject "Бази даних / Бази даних та інформаційні системи (лаб.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 6 (17:20 - 18:40)" ;
     ex:hasTeacher ex:Валько_Н_В_ ;
@@ -2674,8 +2520,8 @@ ex:lesson_243 a ex:Lesson ;
 ex:group_12_231 a ex:Group ; ex:groupName "12-231" .
 ex:Валько_Н_В_ a ex:Teacher ; ex:fullName "Валько Н.В." .
 
-ex:lesson_244 a ex:Lesson ;
-    ex:subject "Бази даних / Бази даних та інформаційні системи (л.) (10.04 пару перенесено на 13.04) Бази даних / Бази даних та інформаційні системи (лаб.)" ;
+ex:lesson_230 a ex:Lesson ;
+    ex:subject "Бази даних / Бази даних та інформаційні системи (лаб.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 6 (17:20 - 18:40)" ;
     ex:hasTeacher ex:Валько_Н_В_ ;
@@ -2685,8 +2531,8 @@ ex:lesson_244 a ex:Lesson ;
 ex:group_12_241 a ex:Group ; ex:groupName "12-241" .
 ex:Валько_Н_В_ a ex:Teacher ; ex:fullName "Валько Н.В." .
 
-ex:lesson_245 a ex:Lesson ;
-    ex:subject "Бази даних / Бази даних та інформаційні системи (л.) (10.04 пару перенесено на 13.04) Бази даних / Бази даних та інформаційні системи (лаб.)" ;
+ex:lesson_231 a ex:Lesson ;
+    ex:subject "Бази даних / Бази даних та інформаційні системи (лаб.)" ;
     ex:dayOfWeek "П'ЯТНИЦЯ" ;
     ex:timeStart "Пара 6 (17:20 - 18:40)" ;
     ex:hasTeacher ex:Валько_Н_В_ ;
@@ -2695,4 +2541,59 @@ ex:lesson_245 a ex:Lesson ;
 
 ex:group_12_261 a ex:Group ; ex:groupName "12-261" .
 ex:Валько_Н_В_ a ex:Teacher ; ex:fullName "Валько Н.В." .
+
+ex:lesson_232 a ex:Lesson ;
+    ex:subject "Астрономічний практикум ЗАЛІК Код доступа: 327617" ;
+    ex:dayOfWeek "П'ЯТНИЦЯ" ;
+    ex:timeStart "Пара 6 (17:20 - 18:40)" ;
+    ex:hasTeacher ex:Кузьменков_С_Г_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/8796647281?pwd=R296c0I0bnFZbHR6TlVsV2tGaHFVdz09" ;
+    ex:belongsToGroup ex:group_12_412 .
+
+ex:group_12_412 a ex:Group ; ex:groupName "12-412" .
+ex:Кузьменков_С_Г_ a ex:Teacher ; ex:fullName "Кузьменков С.Г." .
+
+ex:lesson_233 a ex:Lesson ;
+    ex:subject "Операційні системи та системне програмування (лаб.)" ;
+    ex:dayOfWeek "П'ЯТНИЦЯ" ;
+    ex:timeStart "Пара 6 (17:20 - 18:40)" ;
+    ex:hasTeacher ex:Кльонов_Д_М_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/4555710878?pwd=dVVPVjQrbUpmYlpSVDV6OVhORnZlUT09" ;
+    ex:belongsToGroup ex:group_12_431 .
+
+ex:group_12_431 a ex:Group ; ex:groupName "12-431" .
+ex:Кльонов_Д_М_ a ex:Teacher ; ex:fullName "Кльонов Д.М." .
+
+ex:lesson_234 a ex:Lesson ;
+    ex:subject "Операційні системи та системне програмування (лаб.)" ;
+    ex:dayOfWeek "П'ЯТНИЦЯ" ;
+    ex:timeStart "Пара 6 (17:20 - 18:40)" ;
+    ex:hasTeacher ex:Кльонов_Д_М_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/4555710878?pwd=dVVPVjQrbUpmYlpSVDV6OVhORnZlUT09" ;
+    ex:belongsToGroup ex:group_12_441 .
+
+ex:group_12_441 a ex:Group ; ex:groupName "12-441" .
+ex:Кльонов_Д_М_ a ex:Teacher ; ex:fullName "Кльонов Д.М." .
+
+ex:lesson_235 a ex:Lesson ;
+    ex:subject "Операційні системи та системне програмування (лаб.)" ;
+    ex:dayOfWeek "П'ЯТНИЦЯ" ;
+    ex:timeStart "Пара 6 (17:20 - 18:40)" ;
+    ex:hasTeacher ex:Кльонов_Д_М_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/4555710878?pwd=dVVPVjQrbUpmYlpSVDV6OVhORnZlUT09" ;
+    ex:belongsToGroup ex:group_12_343 .
+
+ex:group_12_343 a ex:Group ; ex:groupName "12-343" .
+ex:Кльонов_Д_М_ a ex:Teacher ; ex:fullName "Кльонов Д.М." .
+
+ex:lesson_236 a ex:Lesson ;
+    ex:subject "Практикум з розв язування фізичних задач ЗАЛІК" ;
+    ex:dayOfWeek "П'ЯТНИЦЯ" ;
+    ex:timeStart "Пара 7 (19:00 - 20:20)" ;
+    ex:hasTeacher ex:Черченко_Н_О_ ;
+    ex:link "https://ksu-ks-ua.zoom.us/j/82338792861?pwd=9Zu48pR2rTVpfBT4crWo9O9H8HnMof.1" ;
+    ex:belongsToGroup ex:group_12_411 .
+
+ex:group_12_411 a ex:Group ; ex:groupName "12-411" .
+ex:Черченко_Н_О_ a ex:Teacher ; ex:fullName "Черченко Н.О." .
 
