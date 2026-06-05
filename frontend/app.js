@@ -316,13 +316,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function resolveTeacherName(block, teacherMap) {
-        const direct = block.match(/ex:fullName\s+"([^"]+)"/);
-        if (direct) return direct[1];
-
         const teacherRef = block.match(/ex:hasTeacher\s+(ex:[^\s.;]+)/);
         if (teacherRef && teacherMap[teacherRef[1]]) {
             return teacherMap[teacherRef[1]];
         }
+
+        const direct = block.match(/ex:fullName\s+"([^"]+)"/);
+        if (direct) return direct[1];
 
         if (teacherRef) {
             const id = teacherRef[1].replace(/^ex:/, '').replace(/_/g, ' ');

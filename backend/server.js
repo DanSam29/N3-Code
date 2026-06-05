@@ -36,28 +36,6 @@ function normalizeTeacherName(raw) {
     return inner ? inner[1].trim() : name;
 }
 
-function buildTeacherDirectory(n3Text) {
-    const map = {};
-    const re = /ex:([^\s]+)\s+a ex:Teacher\s*;\s*ex:fullName\s+"([^"]+)"/g;
-    let m;
-    while ((m = re.exec(n3Text)) !== null) {
-        map[`ex:${m[1]}`] = m[2];
-    }
-    return map;
-}
-
-function enrichReasonerResult(result, dataN3) {
-    if (!result) return result;
-    const teachers = buildTeacherDirectory(dataN3);
-    let extra = '';
-    for (const [id, name] of Object.entries(teachers)) {
-        if (!result.includes(`${id} ex:fullName`)) {
-            extra += `${id} ex:fullName "${name}".\n`;
-        }
-    }
-    return extra ? `${result}\n${extra}` : result;
-}
-
 // Допоміжна функція для очищення рядків для літералів N3
 function sanitize(str) {
     if (!str) return "";
@@ -403,14 +381,14 @@ ex:dynamic_query a ex:ScheduleQuery ;
 } => { 
   ?rec ex:recommendedLesson ?lesson . 
   ?lesson ?p ?o .
+  ?lesson ex:hasTeacher ?t .
   ?t ex:fullName ?name .
 } .
 `;
         
         const rawResult = await n3reasoner(fullData, query);
-        const result = enrichReasonerResult(rawResult, data);
-        console.log('Довжина результату:', result ? result.length : 0);
-        res.json({ result });
+        console.log('Довжина результату:', rawResult ? rawResult.length : 0);
+        res.json({ result: rawResult });
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
